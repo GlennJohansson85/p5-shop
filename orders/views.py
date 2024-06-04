@@ -13,15 +13,7 @@ import json
 
 #___________________________________________________________  payments
 def payments(request):
-    '''
-    This view function receives a POST request with JSON data containing payment details.
-    It retrieves the corresponding order, creates a new payment instance, 
-    and saves it to the database.
-    The order status is updated to indicate that it has been paid for.
-    Cart items are moved to the OrderProduct table, and product stock is reduced accordingly.
-    The user is sent an email confirmation of the order.
-    Finally, the order number and transaction ID are sent back as JSON response data.
-    '''
+
     body = json.loads(request.body)
     order = Order.objects.get(user=request.user, is_ordered=False, order_number=body['orderID'])
 
