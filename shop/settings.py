@@ -19,8 +19,6 @@ ALLOWED_HOSTS = [
     # '8000-glennjohansson85-p4blog-a060fk9lwoz.ws-eu114.gitpod.io'             
 ]
 
-
-
 # CSRF_TRUSTED_ORIGINS = [
 #    'https://p4-blog-f04a1ff6a58f.herokuapp.com',
 # ]
@@ -105,6 +103,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Alert Messages
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -122,24 +126,25 @@ MEDIA_URL = '/media/'
 
 # AMAZON
 if 'USE_AWS' in os.environ:
+    # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-
-    AWS_STORAGE_BUCKET_NAME = 'p5-ishop'
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'p5-ishop' # Long heroku name
     AWS_S3_REGION_NAME = 'us-east-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-
-# SQL
-from django.contrib.messages import constants as messages
-MESSAGE_TAGS = {
-    messages.ERROR: 'danger',
-}
+    MEDIAFILES_LOCATION = 'media'
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 
 # Email Verification
@@ -152,10 +157,13 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD','')
 
 
 # PayPal
+PAYPAL_CLIENT_ID = os.getenv('PAYPAL_CLIENT_ID', '')
+PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
+
 
 # ElephantSQL
 DATABASE_USER = 'Pgdemrvo'
-DATABASE_NAME = ''
+DATABASE_NAME = '' # Long heroku name
 DATABASEB_PASSWORD = os.environ.get('DATABASE_PASSWORD','')
 DATABASE_URL = os.environ.get('DATABASE_URL','')
 
