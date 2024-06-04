@@ -13,10 +13,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY','')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'p5-ishop.herokuapp.com', # 'p4-blog-f04a1ff6a58f.herokuapp.com',
-    'localhost'
-    '127.0.0.1'
-    # '8000-glennjohansson85-p4blog-a060fk9lwoz.ws-eu114.gitpod.io'             
+    'p5-ishop-9dcecd21e916.herokuapp.com',
+    'localhost',
+    '127.0.0.1',            
 ]
 
 # CSRF_TRUSTED_ORIGINS = [
@@ -41,7 +40,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -63,7 +62,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                # 'django.template.context_processors.media',
+                'django.template.context_processors.media',
                 'category.context_processors.menu_links',
                 'cart.context_processors.counter',
             ],
@@ -132,7 +131,7 @@ if 'USE_AWS' in os.environ:
         'CacheControl': 'max-age=94608000',
     }
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'p5-ishop' # Long heroku name
+    AWS_STORAGE_BUCKET_NAME = 'p5-ishop-9dcecd21e916.herokuapp.com'
     AWS_S3_REGION_NAME = 'us-east-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
@@ -146,7 +145,6 @@ if 'USE_AWS' in os.environ:
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-
 # Email Verification
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
@@ -155,17 +153,14 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'glenncoding@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD','')
 
-
 # PayPal
 PAYPAL_CLIENT_ID = os.getenv('PAYPAL_CLIENT_ID', '')
 PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
 
-
 # ElephantSQL
 DATABASE_USER = 'Pgdemrvo'
-DATABASE_NAME = '' # Long heroku name
+DATABASE_NAME = 'p5-ishop-9dcecd21e916.herokuapp.com'
 DATABASEB_PASSWORD = os.environ.get('DATABASE_PASSWORD','')
 DATABASE_URL = os.environ.get('DATABASE_URL','')
-
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
