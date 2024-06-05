@@ -149,9 +149,39 @@ PAYPAL_CLIENT_ID = os.getenv('PAYPAL_CLIENT_ID', '')
 PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
 
 # ElephantSQL
-# DATABASE_USER = 'sfyolaqg'
+DATABASE_USER = 'sfyolaqg'
 DATABASE_NAME = 'p5-ishop'
 DATABASE_PASSWORD = os.environ.get('DATABASE_PASSWORD','')
 DATABASE_URL = os.environ.get('DATABASE_URL','')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Security Middleware Settings
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
+    SECURE_HSTS_SECONDS = 31536000  # 1 year
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    SECURE_BROWSER_XSS_FILTER = True
+    X_FRAME_OPTIONS = 'DENY'
+
+# Logging Configuration
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'debug.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
