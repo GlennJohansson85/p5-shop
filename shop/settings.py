@@ -6,7 +6,7 @@ if os.path.isfile('env.py'):
     import env
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
@@ -110,7 +110,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, "static"),
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
