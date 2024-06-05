@@ -15,7 +15,7 @@ from cart.models import Cart, CartItem
 
 import requests
 
-#___________________________________________________________  register
+
 def register(request):
     '''
     Handles user registration by processing the submitted form, creating a user account, 
@@ -60,8 +60,6 @@ def register(request):
     return render(request, 'accounts/register.html', context)
 
 
-
-#___________________________________________________________  signin
 def signin(request):
     '''
     Handles user sign-in by authenticating the provided email and password, 
@@ -85,7 +83,6 @@ def signin(request):
                         variation = item.variations.all()
                         product_variation.append(list(variation))
 
-                    # GET cart items from user - access products variations
                     cart_item = CartItem.objects.filter(user=user)
                     ex_var_list = []
                     id = []
@@ -94,8 +91,6 @@ def signin(request):
                         ex_var_list.append(list(existing_variation))
                         id.append(item.id)    
 
-                    # product_variation = [1,2,3,4,6]
-                    # ex_var_list =[4,6,3,5]
 
                     for pr in product_variation:
                         if pr in ex_var_list:
@@ -129,7 +124,6 @@ def signin(request):
     return render(request, 'accounts/signin.html')
 
 
-#___________________________________________________________  signout
 @login_required(login_url = 'signin')
 def signout(request):
     '''
@@ -140,7 +134,6 @@ def signout(request):
     return redirect('signin')
 
 
-#___________________________________________________________  activate
 def activate(request, uidb64, token):
     '''
     Activate the user's account by decoding the user ID from a URL-safe base64
@@ -165,7 +158,6 @@ def activate(request, uidb64, token):
     return redirect('register')
 
 
-#___________________________________________________________  DEF DASHBOARD
 @login_required(login_url = 'signin')
 def dashboard(request):
     '''
@@ -185,7 +177,6 @@ def dashboard(request):
     return render (request, 'accounts/dashboard.html', context)
 
 
-#___________________________________________________________  reset_password
 def reset_password(request):
     '''
     This view handles the password reset process. It expects a POST request
@@ -214,7 +205,6 @@ def reset_password(request):
         return render(request, 'accounts/reset_password.html')
 
 
-#___________________________________________________________  my_orders
 @login_required(login_url='signin')
 def my_orders(request):
     '''
@@ -229,7 +219,6 @@ def my_orders(request):
     return render(request, 'accounts/my_orders.html', context)
 
 
-#___________________________________________________________  edit_profile
 @login_required(login_url='signin')
 def edit_profile(request):
     '''
@@ -260,7 +249,6 @@ def edit_profile(request):
     return render(request, 'accounts/edit_profile.html', context)
 
 
-#___________________________________________________________  change_password
 @login_required(login_url='signin')
 def change_password(request):
     '''
@@ -292,7 +280,6 @@ def change_password(request):
     return render(request, 'accounts/change_password.html')
 
 
-#___________________________________________________________  order_detail
 @login_required(login_url='signin')
 def order_detail(request, order_id):
     '''

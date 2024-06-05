@@ -3,7 +3,6 @@ from accounts.models import Account
 from products.models import Product, Variation
 
 
-#___________________________________________________________  Payment
 class Payment(models.Model):
     '''
     Model class representing a payment made by a user.
@@ -11,7 +10,7 @@ class Payment(models.Model):
     user            = models.ForeignKey(Account, on_delete=models.CASCADE)
     payment_id      = models.CharField(max_length=100)
     payment_method  = models.CharField(max_length=100)
-    amount_paid     = models.CharField(max_length=100) # this is the total amount paid
+    amount_paid     = models.CharField(max_length=100) # Total
     status          = models.CharField(max_length=100)
     created_at      = models.DateTimeField(auto_now_add=True)
 
@@ -19,7 +18,6 @@ class Payment(models.Model):
         return self.payment_id
 
 
-#___________________________________________________________  Order
 class Order(models.Model):
     '''
     Model class representing an order made by a user.
@@ -62,7 +60,6 @@ class Order(models.Model):
         return self.first_name
 
 
-#___________________________________________________________  OrderProduct
 class OrderProduct(models.Model):
     '''
     Model class representing a product included in an order.

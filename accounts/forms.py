@@ -2,7 +2,6 @@ from django import forms
 from .models import Account, UserProfile
 
 
-#___________________________________________________________  RegistrationForm
 class RegistrationForm(forms.ModelForm):
     '''
     Form for user registration.
@@ -49,7 +48,6 @@ class RegistrationForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = 'form-control'
 
 
-#___________________________________________________________  UserForm
 class UserForm(forms.ModelForm):
     '''
     Form for updating user information.
@@ -64,7 +62,6 @@ class UserForm(forms.ModelForm):
             self.fields[field].widget.attrs['class'] = 'form-control'
 
 
-#___________________________________________________________  CLASS USERPROFILEFORM
 class UserProfileForm(forms.ModelForm):
     '''
     Form for updating user information.

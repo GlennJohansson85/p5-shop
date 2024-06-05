@@ -4,7 +4,6 @@ from .models import Account, UserProfile
 from django.utils.html import format_html
 
 
-#___________________________________________________________  AccountAdmin
 class AccountAdmin(UserAdmin):
       '''
       Custom admin configuration for the Account model.
@@ -20,7 +19,6 @@ class AccountAdmin(UserAdmin):
       fieldsets          = ()
 
 
-#___________________________________________________________  UserProfileAdmin
 class UserProfileAdmin(admin.ModelAdmin):
       '''
       Custom admin configuration for the UserProfile model.

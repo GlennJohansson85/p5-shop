@@ -3,7 +3,6 @@ from category.models import Category
 from django.urls import reverse
 
 
-#___________________________________________________________  Product
 class Product(models.Model):
       '''
       Model representing a product.
@@ -26,7 +25,6 @@ class Product(models.Model):
             return self.product_name
 
 
-#___________________________________________________________  VariationManager
 class VariationManager(models.Manager):
       '''
       Custom manager for variations.
@@ -36,7 +34,7 @@ class VariationManager(models.Manager):
                   variation_category='color',
                   is_active=True
             )
-      
+
       def sizes(self):
             return super(VariationManager, self).filter(
                   variation_category='size',
@@ -49,7 +47,6 @@ variation_category_choice = (
 )
 
 
-#___________________________________________________________  Variation
 class Variation(models.Model):
       '''
       Model for product variations.

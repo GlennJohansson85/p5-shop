@@ -11,7 +11,6 @@ from django.http import HttpResponse
 from django.contrib import messages
 
 
-#___________________________________________________________  products
 def products(request, category_slug=None):
     '''
     Displays products based on the selected category slug.
@@ -41,7 +40,6 @@ def products(request, category_slug=None):
     return render(request, 'products/products.html', context)
 
 
-#___________________________________________________________  product_detail
 def product_detail(request, category_slug, product_slug):
     '''
     Displays the details of a single product identified by its category slug
@@ -68,7 +66,6 @@ def product_detail(request, category_slug, product_slug):
     return render(request, 'products/product_detail.html', context)
 
 
-#___________________________________________________________  search
 def search(request):
     '''
     Searches for products based on the provided keyword
@@ -84,6 +81,3 @@ def search(request):
         'product_count': product_count,
     }
     return render(request, 'products/products.html', context)
-
-
-

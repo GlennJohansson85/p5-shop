@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
 
-#___________________________________________________________  MyAccountManager
 class MyAccountManager(BaseUserManager):
       '''
       Custom user manager for creating and managing user accounts.
@@ -24,7 +23,7 @@ class MyAccountManager(BaseUserManager):
             user.set_password(password)
             user.save(using=self._db)
             return user
-      
+
       def create_superuser(self, first_name, last_name, email, username, password):
             user = self.create_user(
                   email = self.normalize_email(email),
@@ -41,7 +40,6 @@ class MyAccountManager(BaseUserManager):
             return user
 
 
-#___________________________________________________________  Account
 class Account(AbstractBaseUser):
       '''
       Custom user model for user accounts.
@@ -74,12 +72,11 @@ class Account(AbstractBaseUser):
 
       def has_perm(self, perm, obj=None):
             return self.is_admin
-      
+
       def has_module_perms(self, add_label):
             return True
-      
 
-#___________________________________________________________  CLASS USERPROFILE
+
 class UserProfile(models.Model):
       '''
       Model representing user profiles.
@@ -90,9 +87,9 @@ class UserProfile(models.Model):
       profile_picture = models.ImageField(blank=True, upload_to='userprofile/')
       city = models.CharField(blank=True, max_length=20)
       country = models.CharField(blank=True, max_length=20)
-      
+
       def __str__(self):
             return self.user.first_name
-      
+
       def full_address(self):
             return f'{self.address_line_1} {self.address_line_2}'

@@ -11,12 +11,21 @@ import datetime
 import json
 
 
-#___________________________________________________________  payments
 def payments(request):
-
+    '''
+    Handle payment processing for an order.
+    1. Parses the JSON request body to extract payment and order details.
+    2. Retrieves the corresponding order for the current user.
+    3. Creates and saves a Payment record with the provided transaction details.
+    4. Updates the order to mark it as ordered and associates it with the payment.
+    5. Moves the cart items to the OrderProduct table and adjusts product stock.
+    6. Clears the user's cart.
+    7. Sends an order confirmation email to the user.
+    8. Returns a JsonResponse containing the order number and transaction ID.
+    '''
     body = json.loads(request.body)
     order = Order.objects.get(user=request.user, is_ordered=False, order_number=body['orderID'])
-
+    
     # Store transaction details inside Payment model
     payment = Payment(
         user = request.user,
@@ -51,7 +60,6 @@ def payments(request):
         orderproduct.variations.set(product_variation)
         orderproduct.save()
 
-
         # Reduce the quantity of the sold products
         product = Product.objects.get(id=item.product_id)
         product.stock -= item.quantity
@@ -78,7 +86,6 @@ def payments(request):
     return JsonResponse(data)
 
 
-#___________________________________________________________  place_order
 def place_order(request, total = 0, quantity=0,):
     '''
     This view function handles the checkout process. It calculates the total price,
@@ -147,9 +154,8 @@ def place_order(request, total = 0, quantity=0,):
             return render(request, 'orders/payments.html', context)
     else:
         return redirect('checkout')
-    
+   
 
-#___________________________________________________________  order_complete
 def order_complete(request):
     '''
     This view retrieves the order number and payment ID from the request's GET parameters.

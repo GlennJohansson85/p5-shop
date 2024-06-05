@@ -10,17 +10,13 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'p5-ishop-9dcecd21e916.herokuapp.com',
     'localhost',
-    '127.0.0.1',            
+    '127.0.0.1',
 ]
-
-# CSRF_TRUSTED_ORIGINS = [
-#    'https://p4-blog-f04a1ff6a58f.herokuapp.com',
-# ]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -72,12 +68,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'shop.wsgi.application'
 
-
-#if 'DATABASE_URL' in os.environ:
-#    DATABASES = {
-#        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-#    }
-#else:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

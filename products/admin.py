@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Product, Variation
 
-#___________________________________________________________  ProductAdmin
+
 class ProductAdmin(admin.ModelAdmin):
       '''
       Admin configuration for the Product model.
@@ -16,7 +16,6 @@ class ProductAdmin(admin.ModelAdmin):
       prepopulated_fields     = {'slug': ('product_name',)}
 
 
-#___________________________________________________________  VariationAdmin
 class VariationAdmin(admin.ModelAdmin):
       '''
       Admin configuration for the Variation model.

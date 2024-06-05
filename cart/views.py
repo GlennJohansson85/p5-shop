@@ -5,7 +5,6 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required
 
 
-#___________________________________________________________  _CART_ID
 def _cart_id(request):
     '''
     Helper function to retrieve or create a unique cart ID for the current session.
@@ -16,7 +15,6 @@ def _cart_id(request):
     return cart
 
 
-#___________________________________________________________  ADD_CART
 def add_cart(request, product_id):
     '''
     Function handles the addition of a product to the shopping cart. If the user is
@@ -56,7 +54,7 @@ def add_cart(request, product_id):
                 item = CartItem.objects.get(product=product, id=item_id)
                 item.quantity += 1
                 item.save()
-            
+
             else:
                 item = CartItem.objects.create(product=product, quantity=1, user=current_user)
                 if len(product_variation) > 0:
@@ -118,7 +116,7 @@ def add_cart(request, product_id):
                 item = CartItem.objects.get(product=product, id=item_id)
                 item.quantity += 1
                 item.save()
-            
+
             else:
                 item = CartItem.objects.create(product=product, quantity=1, cart=cart)
                 if len(product_variation) > 0:
@@ -138,7 +136,6 @@ def add_cart(request, product_id):
         return redirect('cart')
 
 
-#___________________________________________________________  REMOVE_CART
 def remove_cart(request, product_id, cart_item_id):
     '''
     Function to remove a product from the shopping cart.
@@ -160,7 +157,6 @@ def remove_cart(request, product_id, cart_item_id):
     return redirect('cart')
 
 
-#___________________________________________________________  remove_cart_item
 def remove_cart_item(request, product_id, cart_item_id):
     '''
     Function to remove a specific cart item from the shopping cart.
@@ -175,7 +171,6 @@ def remove_cart_item(request, product_id, cart_item_id):
     return redirect('cart')
 
 
-#___________________________________________________________  cart
 def cart(request, total=0, quantity=0, cart_items=None):
     '''
     Function calculates the total price, quantity, tax, and grand total of items in the shopping cart.
@@ -208,7 +203,6 @@ def cart(request, total=0, quantity=0, cart_items=None):
     return render(request, 'products/cart.html', context)
 
 
-#___________________________________________________________  checkout
 @login_required(login_url='signin')
 def checkout(request, total=0, quantity=0, cart_items=None):
     '''
