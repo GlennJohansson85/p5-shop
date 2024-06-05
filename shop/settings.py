@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 ALLOWED_HOSTS = [
     'p5-ishop-9dcecd21e916.herokuapp.com',
     'localhost',
@@ -25,12 +25,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gunicorn',
+    'storages',
     'category',
     'accounts',
     'products',
     'cart',
-    'orders',
-    'storages',
+    'orders',  
 ]
 
 MIDDLEWARE = [
@@ -49,7 +49,7 @@ ROOT_URLCONF = 'shop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -64,13 +64,16 @@ TEMPLATES = [
         },
     },
 ]
+WSGI_APPLICATION = 'shop.wsgi.application'
+AUTH_USER_MODEL = 'accounts.Account'
+
 # Alert Messages
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-WSGI_APPLICATION = 'shop.wsgi.application'
+
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -80,12 +83,10 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
 
-
-AUTH_USER_MODEL = 'accounts.Account'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -109,14 +110,16 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR /'static'
+STATICFILES_DIRS = [
+    '/static',
+]
+
+# media files configurations
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = BASE_DIR /'media'
 if 'USE_AWS' in os.environ:
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
