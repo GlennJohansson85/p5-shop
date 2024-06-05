@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'p5-ishop-9dcecd21e916.herokuapp.com',
