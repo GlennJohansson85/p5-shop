@@ -6,7 +6,7 @@ if os.path.isfile('env.py'):
     import env
 
 
-BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
