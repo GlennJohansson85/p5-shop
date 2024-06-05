@@ -1,14 +1,16 @@
-/*_________________________________________________________  CSS/UI.CSS  */
 @charset "UTF-8";
-/*______________________________________  GLOBAL STYLES  */
-
+/* ==== BASE STYLES ====*/
+/* ==================== GLOBAL STYLES ======================= */
 @import url("https://rsms.me/inter/inter.css");
 html {
   font-family: "Inter", sans-serif;
   font-size: 15px;
 }
-/*_______________________________________  INCLUDE STYLES AND COMPONENTS
-/*_______________________________________  HELPERS  */
+
+/* ========================
+INCLUDE STYLES AND COMPONENTS
+===================== */
+/* ================== HELPERS  =================== */
 a:hover {
   text-decoration: none;
 }
@@ -35,7 +37,7 @@ a:hover {
   padding: 2rem 2.3rem;
 }
 
-/*_______________________________________  DEFINED VARIABLES */
+/* =================  DEFINED VARIABLES =================== */
 .icon-xs, .icon-sm, .icon-md, .icon-lg {
   display: inline-block;
   text-align: center;
@@ -153,7 +155,7 @@ a:hover {
   transform: scaleX(1);
 }
 
-/*_______________________________________  SPACING  */
+/* ============== spacing ============== */
 .padding-y {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -224,7 +226,7 @@ article:after,
   content: "";
 }
 
-/*_______________________________________  SMALL GRID GUTTER  */
+/* -------------------- small grid gutter --------------------- */
 .row-sm {
   margin-right: -7px;
   margin-left: -7px;
@@ -356,7 +358,7 @@ article:after,
   opacity: 0.9;
 }
 
-/*_______________________________________  TITLES  */
+/* --------------------- titles ---------------------- */
 .section-heading {
   margin-bottom: 20px;
   margin-top: 15px;
@@ -401,7 +403,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
-/*_______________________________________  TITLE HELPERS  */
+/* ==================  title helpers ================ */
 .rtl {
   direction: rtl;
 }
@@ -410,8 +412,8 @@ p:last-child {
   direction: ltr;
 }
 
-/*_______________________________________  SECTIONS  */
-/*_______________________________________  HEADER MAIN  */
+/* ================== SECTIONS =================== */
+/* ================== header main ==================  */
 .header-top-light .nav-link {
   color: #969696;
 }
@@ -425,6 +427,11 @@ p:last-child {
   padding-bottom: 1rem;
 }
 
+.brand-wrap .logo, .navbar-brand .logo {
+  margin-right: 7px;
+  max-height: 42px;
+  display: inline-block;
+}
 
 .navbar-main .nav-link {
   font-weight: 500;
@@ -465,7 +472,7 @@ p:last-child {
 
 /* desktop only */
 /* desktop only .end */
-/*_______________________________________  SECTION-FOOTER  */
+/* ================ SECTION-FOOTER ==================  */
 .section-footer ul li {
   margin-bottom: 5px;
 }
@@ -494,8 +501,8 @@ p:last-child {
   padding-bottom: 20px;
 }
 
-/*_______________________________________  COMPONENTS  */
-/*_______________________________________  OWL SLIDER BANNER  */
+/* ================== COMPONENTS =================== */
+/* ================ OWL SLIDER BANNER ================ */
 .slider-banner-owl .owl-nav .owl-prev, .slider-banner-owl .owl-nav .owl-next {
   padding: 16px 7px;
   color: #FFF;
@@ -659,7 +666,7 @@ a.itemside {
   vertical-align: middle;
 }
 
-/*_______________________________________  DESCRIPTION LIST  */
+/* --------- description list --------*/
 dl[class=row] {
   margin-bottom: 0;
 }
@@ -686,13 +693,13 @@ dl[class=row] {
   flex-grow: 1;
 }
 
-/*_______________________________________  LIST.ROW  */
+/* -------------------- list.row--------------------- */
 ul.row, ul.row-sm {
   list-style: none;
   padding: 0;
 }
 
-/*_______________________________________  LISTS  */
+/* ================= lists ================= */
 [class*=list-] li:after {
   visibility: hidden;
   display: block;
@@ -811,7 +818,7 @@ ul.row, ul.row-sm {
        column-count: 4;
 }
 
-/*_______________________________________  IF CARD IS LINKED  */
+/* IF CARD IS LINKED */
 a[class*=card] {
   color: initial;
 }
@@ -819,7 +826,7 @@ a[class*=card]:hover .title {
   color: #3167eb;
 }
 
-/*_______________________________________  BASE STYLE FOR PRODUCT ITEM  */
+/* BASE STYLE FOR PRODUCT ITEM */
 [class*=card-product] a.title {
   color: #212529;
   display: block;
@@ -848,7 +855,7 @@ a[class*=card]:hover .title {
      object-fit: cover;
 }
 
-/*_______________________________________  GRID STYLE PRODUCT ITEM  */
+/* GRID STYLE PRODUCT ITEM */
 .card-product-grid {
   margin-bottom: 20px;
 }
@@ -907,7 +914,7 @@ a[class*=card]:hover .title {
   margin-bottom: 0;
 }
 
-/*_______________________________________  LARGE LIST STYLE PRODUCT ITEM  */
+/* LARGE LIST STYLE PRODUCT ITEM */
 .card-product-list {
   margin-bottom: 20px;
 }
@@ -1083,7 +1090,7 @@ a[class*=card]:hover .title {
   border-bottom: 0;
 }
 
-/*_______________________________________  BLOCK  */
+/* ====================== block ==================== */
 .box {
   padding: 18px;
   background: #fff;
@@ -1094,7 +1101,7 @@ a[class*=card]:hover .title {
   max-width: 100%;
 }
 
-/*_______________________________________  RATINGS  */
+/* ================= RATINGS ============== */
 .label-rating {
   margin-left: 7px;
   display: inline-block;
@@ -1142,7 +1149,7 @@ a[class*=card]:hover .title {
   max-width: none;
 }
 
-/*_______________________________________  TRACKING  */
+/* ================= TRACKING ============== */
 .tracking-wrap {
   position: relative;
   background-color: #ddd;
@@ -1334,13 +1341,13 @@ a[class*=card]:hover .title {
   padding-bottom: 5px;
 }
 
-/*_______________________________________  PAGES  */
-/*_______________________________________  PAGES HEADER  */
+/* ================== PAGES =================== */
+/* ================ PAGES HEADER ================== */
 .section-pagetop {
   padding: 45px 0;
 }
 
-/*_______________________________________  PAGE DETAILS  */
+/* ================== PAGE DETAILS ==================  */
 .gallery-wrap .img-big-wrap {
   margin-bottom: 10px;
   border-radius: 0.37rem;
@@ -1390,8 +1397,8 @@ a[class*=card]:hover .title {
   min-width: 80px;
 }
 
-/*_______________________________________  PAGES HEADER  */
-/*_______________________________________  SHOPPING-CART */
+/* ================ PAGES HEADER ================== */
+/* ====================== shopping-cart ==================== */
 .table-shopping-cart.table td, .table-shopping-cart.table th {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
