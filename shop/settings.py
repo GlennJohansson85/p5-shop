@@ -80,17 +80,17 @@ DATABASES = {
     }
 }
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+#if 'DATABASE_URL' in os.environ:
+#    DATABASES = {
+#        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#    }
+#else:
+#    DATABASES = {
+#        'default': {
+#            'ENGINE': 'django.db.backends.sqlite3',
+#            'NAME': BASE_DIR / 'db.sqlite3',
+#        }
+#    }
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -117,7 +117,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR /'static'
+STATIC_ROOT = BASE_DIR /'staticfiles'
 STATICFILES_DIRS = [
     '/static',
 ]
