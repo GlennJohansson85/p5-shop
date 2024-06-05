@@ -149,7 +149,7 @@ PAYPAL_CLIENT_ID = os.getenv('PAYPAL_CLIENT_ID', '')
 PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
 
 # ElephantSQL
-DATABASE_USER = 'sfyolaqg'
+# DATABASE_USER = 'sfyolaqg'
 DATABASE_NAME = 'p5-ishop'
 DATABASE_PASSWORD = os.environ.get('DATABASE_PASSWORD','')
 DATABASE_URL = os.environ.get('DATABASE_URL','')
