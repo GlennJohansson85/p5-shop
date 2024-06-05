@@ -75,18 +75,9 @@ MESSAGE_TAGS = {
 }
 
 
-
-#'DATABASE_URL' in os.environ:
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
-#else:
-#    DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -130,11 +121,11 @@ if 'USE_AWS' in os.environ:
         'CacheControl': 'max-age=94608000',
     }
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'p5-ishop'
-    AWS_S3_REGION_NAME = 'us-east-1'
+    AWS_STORAGE_BUCKET_NAME = 'p5-ishop-aws'
+    AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.us-east-1.amazonaws.com'
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.eu-north-1.amazonaws.com'
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
@@ -158,8 +149,8 @@ PAYPAL_CLIENT_ID = os.getenv('PAYPAL_CLIENT_ID', '')
 PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
 
 # ElephantSQL
-DATABASE_USER = 'Pgdemrvo'
-DATABASE_NAME = 'p5-ishop-9dcecd21e916.herokuapp.com'
+DATABASE_USER = 'sfyolaqgReset'
+DATABASE_NAME = 'p5-ishop'
 DATABASE_PASSWORD = os.environ.get('DATABASE_PASSWORD','')
 DATABASE_URL = os.environ.get('DATABASE_URL','')
 
