@@ -1,2 +1,4 @@
 env.py
 test_env.py
+python
+*.sqlite3
