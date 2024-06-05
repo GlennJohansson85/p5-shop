@@ -73,7 +73,12 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -157,7 +162,7 @@ PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
 # ElephantSQL
 DATABASE_USER = 'Pgdemrvo'
 DATABASE_NAME = 'p5-ishop-9dcecd21e916.herokuapp.com'
-DATABASEB_PASSWORD = os.environ.get('DATABASE_PASSWORD','')
+DATABASE_PASSWORD = os.environ.get('DATABASE_PASSWORD','')
 DATABASE_URL = os.environ.get('DATABASE_URL','')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
