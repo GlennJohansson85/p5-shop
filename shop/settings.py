@@ -6,7 +6,7 @@ if os.path.isfile('env.py'):
     import env
 
 
-BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
@@ -17,6 +17,10 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://p5-ishop-9dcecd21e916.herokuapp.com'
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -24,13 +28,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'gunicorn',
+    'storages',
     'category',
     'accounts',
     'products',
     'cart',
-    'orders',
-    'gunicorn',
-    'storages',
+    'orders',  
 ]
 
 MIDDLEWARE = [
