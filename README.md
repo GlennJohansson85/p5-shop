@@ -3,18 +3,41 @@
 ## 1. Features
 ### 1.1 Main Page
 ![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/3a5d2e27-34a3-4a45-81fc-c0353b522645)
-The main/first page the user see is where all the popular items are presented. In the top right corner (navbar) the user is greeted with a welcome message "Welcome Guest". It is also here the user either register or logs in.  
+The main/first page you will see is where all the popular items are presented. In the top right corner (navbar) you are greeted with a welcome message "Welcome Guest". Below the message is where you register.  
 
-### 1.2 Register
+### 1.2 Registration Process
 ![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/5b890e31-4363-45be-93d3-736ff5e1e813)
-The user fill out his personal information presented in the form above to register. Incase she tries to register with an already registered email or there is a missmatch between passwords an error message will show. 
+You fill out the form and incase the provided email address is already registered or there is a missmatch between passwords you will be notified with a error message. When submitted the form you will recieve a success message letting you know there is a email within you inbox to verify your account.  
+
+Pressing the link will take you to the login page where you will be notified that your account is activated. 
+
+### 1.3 Login
+![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/0f651fc9-f5e9-4ab1-b62b-7a1d6334edb8)
+You add your email address and your password to login. Incase you have already forgot you can get a new one or register another account using the links presented.  
+
+### 1.4 Dashboard
+When logged in you will be redirected to your Dashboard which contains 4 (+ Log out) tabs. 
+
+#### 1.4.1 Dashboard tab
+![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/fb928972-c04f-4733-90c2-3579f98dee4f)
+As presented in the image above you will see whom you are logged in as (first name & last name), total orders, your profile picture (not uploaded yet) and below your email address and phone number. 
+
+#### 1.4.2 My Orders tab
+![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/76dcda47-9a74-4dfe-8b4b-14ff64bf3e6f)
+Here you will see all your orders, total cost and the date the order was executed. 
+
+#### 1.4.2.1 My Orders tab - Order Number
+![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/7805abe3-3fd8-4584-92a2-e8758d8df66f)
+By pressing the order number in the orders tab you will get the order details for that specific order. 
+
+#### 1.4.3
+
+#### 1.4.4
 
 
+Dashboard
 
-* Verification link
-* Alert Messages
-### 1.2 Dashboard
-* Dashboard
+  
 * Edit Profile
 * My orders
 * Password Reset
