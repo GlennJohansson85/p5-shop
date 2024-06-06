@@ -69,6 +69,7 @@ You can add/remove, choose to continue to shop or checkout.
 
 ### 1.9 Shipment / Billing
 ![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/3e4f96ce-6380-4be8-a730-c7b4c53455fb)
+<br>
 Here you add the details you want the items in your cart to be sent too. You can even add a order note. 
 
 ### 1.10 Review your order
