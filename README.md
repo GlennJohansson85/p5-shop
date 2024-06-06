@@ -90,44 +90,6 @@ You add your mail and password and if the payment goes through you will be notif
 ![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/4d56fa2d-2e89-47b8-8264-5eceb1c34369)
 
 
-
-  
-* Edit Profile
-* My orders
-* Password Reset
-
-### 1.3 Login
-* Alert Messages
-
-### 1.4 Logout
-* Alert Messages
-
-### 1.5 Edit Profile
-* Profile Picture
-* Street, city, phonenumber
-
-### 1.6 Forgot password
-* Alert Messages
-### 1.7 Navbar
-* Welcome Guest/user
-
-### 1.8 Home
-
-### 1.9 Products
-
-### 1.10 Cart
-
-### 1.11 Checkout
-
-### 1.12 Order
-
-
-
-
-## 3. Gallery
-
-
-
 ## 4. Testing
 ### 4.1 Functional Tests
 #### 4.1.1 Homepage Load Test
@@ -218,8 +180,6 @@ You add your mail and password and if the payment goes through you will be notif
 
 ### 5. Unfixed
 ### 5.1 Just a note:
-This is my 5th project restart. The reason why I´m saying this because I dont want you to think that the hours I´ve spent on this repo is the only ones. 
-
 I have two other projects which I gave up due to migrations error. 
 * https://github.com/GlennJohansson85/hitech
 * https://github.com/GlennJohansson85/techboy
