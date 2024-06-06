@@ -1,7 +1,16 @@
 # iShop - Welcome to the future!
 
 ## 1. Features
-### 1.1 Register
+### 1.1 Main Page
+![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/3a5d2e27-34a3-4a45-81fc-c0353b522645)
+The main/first page the user see is where all the popular items are presented. In the top right corner (navbar) the user is greeted with a welcome message "Welcome Guest". It is also here the user either register or logs in.  
+
+### 1.2 Register
+![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/5b890e31-4363-45be-93d3-736ff5e1e813)
+The user fill out his personal information presented in the form above to register. Incase she tries to register with an already registered email or there is a missmatch between passwords an error message will show. 
+
+
+
 * Verification link
 * Alert Messages
 ### 1.2 Dashboard
