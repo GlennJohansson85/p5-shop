@@ -4,15 +4,18 @@ from .models import Account, UserProfile
 from orders.models import Order, OrderProduct
 from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
+
+# Verification
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import EmailMessage
+
 from cart.views import _cart_id
 from cart.models import Cart, CartItem
-
 import requests
 
 
@@ -36,9 +39,17 @@ def register(request):
                 email=email,
                 username=username,
                 password=password
-                )
+            )
             user.phone_number = phone_number
             user.save()
+            
+            # User Profile
+            profile = UserProfile()
+            profile.user_id = user.id
+            profile.profile_picture = 'default/default-user.png'
+            profile.save()
+
+            # Activation
             current_site = get_current_site(request)
             mail_subject = 'Please activate your account'
             message = render_to_string('accounts/account_verification_email.html', {
@@ -50,8 +61,8 @@ def register(request):
             to_email = email
             send_email = EmailMessage(mail_subject, message, to=[to_email])
             send_email.send()
-            messages.success(request, 'Activation link sent to your email!')
-            return redirect('/accounts/signin/?command=verification&email='+email)
+            # messages.success(request, 'Thank you for registering with us. We have sent you a verification email to your email address [rathan.kumar@gmail.com]. Please verify it.')
+            return redirect('/accounts/Signin/?command=verification&email='+email)
     else:
         form = RegistrationForm()
     context = {
@@ -68,6 +79,7 @@ def signin(request):
     if request.method == "POST":
         email = request.POST['email']
         password = request.POST['password']
+        
         user = auth.authenticate(email=email, password=password)
 
         if user is not None:
@@ -77,12 +89,13 @@ def signin(request):
                 if is_cart_item_exists:
                     cart_item = CartItem.objects.filter(cart=cart)
 
-                    # GET product variation by cart id
+                    # Product variation > Cart Id
                     product_variation = []
                     for item in cart_item:
                         variation = item.variations.all()
                         product_variation.append(list(variation))
 
+                    # Cart Items > User > Product Variations
                     cart_item = CartItem.objects.filter(user=user)
                     ex_var_list = []
                     id = []
@@ -90,7 +103,6 @@ def signin(request):
                         existing_variation = item.variations.all()
                         ex_var_list.append(list(existing_variation))
                         id.append(item.id)    
-
 
                     for pr in product_variation:
                         if pr in ex_var_list:
