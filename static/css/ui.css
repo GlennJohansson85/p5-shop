@@ -1,16 +1,23 @@
-@charset "UTF-8";
-/* ==== BASE STYLES ====*/
-/* ==================== GLOBAL STYLES ======================= */
+/* 2024-12-09 */
+
+/* Top-Navbar Items spread out (English, USD, Email, Call Us) */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+
+
+
 @import url("https://rsms.me/inter/inter.css");
 html {
   font-family: "Inter", sans-serif;
   font-size: 15px;
 }
 
-/* ========================
-INCLUDE STYLES AND COMPONENTS
-===================== */
-/* ================== HELPERS  =================== */
 a:hover {
   text-decoration: none;
 }

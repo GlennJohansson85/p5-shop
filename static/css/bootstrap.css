@@ -52,8 +52,6 @@ Bootstrap with custom variables
 html {
   font-family: sans-serif;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -4046,13 +4044,9 @@ input[type=button].btn-block {
   text-decoration: none;
 }
 
-.navbar-nav {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
+
+
+
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;

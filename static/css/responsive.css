@@ -75,10 +75,6 @@
   .mobile-pt {
     padding-top: 20px;
   }
-
-  .navbar-expand .navbar-collapse {
-    flex-direction: column;
-  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
