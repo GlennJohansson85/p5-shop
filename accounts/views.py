@@ -21,7 +21,7 @@ import requests
 
 def register(request):
     '''
-    Handles user registration by processing the submitted form, creating a user account, 
+    Handles user registration by processing the submitted form, creating a user account,
     and sending an email verification link.
     '''
     if request.method == 'POST':
@@ -36,7 +36,7 @@ def register(request):
             user = Account.objects.create_user(first_name=first_name, last_name=last_name, email=email, username=username, password=password)
             user.phone_number = phone_number
             user.save()
-            
+
             # User Profile
             profile = UserProfile()
             profile.user_id = user.id
@@ -67,13 +67,13 @@ def register(request):
 
 def signin(request):
     '''
-    Handles user sign-in by authenticating the provided email and password, 
+    Handles user sign-in by authenticating the provided email and password,
     and manages the user's cart items upon successful login.
     '''
     if request.method == "POST":
         email = request.POST['email']
         password = request.POST['password']
-        
+
         user = auth.authenticate(email=email, password=password)
 
         if user is not None:
@@ -96,7 +96,7 @@ def signin(request):
                     for item in cart_item:
                         existing_variation = item.variations.all()
                         ex_var_list.append(list(existing_variation))
-                        id.append(item.id)    
+                        id.append(item.id)
 
                     for pr in product_variation:
                         if pr in ex_var_list:
@@ -132,22 +132,14 @@ def signin(request):
 
 @login_required(login_url = 'signin')
 def signout(request):
-    '''
-    Logs out the currently authenticated user and redirects them to the sign-in page.
-    '''
+
     auth.logout(request)
     messages.success(request, 'Loggout Successful!')
     return redirect('signin')
 
 
 def activate(request, uidb64, token):
-    '''
-    Activate the user's account by decoding the user ID from a URL-safe base64
-    encoded string (`uidb64`) and retrieving the corresponding user object.
-    Validate the token against the user object using Django's default token generator.
-    If the token is valid, set the `is_active` flag of the user to True, indicating
-    that the account is activated. Display a success message upon successful activation.
-    '''
+
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
         user = Account._default_manager.get(pk=uid)
@@ -164,23 +156,22 @@ def activate(request, uidb64, token):
     return redirect('register')
 
 
-@login_required(login_url = 'signin')
+@login_required(login_url='signin')
 def dashboard(request):
     '''
-    This view renders the user's dashboard, showing their order count and profile
-    information. It retrieves the user's completed orders from the database and
-    calculates the total count. Additionally, it fetches the user's profile details
-    to display them on the dashboard.
+    Dashboard view for user profile and orders.
     '''
-    orders = Order.objects.order_by('-created_at').filter(user_id=request.user.id, is_ordered=True)
+    orders = Order.objects.filter(user_id=request.user.id, is_ordered=True).order_by('-created_at')
     orders_count = orders.count()
 
-    userprofile = UserProfile.objects.get(user_id=request.user.id)
+    # Safe query - Guaranteed UserProfile exists.
+    userprofile = UserProfile.objects.get(user=request.user)
+
     context = {
         'orders_count': orders_count,
         'userprofile': userprofile,
     }
-    return render (request, 'accounts/dashboard.html', context)
+    return render(request, 'accounts/dashboard.html', context)
 
 
 def reset_password(request):
@@ -246,7 +237,7 @@ def edit_profile(request):
     else:
         user_form = UserForm(instance=request.user)
         profile_form = UserProfileForm(instance=userprofile)
-    
+
     context = {
         'user_form': user_form,
         'profile_form': profile_form,

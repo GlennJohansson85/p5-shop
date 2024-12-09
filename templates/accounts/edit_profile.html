@@ -14,9 +14,12 @@
                     <div class="card-body">
                         <div class="text-right">
                             {% if userprofile.profile_picture %}
-                            <img src="{{ userprofile.profile_picture.url }}" alt="Profile Picture" width="100" style="border-radius:50%">
+                                <!-- Render uploaded profile picture -->
+                                <img src="{{ userprofile.profile_picture.url }}" alt="Profile Picture" width="100" style="border-radius:50%;">
+                            {% else %}
+                                <!-- Render default fallback profile picture -->
+                                <img src="{% static 'images/default_profile.png' %}" alt="Default Profile Picture" width="100" style="border-radius:50%;">
                             {% endif %}
-                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <form action="{% url 'edit_profile' %}" method="POST" enctype="multipart/form-data">
@@ -29,7 +32,7 @@
                                         <div class="form-group col-md-6">
                                             <label>Last Name:</label>
                                             {{ user_form.last_name }}
-                                        </div> 
+                                        </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
@@ -39,7 +42,7 @@
                                         <div class="form-group col-md-6">
                                             <label>Picture:</label>
                                             {{ profile_form.profile_picture }}
-                                        </div> 
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label>Address 1:</label>

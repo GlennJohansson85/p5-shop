@@ -10,7 +10,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
-DEBUG = False
+DEBUG = True
+
 ALLOWED_HOSTS = [
     'p5-ishop-9dcecd21e916.herokuapp.com',
     'localhost',
@@ -34,7 +35,7 @@ INSTALLED_APPS = [
     'accounts',
     'products',
     'cart',
-    'orders',  
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -133,7 +134,7 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.eu-north-1.amazonaws.com'
     # Static and media files
-    
+
        # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
@@ -143,9 +144,9 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-    
 
-    
+
+
 # Email Verification
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True

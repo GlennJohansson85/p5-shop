@@ -9,10 +9,10 @@ class MyAccountManager(BaseUserManager):
       def create_user(self, first_name, last_name, username, email, password=None):
             if not email:
                   raise ValueError('Email required')
-            
+
             if not username:
                   raise ValueError('Username required')
-            
+
             user = self.model(
                   email = self.normalize_email(email),
                   username = username,
@@ -78,13 +78,10 @@ class Account(AbstractBaseUser):
 
 
 class UserProfile(models.Model):
-      '''
-      Model representing user profiles.
-      '''
       user = models.OneToOneField(Account, on_delete=models.CASCADE)
       address_line_1 = models.CharField(blank=True, max_length=100)
       address_line_2 = models.CharField(blank=True, max_length=100)
-      profile_picture = models.ImageField(blank=True, upload_to='userprofile/')
+      profile_picture = models.ImageField(upload_to='userprofile/', blank=True, null=True)  # Optional
       city = models.CharField(blank=True, max_length=20)
       country = models.CharField(blank=True, max_length=20)
 

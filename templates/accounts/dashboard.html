@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 <section class="section-conten padding-y bg">
     {% include 'includes/alerts.html' %}
@@ -14,6 +16,8 @@
                     </header>
                     <div class="card-body">
                         <div class="row">
+
+                            <!-- Orders Information -->
                             <div class="col-md-6">
                                 <div class="card" style="text-align:center;">
                                     <div class="card-body">
@@ -23,10 +27,18 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Profile Info with Fallback -->
                             <div class="col-md-6">
                                 <div class="card" style="text-align:center;">
                                     <div class="card-body">
-                                        <img src="{{ userprofile.profile_picture.url }}" alt="User Profile Picture" width="50" style="border-radius:50%;">
+                                        {% if userprofile.profile_picture %}
+                                            <!-- Use user-uploaded profile picture -->
+                                            <img src="{{ userprofile.profile_picture.url }}" alt="User Profile Picture" width="50" style="border-radius:50%;">
+                                        {% else %}
+                                            <!-- Use default fallback image -->
+                                            <img src="{% static 'images/default_profile.png' %}" alt="Default Profile Picture" width="50" style="border-radius:50%;">
+                                        {% endif %}
                                         <p class="mb-0">{{ user.email }}</p>
                                         <p>{{ user.phone_number }}</p>
                                     </div>
@@ -39,5 +51,5 @@
         </div>
     </div>
 </section>
-
 {% endblock %}
+
