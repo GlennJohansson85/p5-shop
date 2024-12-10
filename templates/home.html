@@ -2,26 +2,33 @@
 {% load static %}
 
 {% block content %}
-<section class="section-intro padding-y-sm">
+<!-- Banner Section -->
+<section class="section-intro">
     <div class="container">
         <div class="intro-banner-wrap">
             <img src="{% static 'images/banners/banner-sub.png' %}" class="img-fluid rounded">
         </div>
     </div>
 </section>
-<section class="section-name padding-y-sm">
+
+<!-- Popular Products Section -->
+<section class="section-products">
     <div class="container">
+
+        <!-- Popular Products Section - Heading -->
         <header class="section-heading">
             <a href="{% url 'products' %}" class="btn btn-outline-primary float-right">See all</a>
             <h3 class="section-title">Popular products</h3>
         </header>
+
+        <!-- Popular Products Section - Products  -->
         <div class="row">
             {% for product in products %}
             <div class="col-md-3">
                 <div class="card card-product-grid">
                     <a href="{{ product.get_url }}" class="img-wrap"><img src="{{ product.images.url }}"></a>
                     <figcaption class="info-wrap">
-                        <a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
+                        <a href="{{ product.get_url }}" class="product-title">{{ product.product_name }}</a>
                         <div class="price mt-1">${{ product.price }}</div>
                     </figcaption>
                 </div>

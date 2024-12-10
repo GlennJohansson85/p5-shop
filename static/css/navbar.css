@@ -1,0 +1,24 @@
+/* NAVBAR.HTML */
+.navbar-nav {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+
+.brand {
+    font-size: 1.5rem; /* Adjust size */
+    font-weight: bold;
+    color: #333;       /* Set the text color */
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  width: 100%;
+}

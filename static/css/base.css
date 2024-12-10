@@ -1,0 +1,131 @@
+/* General */
+
+/* Styles are applied universally across all elements. */
+* {
+    margin:     0;
+    padding:    0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/************** HOME.HTML */
+/* Banner */
+.intro-banner-wrap {
+    margin-top: 10px;
+}
+
+/* Section for Popular Products */
+.section-products {
+    padding: 20px 0;
+}
+
+
+/* 'Popular Products', 'Se all' heading */
+.section-heading {
+    justify-content:    space-between;
+    align-items:        center;
+    margin-bottom:      20px;
+}
+
+/* Product Grid */
+.row {
+    display:            flex;   /* Flexible layout container */
+    flex-wrap:          wrap;   /* Wrap to the next row if needed */
+    gap:                20px;   /* Adds space between grid items */
+    justify-content:    center; /* Center cards in row */
+}
+
+.col-md-3 {
+    flex:       1 1 calc(25% - 20px);   /* Makes each column 25% wide minus the gap */
+    max-width:  calc(25% - 20px);       /* Ensures no column exceeds 25% width */
+    transition: transform 0.2s ease;
+}
+
+.card-product-grid {
+    padding:        2px;
+    border:         1px solid #ddd;
+    border-radius:  5px;
+    box-shadow:     0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow:       hidden; /* Hides any overflowing content within the card */
+    background:     linear-gradient(135deg, #f0efef, #ffffff);
+    transition:     transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Enlarges card when hovering */
+.card-product-grid:hover {
+    transform:  scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image container */
+.img-wrap {
+    display:        block;  /* Makes the container block-level */
+    height:         200px;  /* Fixes the height of the image container */
+    padding:        5px;    /* Adds inner spacing around the image */
+    overflow:       hidden; /* Ensures any overflowing part of the image is clipped */
+    border-radius:  5px;
+
+}
+
+/* Product image */
+.img-wrap img {
+    width:      100%;   /* Ensures the image spans the full width of the container */
+    height:     100%;   /* Ensures the image covers the entire height */
+    object-fit: cover;  /* Crops the image to maintain its aspect ratio */
+}
+
+/* Product info  */
+.info-wrap {
+    text-align: center; /* Centers the text inside the container */
+
+}
+
+/* Product title style */
+.product-title {
+    display:            block;  /* Ensures the title occupies its own line */
+    font-size:          16px;
+    color:              #333;
+    text-decoration:    none;
+    margin-bottom:      5px;
+    transition:         color 0.3s ease;
+}
+
+/* Product title hover style */
+.product-title:hover {
+    font-weight:        bold;
+    text-decoration:    none;
+    color:              #007bff;
+}
+
+/* Product Price style */
+.price {
+    font-size:      16px;
+    font-weight:    bold;
+    color:          #2f910e;
+}
+
+/* Button Styles */
+.btn-outline-primary:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Settings - */
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex:       1 1 calc(50% - 20px);
+        max-width:  calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex:       1 1 100%;
+        max-width:  100%;
+    }
+}
+

@@ -1,5 +1,9 @@
 {% load static %}
 
+{% block extra_css %}
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
 <!-- Navbar 1 -->
 <header class="section-header">
     <nav class="navbar navbar-expand-lg navbar-light border-bottom">
@@ -45,9 +49,7 @@
 
                 <!-- Navbar -->
                 <div class="col-lg-2 col-md-3 col-6">
-                    <a href="{% url 'home' %}" class="brand-wrap">
-                        <img class="logo" src="{% static 'images/banners/banner-big.png' %}">
-                    </a>
+                    <a href="{% url 'home' %}" class="brand">I Shop</a>
                 </div>
 
                 <!-- Categories Dropdown -->

@@ -11,7 +11,8 @@
     <!-- CSS: Font Awesome, Bootstrap, and Custom -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="{% static 'css/ui.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css"/>
+    {% block extra_css %}{% endblock %}
 
     <!-- Scripts: jQuery, Popper, Bootstrap, PayPal SDK, Custom -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
@@ -29,4 +30,5 @@
 
     {% include 'includes/footer.html' %}
 </body>
+
 </html>
