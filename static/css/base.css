@@ -32,7 +32,7 @@ body {
 }
 
 /* Product Grid */
-.row {
+.product-row {
     display:            flex;   /* Flexible layout container */
     flex-wrap:          wrap;   /* Wrap to the next row if needed */
     gap:                20px;   /* Adds space between grid items */

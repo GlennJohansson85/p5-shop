@@ -1,24 +1,18 @@
-/* NAVBAR.HTML */
-.navbar-nav {
-    flex-direction: row;
+* {
+    margin:     0;
+    padding:    0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+
+.nav1-container {
     display: flex;
-    align-items: center;
-}
-
-
-.brand {
-    font-size: 1.5rem; /* Adjust size */
-    font-weight: bold;
-    color: #333;       /* Set the text color */
-    text-decoration: none;
-    padding: 5px;
-}
-
-
-.navbar-nav {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 0;
-  width: 100%;
+    flex-direction: row;    /* Keep items in a row */
+    flex-wrap: nowrap;       /* Prevent items from wrapping */
+    align-items: center;     /* Align items vertically centered */
 }

@@ -1,124 +1,115 @@
 {% load static %}
 
-{% block extra_css %}
-    <link href="{% static 'css/navbar.css' %}" rel="stylesheet" type="text/css"/>
-{% endblock %}
+<!-- Navbar 1: Static -->
+<nav class="navbar navbar-expand-lg navbar-light border-bottom top-navbar">
+    <div class="nav1-container">
+        <ul class="navbar-nav mr-auto">
+            <!-- Language -->
+            <li class="nav-item">
+                <a href="#" class="nav-link">English</a>
+            </li>
 
-<!-- Navbar 1 -->
-<header class="section-header">
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
-        <div class="container">
-            <ul class="navbar-nav mr-auto">
-
-                <!-- Language -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">English</a>
-                </li>
-
-                <!-- Currency -->
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">USD</a>
-                    <ul class="dropdown-menu small">
-                        <li><a class="dropdown-item" href="#">EUR</a></li>
-                        <li><a class="dropdown-item" href="#">AED</a></li>
-                        <li><a class="dropdown-item" href="#">RUBL</a></li>
-                    </ul>
-                </li>
-
-                <!-- Email -->
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa fa-envelope"></i> Email
-                    </a>
-                </li>
-
-                <!-- Call us -->
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa fa-phone"></i> Call us
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Navbar 2 -->
-    <section class="header-main border-bottom">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <!-- Navbar -->
-                <div class="col-lg-2 col-md-3 col-6">
-                    <a href="{% url 'home' %}" class="brand">I Shop</a>
+            <!-- Currency -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD</a>
+                <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                    <a class="dropdown-item" href="#">EUR</a>
+                    <a class="dropdown-item" href="#">AED</a>
+                    <a class="dropdown-item" href="#">RUBL</a>
                 </div>
+            </li>
 
-                <!-- Categories Dropdown -->
-                <div class="col-lg col-sm col-md col-6 flex-grow-0">
-                    <div class="category-wrap dropdown d-inline-block float-right">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-bars"></i> Categories
-                        </button>
-                        <!-- Categories Dropdown (All Products) -->
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
+            <!-- Email -->
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fa fa-envelope"></i> Email
+                </a>
+            </li>
+
+            <!-- Call Us -->
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fa fa-phone"></i> Call us
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Navbar 2: Collapsible -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="{% url 'home' %}">I Shop</a>
+
+        <!-- Search Form -->
+            <form class="d-flex mx-3">
+                <input class="form-control me-2" type="search" placeholder="Search" name="keyword" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="d-flex align-items-center justify-content-between w-100">
+
+                <!-- Navigation Links -->
+                <ul class="navbar-nav me-auto">
+                    <!-- Categories Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
                             {% for category in links %}
-                                <a class="dropdown-item" href="{{ category.get_url }}">{{ category.category_name }}</a>
+                                <li><a class="dropdown-item" href="{{ category.get_url }}">{{ category.category_name }}</a></li>
                             {% endfor %}
-                        </div>
-                    </div>
-                </div>
+                        </ul>
+                    </li>
 
-                <!-- Products Button Link -->
-                <a href="{% url 'products' %}" class="btn btn-outline-primary">Products</a>
+                    <!-- All Products Link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'products' %}">All Products</a>
+                    </li>
 
-                <!-- Search - Inputfield -->
-                <div class="col-lg col-md-6 col-sm-12 col">
-                    <form action="{% url 'search' %}" class="search" method="GET">
-                        <div class="input-group w-100">
-                            <input type="text" class="form-control" style="width:60%;" placeholder="Search" name="keyword">
-                            <!-- Search - Submit button  -->
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="submit">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
 
-                <!-- Welcome -->
-                <div class="col-lg-3 col-sm-6 col-8 order-2 order-lg-3">
-                    <div class="d-flex justify-content-end mb-3 mb-lg-0">
-                        <!-- Welcome (Guest Configuration) -->
+                </ul>
+
+
+
+                <!-- User Section with Cart -->
+                <div class="d-flex align-items-center">
+                    <!-- Welcome Message and Links -->
+                    <div class="me-4 text-end">
                         {% if user.id is None %}
-                            <div class="widget-header">
-                                <small class="title text-muted">Welcome Guest!</small>
-                                <div>
-                                    <a href="{% url 'signin' %}">Login</a> <span class="dark-transp"> | </span>
-                                    <a href="{% url 'register' %}">Register</a>
-                                </div>
+                            <small class="title text-muted">Welcome Guest!</small>
+                            <div>
+                                <a href="{% url 'signin' %}">Login</a> <span class="dark-transp"> | </span>
+                                <a href="{% url 'register' %}">Register</a>
                             </div>
-                        <!-- Welcome (Registered User Configuration) -->
                         {% else %}
-                            <div class="widget-header">
-                                <small class="title text-muted">Welcome {{ user.first_name }}!</small>
-                                <div>
-                                    <a href="{% url 'dashboard' %}">Dashboard</a> <span class="dark-transp"> | </span>
-                                    <a href="{% url 'signout' %}">Logout</a>
-                                </div>
+                            <small class="title text-muted">Welcome {{ user.first_name }}!</small>
+                            <div>
+                                <a href="{% url 'dashboard' %}">Dashboard</a> <span class="dark-transp"> | </span>
+                                <a href="{% url 'signout' %}">Logout</a>
                             </div>
                         {% endif %}
+                    </div>
 
-                        <!-- Cart -->
-                        <a href="{% url 'cart' %}" class="widget-header pl-3 ml-3">
-                            <div class="icon icon-sm rounded-circle border">
-                                <i class="fa fa-shopping-cart"></i>
-                            </div>
-                            <span class="badge badge-pill badge-danger notify">{{ cart_count }}</span>
+                    <!-- My Cart Button -->
+                    <div>
+                        <a href="{% url 'cart' %}" class="btn btn-outline-primary">
+                            <i class="fa fa-shopping-cart"></i> My Cart
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</header>
+    </div>
+</nav>
