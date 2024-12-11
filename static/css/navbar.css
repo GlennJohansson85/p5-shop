@@ -1,18 +1,81 @@
-* {
-    margin:     0;
-    padding:    0;
+/* General Navbar Styling */
+.navbar {
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-}
-
-
-.nav1-container {
+    max-width: 1200px;
+    width: 100%;
     display: flex;
-    flex-direction: row;    /* Keep items in a row */
-    flex-wrap: nowrap;       /* Prevent items from wrapping */
-    align-items: center;     /* Align items vertically centered */
+
+    background:     linear-gradient(135deg, #fff, #a4bfd7);
+    transition:     transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+.navbar-brand:hover {
+    color: #004078;
+}
+
+/* Navbar Buttons */
+.nav-link.btn {
+    border: 2px outset #becedc;
+    padding: 5px;
+    margin: 0 5px;
+    color: #000;
+}
+.nav-link.btn:hover {
+    border: 2px outset #278ae1;
+    color: #004078;
+}
+
+/* Navbar Links */
+.nav-link {
+    color: #000;
+}
+.nav-link:hover {
+    color: #004078;
+}
+
+/* Navbar Links - Dropdown Menu */
+.dropdown-menu {
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+/* Search field  */
+.search {
+    border-radius: 5px;
+}
+
+/* Search Button  */
+.search-btn {
+    border: 2px outset #becedc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:#becedc;
+    padding: 10px 15px; /* Add padding */
+    display: flex; /* Align the icon */
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Center the icon vertically */
+}
+
+.search-btn:hover {
+    border: 2px outset #278ae1;
+    color: #004078;
+}
+
+/* Tray Pill  */
+.notify {
+    background-color: #ed98a1; /* Red badge */
+    color: #fff;
+    padding: 5px;
 }
