@@ -1,31 +1,100 @@
-/* General */
+/*                                          General */
+/*                                          Fonts */
+
+@font-face {
+    font-family: "janyss";
+    src: url('/static/fonts/janyss.otf') format('OpenType');
+}
+
+@font-face {
+    font-family:"junegull";
+    src: url('/static/fonts/junegull.otf') format('OpenType');
+}
+
+@font-face {
+    font-family:"Aster";
+    src: url('/static/fonts/Aster.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "Asket"; /*2 */
+    src: url('/static/fonts/Classic2.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "Carrois Gothic"; /*2 */
+    src: url('/static/fonts/hibold.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "Saira-Medium"; /*2 */
+    src: url('/static/fonts/Saira-Medium.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: "rose";
+    src: url('/static/fonts/rose.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "casettethin";
+    src: url('/static/fonts/casettethin.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: "casette";
+    src: url('/static/fonts/casettethin.ttf') format('TrueType');
+}
 
 /* Styles are applied universally across all elements. */
 
 body {
-    width: 1200px;
+    font-family: "Typo Grotesk", "Arial";
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-/************** HOME.HTML */
+/*                                          HOME.HTML */
 /* Banner */
 .intro-banner-wrap {
     margin-top: 10px;
 }
 
-/* Section for Popular Products */
-.section-products {
-    padding: 20px 0;
-}
 
 
-/* 'Popular Products', 'Se all' heading */
+/* Positioning for '"Popular Products" text' & '"Se all" Button' */
 .section-heading {
-    justify-content:    space-between;
-    align-items:        center;
-    margin-bottom:      20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
 }
+
+.section-title {
+    font-family: "junegull";
+    font-size: 26px;
+}
+
+/* General for all buttons */
+.btn {
+    font-family: "junegull";
+    font-size: 18px;
+    border: 2px outset #000;
+    padding: 5px;
+    color: #000;
+}
+
+/* Button:Hover */
+.btn:hover {
+    color: #004078;
+    background-color: transparent;
+    border: 2px outset #278ae1;
+
+}
+
+
 
 /* Product Grid */
 .product-row {

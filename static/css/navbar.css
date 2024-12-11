@@ -1,14 +1,15 @@
-/* General Navbar Styling */
+/* Navbar */
 .navbar {
     box-sizing: border-box;
     max-width: 1200px;
     width: 100%;
     display: flex;
-
-    background:     linear-gradient(135deg, #fff, #a4bfd7);
-    transition:     transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #fff, #a4bfd7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #000;
 }
 
+/* Navbar - Positioning */
 .navbar-nav {
     flex-direction: row;
     display: flex;
@@ -17,65 +18,109 @@
 
 /* Navbar Brand */
 .navbar-brand {
-    font-size: 22px;
-    font-weight: bold;
+    font-family: "junegull";
+    font-size: 32px;
     color: #000;
 }
+
+/* Navbar Brand - hover */
 .navbar-brand:hover {
     color: #004078;
 }
 
-/* Navbar Buttons */
-.nav-link.btn {
-    border: 2px outset #becedc;
-    padding: 5px;
-    margin: 0 5px;
-    color: #000;
+/* Navbar Toggler - Border */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler.open,
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
 }
-.nav-link.btn:hover {
-    border: 2px outset #278ae1;
+
+/* Navbar Toggler - Icon */
+.navbar-toggler-icon {
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    width: 45px;
+    height: 8px;
+    background-color: #000;
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Navbar Toggler - Clicked Icon */
+.navbar-toggler.open .navbar-toggler-icon:nth-child(1) {
     color: #004078;
+    background-color: #004078;
+    transform: rotate(45deg) translate(6px, 6px);
 }
 
 /* Navbar Links */
 .nav-link {
+    font-family: "junegull";
+    font-size: 18px;
+    margin-right: 5px;
     color: #000;
 }
+
+/* Navbar Links:Hover */
 .nav-link:hover {
     color: #004078;
 }
 
-/* Navbar Links - Dropdown Menu */
+/* Dropdown Menu */
 .dropdown-menu {
+    font-family: "Typo Grotesk";
     border-radius: 5px;
     background-color: #FFF;
 }
 
-/* Search field  */
+/* Dropdown Item */
+.dropdown-item:hover {
+    background-color: #e7eff8;
+}
+
+/* Search Field  */
 .search {
     border-radius: 5px;
+    flex-grow: 1;
 }
 
-/* Search Button  */
+
+/* Search Placeholder font  */
+.form-control::placeholder {
+    font-family: "junegull";
+    font-size: 14px;
+}
+
+/* Search Button */
 .search-btn {
     border: 2px outset #becedc;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color:#becedc;
-    padding: 10px 15px; /* Add padding */
-    display: flex; /* Align the icon */
-    justify-content: center; /* Center the icon */
-    align-items: center; /* Center the icon vertically */
+    background-color: #becedc;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Search Button Hover */
 .search-btn:hover {
     border: 2px outset #278ae1;
     color: #004078;
 }
 
-/* Tray Pill  */
+/* Cart Icon Container */
+.cart-icon-container {
+    position: relative;
+}
+
+/* Cart Pill */
 .notify {
-    background-color: #ed98a1; /* Red badge */
+    padding: 2px;
+    border-radius: 5px;
     color: #fff;
-    padding: 5px;
+    background-color: #ed98a1;
+    font-size: 16px;
 }
