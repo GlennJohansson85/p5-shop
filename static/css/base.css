@@ -37,33 +37,76 @@
 }
 
 @font-face {
-    font-family: "casettethin";
-    src: url('/static/fonts/casettethin.ttf') format('TrueType');
+    font-family: "nordica";
+    src: url('/static/fonts/nordica.otf') format('OpenType');
 }
 
 @font-face {
-    font-family: "casette";
-    src: url('/static/fonts/casettethin.ttf') format('TrueType');
+    font-family: "crunch";
+    src: url('/static/fonts/crunch.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "colortime";
+    src: url('/static/fonts/colortime.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "classictext"; /* 1*/
+    src: url('/static/fonts/classictext.otf') format('OpenType');
 }
 
 /* Styles are applied universally across all elements. */
+
+html {
+    background-image: url("/static/images/misc/concrete.png");
+    background-repeat: repeat;
+    background-color: #ffffffe0;
+
+}
 
 body {
     font-family: "Typo Grotesk", "Arial";
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-
+    background-color: transparent;
 }
+
+/* Pushes page content down for Navbar */
+.section-intro {
+    padding-top: 60px;
+}
+
 
 /*                                          HOME.HTML */
 /* Banner */
-.intro-banner-wrap {
-    margin-top: 10px;
+.intro-home {
+    margin: 70px;
+    font-family: "junegull";
+    font-size: 84px;
+    text-align: center;
+    animation: text-shadow-animation 10s infinite alternate;
+}
+@keyframes text-shadow-animation {
+  0% {
+    color:#e9eaea;
+    text-shadow: none;
+  }
+  100% {
+    color:#e9eaea;
+    text-shadow:    4px 0px 0 #00000025,
+                    8px 0px 0 #00000030,
+                    12px 0px 0 #00000040;
+    }
 }
 
+.intro-home {
+  /* ... your existing styles ... */
+  animation: text-shadow-animation 2s infinite alternate,
+               text-transform-animation 2s infinite alternate;
 
-
+}
 /* Positioning for '"Popular Products" text' & '"Se all" Button' */
 .section-heading {
     display: flex;
@@ -93,8 +136,6 @@ body {
     border: 2px outset #278ae1;
 
 }
-
-
 
 /* Product Grid */
 .product-row {

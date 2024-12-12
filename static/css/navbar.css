@@ -1,15 +1,19 @@
 /* Navbar */
 .navbar {
+    position: fixed;
     box-sizing: border-box;
+    display: flex;
+    line-height: 18px;
+    margin-top: 5px;
+    z-index: 1050;
     max-width: 1200px;
     width: 100%;
-    display: flex;
-    background: linear-gradient(135deg, #fff, #a4bfd7);
+    border-radius: 5px;
+    background-color: #ffc3e0be;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #000;
 }
 
-/* Navbar - Positioning */
+/* Nav - Positioning items */
 .navbar-nav {
     flex-direction: row;
     display: flex;
@@ -23,12 +27,12 @@
     color: #000;
 }
 
-/* Navbar Brand - hover */
+/* Navbar Brand - Hover */
 .navbar-brand:hover {
     color: #004078;
 }
 
-/* Navbar Toggler - Border */
+/* Navbar Toggler - Remove default states */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler.open,
@@ -37,7 +41,7 @@
     box-shadow: none;
 }
 
-/* Navbar Toggler - Icon */
+/* Navbar Toggler Icon - Closed */
 .navbar-toggler-icon {
     border: none;
     border-radius: 5px;
@@ -50,27 +54,29 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Navbar Toggler - Clicked Icon */
+/* Navbar Toggler Icon - Open */
 .navbar-toggler.open .navbar-toggler-icon:nth-child(1) {
     color: #004078;
     background-color: #004078;
     transform: rotate(45deg) translate(6px, 6px);
 }
 
-/* Navbar Links */
+/* Navbar Link */
 .nav-link {
     font-family: "junegull";
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 5px;
     color: #000;
 }
 
-/* Navbar Links:Hover */
-.nav-link:hover {
+/* Navbar Link - Hover */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
     color: #004078;
 }
 
-/* Dropdown Menu */
+/* Dropdown Container */
 .dropdown-menu {
     font-family: "Typo Grotesk";
     border-radius: 5px;
@@ -79,36 +85,65 @@
 
 /* Dropdown Item */
 .dropdown-item:hover {
+    color: #000;
     background-color: #e7eff8;
 }
 
-/* Search Field  */
-.search {
+/* Search Container */
+.search-container {
+    line-height: 30px;
+    display: flex;
+    position: relative;
+    border: 2px solid #000;
     border-radius: 5px;
-    flex-grow: 1;
 }
 
+/* Search Container - Hover */
+.search-container:hover {
+    border: 2px outset #278ae1;
+    color: #004078;
+}
+/* Search Input */
+.search-input {
+    font-family: "Typo Grotesk";
+    padding-left: 5px;
+    border: none;
+}
 
-/* Search Placeholder font  */
-.form-control::placeholder {
+/* Search Input - Remove default black outline */
+.search-input:focus {
+  outline: none;
+}
+
+/* Search Input - Search text */
+.search-input::placeholder {
     font-family: "junegull";
-    font-size: 14px;
+    color: #000;
 }
 
 /* Search Button */
 .search-btn {
-    border: 2px outset #becedc;
-    background-color: #becedc;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    position: relative;
+    border: none;
+    background-color: transparent;
 }
 
-/* Search Button Hover */
+/* Search Button - Hover */
 .search-btn:hover {
-    border: 2px outset #278ae1;
     color: #004078;
+}
+
+/* Search Button Icon */
+.search-btn i {
+  font-size: 18px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+/* Search Button Icon - Hover */
+.search-btn:hover i {
+  font-size: 22px;
 }
 
 /* Cart Icon Container */
@@ -120,7 +155,7 @@
 .notify {
     padding: 2px;
     border-radius: 5px;
-    color: #fff;
-    background-color: #ed98a1;
+    color: #000;
+    background-color: #fff6af;
     font-size: 16px;
 }

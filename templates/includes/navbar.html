@@ -46,15 +46,18 @@
                     </li>
 
                     <!-- Search Form -->
-                    <li class="nav-item">
-                        <form class="search mx-auto d-flex" action="{% url 'search' %}" method="GET">
-                            <input type="text" class="form-control me-2" placeholder="Search" name="keyword" aria-label="Search">
-                            <button class="search-btn btn btn-outline-success" type="submit">
-                                <i class="fa fa-search"></i>
+                    <li>
+                        <form action="{% url 'search' %}" method="GET" class="search-container">
+                            <input type="text" name="keyword" class="search-input"
+                                placeholder="Search" aria-label="Search">
+                            <button class="search-btn" type="submit" aria-label="Search Button">
+                                <i class="fas fa-search"></i>
                             </button>
                         </form>
-                    </li>
+                    <li>
                 </ul>
+
+
 
                 <!-- User and Cart Links -->
                 <ul class="navbar-nav ms-auto">
