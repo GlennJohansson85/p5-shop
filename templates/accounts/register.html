@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<section class="section-content padding-y">
+<section class="content-down">
 	<div class="card mx-auto" style="max-width:520px; margin-top:40px;">
         <article class="card-body">
       {% include 'includes/alerts.html' %}
@@ -40,9 +40,9 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block"> Register </button>
-                </div>   
+                </div>
                 {{ form.email.errors }}
-                {{ form.non_field_errors }} 
+                {{ form.non_field_errors }}
             </form>
         </article>
     </div>

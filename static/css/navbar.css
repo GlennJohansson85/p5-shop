@@ -5,10 +5,8 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    display: flex;
     max-width: 1200px;
     width: 100%;
-    margin-top: 5px;
     padding: 0px;
     z-index: 1000;
     border-radius: 5px;
@@ -27,7 +25,6 @@
 /* Dropdown */
 .navbar-nav .dropdown-menu {
     position: absolute;
-    font-family: "Typo Grotesk";
     background-clip: padding-box;
     border-radius: 5px;
     background-color: #FFF;
@@ -129,6 +126,7 @@
 .search-form {
     display: flex;
     border-radius: 5px;
+    margin-right: 5px;
 }
 
 .search-form:hover {
