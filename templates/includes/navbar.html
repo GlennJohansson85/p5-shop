@@ -14,78 +14,78 @@
         <div class="container-fluid">
 
             <!-- Navbar Brand -->
-            <a class="navbar-brand" href="{% url 'home' %}">I Shop</a>
+            <div class="nav-item">
+                <a class="navbar-brand" href="{% url 'home' %}">I Shop</a>
+            </div>
+
+            <!-- Search Form -->
+            <div class="nav-item">
+                <form class="search-form" action="{% url 'search' %}" method="GET">
+                    <input class="search-input" type="text" name="keyword" class="search-input"
+                        placeholder="Search...">
+                    <button class="search-btn" type="submit" aria-label="Search Button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
 
             <!-- Toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="navbar-toggler-icon"></i>
-            </button>
+            <div class="nav-item">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="navbar-toggler-icon"></i>
+                </button>
+            </div>
 
             <!-- Navbar Content -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <!-- Categories and Links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav">
 
                     <!-- Categories Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="category-wrap dropdown d-inline-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Categories
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
                             {% for category in links %}
-                                <li><a class="dropdown-item" href="{{ category.get_url }}">{{ category.category_name }}</a></li>
+                                <a class="dropdown-item" href="{{ category.get_url }}">{{ category.category_name }}</a>
                             {% endfor %}
-                        </ul>
+                        </div>
                     </li>
 
                     <!-- All Products Link -->
                     <li class="nav-item">
-                        <a class="nav-link btn" href="{% url 'products' %}">All Products</a>
-                    </li>
-
-                    <!-- Search Form -->
-                    <li>
-                        <form action="{% url 'search' %}" method="GET" class="search-container">
-                            <input type="text" name="keyword" class="search-input"
-                                placeholder="Search" aria-label="Search">
-                            <button class="search-btn" type="submit" aria-label="Search Button">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </form>
-                    <li>
-                </ul>
-
-
-
-                <!-- User and Cart Links -->
-                <ul class="navbar-nav ms-auto">
-
-                    <!-- Account Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarAccountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Account
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarAccountDropdown">
-                            {% if user.id is None %}
-                                <li><a class="dropdown-item" href="{% url 'signin' %}">Login</a></li>
-                                <li><a class="dropdown-item" href="{% url 'register' %}">Register</a></li>
-                            {% else %}
-                                <li><a class="dropdown-item" href="{% url 'dashboard' %}">Dashboard</a></li>
-                                <li><a class="dropdown-item" href="{% url 'signout' %}">Logout</a></li>
-                            {% endif %}
-                        </ul>
-                    </li>
-
-                    <!-- Cart Link -->
-                    <li class="nav-item">
-                        <a class="nav-link position-relative" href="{% url 'cart' %}">
-                            <i class="fa fa-shopping-cart"></i>
-                            <span class="notify">{{ cart_count }}</span>
-                        </a>
+                        <a class="nav-link" href="{% url 'products' %}">All Products</a>
                     </li>
                 </ul>
+
+                <!-- Right-Aligned Items: Account and Cart -->
+                <div class="right-items">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarAccountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarAccountDropdown">
+                                {% if user.id is None %}
+                                    <li><a class="dropdown-item" href="{% url 'signin' %}">Login</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'register' %}">Register</a></li>
+                                {% else %}
+                                    <li><a class="dropdown-item" href="{% url 'dashboard' %}">Dashboard</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'signout' %}">Logout</a></li>
+                                {% endif %}
+                            </ul>
+                        </li>
+
+                        <!-- Cart Link -->
+                        <li class="nav-item cart">
+                            <a class="nav-link" href="{% url 'cart' %}">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="notify">{{ cart_count }}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>

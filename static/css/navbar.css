@@ -1,38 +1,50 @@
-/* Navbar */
+/*                                  Navbar */
 .navbar {
-    position: fixed;
     box-sizing: border-box;
+    position: fixed;
+    align-items: center;
     display: flex;
-    line-height: 18px;
-    margin-top: 5px;
-    z-index: 1050;
+    justify-content: space-between;
+    display: flex;
     max-width: 1200px;
     width: 100%;
+    margin-top: 5px;
+    padding: 0px;
+    z-index: 1000;
     border-radius: 5px;
     background-color: #ffc3e0be;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Nav - Positioning items */
+/*                                  Navbar Nav */
 .navbar-nav {
     flex-direction: row;
     display: flex;
     align-items: center;
 }
 
-/* Navbar Brand */
-.navbar-brand {
-    font-family: "junegull";
-    font-size: 32px;
+
+
+/* Dropdown */
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    font-family: "Typo Grotesk";
+    background-clip: padding-box;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+.navbar-nav .dropdown-menu:hover  {
     color: #000;
+    background-color: #e7eff8;
 }
 
-/* Navbar Brand - Hover */
-.navbar-brand:hover {
-    color: #004078;
+/* Toggler */
+.navbar-nav.open {
+    flex-direction: column; /* Change the direction to column when toggler is open */
+    align-items: center; /* Center align the items */
+    transition: transform 0.3s ease;
 }
 
-/* Navbar Toggler - Remove default states */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler.open,
@@ -41,121 +53,124 @@
     box-shadow: none;
 }
 
-/* Navbar Toggler Icon - Closed */
 .navbar-toggler-icon {
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: none;
-    width: 45px;
-    height: 8px;
     background-color: #000;
     display: block;
     position: relative;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.2s ease, opacity 0.3s ease, background-color 0.2s ease;
 }
 
-/* Navbar Toggler Icon - Open */
 .navbar-toggler.open .navbar-toggler-icon:nth-child(1) {
     color: #004078;
     background-color: #004078;
     transform: rotate(45deg) translate(6px, 6px);
 }
 
-/* Navbar Link */
-.nav-link {
+.navbar-collapse {
+    transition: ease-out;
+}
+
+/*                                  Navbar Brand */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    position: relative;
     font-family: "junegull";
-    font-size: 16px;
-    margin-right: 5px;
+    font-size: 32px;
     color: #000;
 }
 
-/* Navbar Link - Hover */
+.navbar-brand:hover {
+    color: #004078;
+}
+
+/*                                  Nav Link */
+.nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-family: "junegull";
+    color: #000;
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
     color: #004078;
 }
 
-/* Dropdown Container */
-.dropdown-menu {
-    font-family: "Typo Grotesk";
-    border-radius: 5px;
-    background-color: #FFF;
-}
-
-/* Dropdown Item */
-.dropdown-item:hover {
-    color: #000;
-    background-color: #e7eff8;
-}
-
-/* Search Container */
-.search-container {
-    line-height: 30px;
+/* Right Nav Links*/
+.right-items {
+    margin-left: auto;
     display: flex;
-    position: relative;
-    border: 2px solid #000;
+    align-items: center;
+}
+
+.cart {
     border-radius: 5px;
 }
 
-/* Search Container - Hover */
-.search-container:hover {
-    border: 2px outset #278ae1;
+.navbar-nav .nav-item .nav-link .notify {
+    position: relative;
+    top: 0;
+    right: -5px;
+    color: #fff;
+    font-size: 14px;
+    padding: 0;
+    z-index: 1050;
+}
+
+
+
+/*                                  Search */
+.search-form {
+    display: flex;
+    border-radius: 5px;
+}
+
+.search-form:hover {
     color: #004078;
 }
-/* Search Input */
+
 .search-input {
     font-family: "Typo Grotesk";
     padding-left: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     border: none;
 }
 
-/* Search Input - Remove default black outline */
 .search-input:focus {
   outline: none;
 }
 
-/* Search Input - Search text */
 .search-input::placeholder {
     font-family: "junegull";
-    color: #000;
+    color: #c0adb6
 }
 
-/* Search Button */
 .search-btn {
-    align-items: center;
-    display: flex;
-    position: relative;
     border: none;
-    background-color: transparent;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
-/* Search Button - Hover */
 .search-btn:hover {
     color: #004078;
 }
 
-/* Search Button Icon */
-.search-btn i {
-  font-size: 18px;
-  transition: font-size 0.3s ease-in-out;
-}
+/* Mobile - Responsive Settings */
+@media (max-width: 1200px) {
+    .navbar-collapse {
+        display: flex;
 
-/* Search Button Icon - Hover */
-.search-btn:hover i {
-  font-size: 22px;
-}
+    }
+    .nav-link {
+        margin: 0 10px;
+    }
 
-/* Cart Icon Container */
-.cart-icon-container {
-    position: relative;
-}
-
-/* Cart Pill */
-.notify {
-    padding: 2px;
-    border-radius: 5px;
-    color: #000;
-    background-color: #fff6af;
-    font-size: 16px;
 }

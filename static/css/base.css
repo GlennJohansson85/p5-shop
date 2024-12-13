@@ -1,6 +1,5 @@
-/*                                          General */
-/*                                          Fonts */
 
+/* Fonts */
 @font-face {
     font-family: "janyss";
     src: url('/static/fonts/janyss.otf') format('OpenType');
@@ -56,13 +55,10 @@
     src: url('/static/fonts/classictext.otf') format('OpenType');
 }
 
-/* Styles are applied universally across all elements. */
-
+/* General Styles*/
 html {
-    background-image: url("/static/images/misc/concrete.png");
-    background-repeat: repeat;
-    background-color: #ffffffe0;
-
+    background-image:   url("/static/images/misc/concrete.png");
+    background-repeat:  repeat;
 }
 
 body {
@@ -70,54 +66,7 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    background-color: transparent;
-}
-
-/* Pushes page content down for Navbar */
-.section-intro {
-    padding-top: 60px;
-}
-
-
-/*                                          HOME.HTML */
-/* Banner */
-.intro-home {
-    margin: 70px;
-    font-family: "junegull";
-    font-size: 84px;
-    text-align: center;
-    animation: text-shadow-animation 10s infinite alternate;
-}
-@keyframes text-shadow-animation {
-  0% {
-    color:#e9eaea;
-    text-shadow: none;
-  }
-  100% {
-    color:#e9eaea;
-    text-shadow:    4px 0px 0 #00000025,
-                    8px 0px 0 #00000030,
-                    12px 0px 0 #00000040;
-    }
-}
-
-.intro-home {
-  /* ... your existing styles ... */
-  animation: text-shadow-animation 2s infinite alternate,
-               text-transform-animation 2s infinite alternate;
-
-}
-/* Positioning for '"Popular Products" text' & '"Se all" Button' */
-.section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px;
-}
-
-.section-title {
-    font-family: "junegull";
-    font-size: 26px;
+    background-color: transparent; /* To show html background-image */
 }
 
 /* General for all buttons */
@@ -137,17 +86,58 @@ body {
 
 }
 
+/* Pushes down page content due to Navbar Config. */
+.section-intro {
+    padding-top: 60px;
+}
+
+
+/* HOME.HTML Specific Styles */
+/* "Lastest Trends are Here!"*/
+.intro-home {
+    margin: 70px;
+    font-family: "junegull";
+    font-size: 84px;
+    text-align: center;
+    animation: text-shadow-animation 4s infinite alternate;
+}
+@keyframes text-shadow-animation {
+  0% {
+    color:#e9eaea;
+    text-shadow: none;
+  }
+  100% {
+    color:#e9eaea;
+    text-shadow:    4px 0px 0 #00000025,
+                    8px 0px 0 #00000030,
+                    12px 0px 0 #00000040;
+    }
+}
+
+/* "Popular Products" & '"Se all"  */
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+/* "Popular Products" */
+.section-title {
+    font-family: "junegull";
+    font-size: 26px;
+}
+
 /* Product Grid */
 .product-row {
-    display:            flex;   /* Flexible layout container */
-    flex-wrap:          wrap;   /* Wrap to the next row if needed */
-    gap:                20px;   /* Adds space between grid items */
-    justify-content:    center; /* Center cards in row */
+    display: flex; /* Flexible layout container */
+    flex-wrap:  wrap; /* Wrap to the next row if needed */
+    gap: 20px; /* Adds space between grid items */
+    justify-content: center;
 }
 
 .col-md-3 {
-    flex:       1 1 calc(25% - 20px);   /* Makes each column 25% wide minus the gap */
-    max-width:  calc(25% - 20px);       /* Ensures no column exceeds 25% width */
+    flex: 1 1 calc(25% - 20px);/* Makes each column 25% wide minus the gap */
+    max-width: calc(25% - 20px); /* Ensures no column exceeds 25% width */
     transition: transform 0.2s ease;
 }
 
@@ -174,7 +164,6 @@ body {
     padding:        5px;    /* Adds inner spacing around the image */
     overflow:       hidden; /* Ensures any overflowing part of the image is clipped */
     border-radius:  5px;
-
 }
 
 /* Product image */
@@ -187,7 +176,6 @@ body {
 /* Product info  */
 .info-wrap {
     text-align: center; /* Centers the text inside the container */
-
 }
 
 /* Product title style */
