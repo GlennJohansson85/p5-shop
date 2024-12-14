@@ -13,16 +13,14 @@
     background-color: #ffc3e0be;
 }
 
-/*                                  Navbar Nav */
+/*                                  Navbar - Nav */
 .navbar-nav {
     flex-direction: row;
     display: flex;
     align-items: center;
 }
 
-
-
-/* Dropdown */
+/*                                  Navbar - Dropdown */
 .navbar-nav .dropdown-menu {
     position: absolute;
     background-clip: padding-box;
@@ -35,42 +33,50 @@
     background-color: #e7eff8;
 }
 
-/* Toggler */
-.navbar-nav.open {
-    flex-direction: column; /* Change the direction to column when toggler is open */
-    align-items: center; /* Center align the items */
-    transition: transform 0.3s ease;
+/*                                  Navbar - Toggler */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
-.navbar-toggler.open,
-.navbar-toggler {
+.navbar-toggler:hover {
     border: none;
+    outline: none;
     box-shadow: none;
+
 }
 
+/*                                  Navbar - Toogler - Icon */
 .navbar-toggler-icon {
-    border: none;
-    border-radius: 10px;
-    box-shadow: none;
-    background-color: #000;
     display: block;
-    position: relative;
-    transition: transform 0.2s ease, opacity 0.3s ease, background-color 0.2s ease;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    mask: url("/static/images/misc/lines_15641347.png") no-repeat center;
+    -webkit-mask: url("/static/images/misc/lines_15641347.png") no-repeat center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.navbar-toggler.open .navbar-toggler-icon:nth-child(1) {
-    color: #004078;
-    background-color: #004078;
-    transform: rotate(45deg) translate(6px, 6px);
+.navbar-toggler-icon:hover {
+    filter: invert(31%) sepia(88%) saturate(2997%) hue-rotate(200deg) brightness(50%) contrast(94%);
+}
+
+.navbar-toggler.open .navbar-toggler-icon {
+    transform: rotate(45deg);
 }
 
 .navbar-collapse {
     transition: ease-out;
 }
 
-/*                                  Navbar Brand */
+/*                                  Navbar - Brand */
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -84,7 +90,7 @@
     color: #004078;
 }
 
-/*                                  Nav Link */
+/*                                  Navbar - Link */
 .nav-link {
     position: relative;
     display: inline-flex;
@@ -99,17 +105,18 @@
     color: #004078;
 }
 
-/* Right Nav Links*/
 .right-items {
     margin-left: auto;
     display: flex;
     align-items: center;
 }
 
+/*                                  Navbar - Cart */
 .cart {
     border-radius: 5px;
 }
 
+/*                                  Navbar - Cart - Notify */
 .navbar-nav .nav-item .nav-link .notify {
     position: relative;
     top: 0;
@@ -120,9 +127,7 @@
     z-index: 1050;
 }
 
-
-
-/*                                  Search */
+/*                                  Navbar - Search */
 .search-form {
     display: flex;
     border-radius: 5px;
@@ -133,6 +138,7 @@
     color: #004078;
 }
 
+/*                                  Navbar - Search - Input */
 .search-input {
     font-family: "Typo Grotesk";
     padding-left: 5px;
@@ -150,6 +156,7 @@
     color: #c0adb6
 }
 
+/*                                  Navbar - Search - Button */
 .search-btn {
     border: none;
     background-color: #fff;
@@ -161,7 +168,7 @@
     color: #004078;
 }
 
-/* Mobile - Responsive Settings */
+/* ================================> 1200PX */
 @media (max-width: 1200px) {
     .navbar-collapse {
         display: flex;
