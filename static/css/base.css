@@ -9,7 +9,7 @@
     src: url('/static/fonts/VarelaRound-Regular.ttf') format('TrueType');
 }
 
-/*                                  General Styles*/
+/*                                  General */
 html {
     background-image: url("/static/images/misc/concrete.png");
     background-repeat: repeat;
@@ -22,21 +22,18 @@ body {
     margin: 0 auto;
     background-color: transparent;
 }
-
-/* Pushes down page content due to Navbar Config. */
+/*                                  General - Push down Page Content */
 .content-down {
     padding-top: 120px;
 }
 
-/*                                  Titles */
-
-/* "Our Products:" */
+/*                                  Title - Page */
 .title-32 {
     font-family: "junegull";
     font-size: 32px;
 }
 
-/* Product title */
+/*                                  Title - Item */
 .product-title {
     display: block;
     color: #333;
@@ -48,14 +45,14 @@ body {
 .product-title:hover {
     font-weight: bold;
     text-decoration: none;
-    color: #007bff;
+    color: #004078;
 }
 
-/*                                  Pagination */
+/*                                  Pagination - Container */
 .pagination {
     justify-content: center;
 }
-
+/*                                  Pagination - Item */
 .pagination a {
     color: #000;
 }
@@ -64,40 +61,60 @@ body {
 .pagination a:focus,
 .pagination a:hover {
     color: #fff;
-    background-color: #007bff;
+    background-color: #004078;
 }
 
-/*                                  "Categories" */
+/*                                  List - Title */
 .list-header {
     margin-bottom: 0;
     line-height: 1.5;
 }
 
-/* "Categories" - Product list */
+/*                                  List - Container */
 .list-menu {
   list-style: none;
   text-align: right;
 }
 
+/*                                  List - Item */
 .filter-group a {
     text-decoration: none;
     color: #000;
 }
 
-/* "Categories" - Product list items */
 .list-menu a:hover {
     color: #004078;
     border-bottom: 1px solid #004078;
 }
 
-/* "Categories" - Dropdown Icon */
+/*                                  List - Icon */
 .icon-control {
   margin-top: 5px;
   float: right;
   font-size: 80%;
 }
 
-/*                                  Buttons */
+/*                                  Card - Container */
+.card-width-400 {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+}
+
+/*                                  Form */
+.form-group {
+    margin: 10px;
+}
+
+
+/*                                  Card - Body */
+.card-body {
+    background-color: #00000050;
+    border-color: #d0ac35;
+    border-style: inset;
+    border-width: 5px;
+}
+/*                                  Button */
 .btn {
     font-family: "junegull";
     font-size: 18px;
@@ -109,11 +126,10 @@ body {
 .btn:hover {
     color: #004078;
     background-color: transparent;
-    border: 2px outset #278ae1;
+    border: 2px outset #004078;
 }
 
 /*                                  HOME.HTML Specific */
-/* "Lastest Trends are Here!"*/
 .intro-home {
     margin-bottom: 40px;
     padding: 0px;
@@ -213,8 +229,62 @@ body {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/*                                  PRODUCTS.HTML */
+/*                                  SIGNIN TEMPLATE */
+/*                         Forgot - SIGNIN */
+.forgot_password {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
 
+.forgot_password:hover {
+    color: #004078;
+    text-decoration: none;
+    border-bottom: 1px solid #004078;
+}
+/*                      No Account - SIGNIN */
+.no_account {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #000;
+}
+/*                        Register - SIGNIN */
+.register {
+    text-align: center;
+}
+
+.register a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.register a:hover {
+    color: #004078;
+    text-decoration: none;
+    border-bottom: 1px solid #004078;
+}
+/*                                  REGISTER TEMPLATE */
+.register-btn-container {
+    margin: 20px 10px 0;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.signin a:hover {
+    color: #004078;
+    text-decoration: none;
+    border-bottom: 1px solid #004078;
+}
 
 
 /*                                  FOOTER.HTML */
@@ -276,6 +346,12 @@ body {
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
+
+
+    .card-width-400 {
+        width: 80%;
+    }
+
     /* Footer */
     .footer {
         flex-direction: column;

@@ -1,53 +1,63 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 <section class="content-down">
-	<div class="card mx-auto" style="max-width:520px; margin-top:40px;">
+    <div class="card-width-400">
         <article class="card-body">
-      {% include 'includes/alerts.html' %}
-          <header class="mb-4"><h4 class="card-title">Sign up</h4></header>
-          <form action="{% url 'register' %}" method="POST">
-        {% csrf_token %}
+            {% include 'includes/alerts.html' %}
+            <div class="title-32">Register Form!</div>
+            <form action="{% url 'register' %}" method="POST">
+                {% csrf_token %}
+
+                <!-- First & Last Name -->
                 <div class="form-row">
                     <div class="col form-group">
                         <label>First Name:</label>
-                            {{ form.first_name }}
+                        {{ form.first_name }}
                     </div>
                     <div class="col form-group">
                         <label>Last Name:</label>
-                            {{ form.last_name }}
+                        {{ form.last_name }}
                     </div>
                 </div>
+
+                <!-- Email & Phone -->
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="col form-group">
                         <label>Email:</label>
                         {{ form.email }}
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="col form-group">
                         <label>Phone Number:</label>
                         {{ form.phone_number }}
                     </div>
                 </div>
+
+                <!-- Create & Confirm Password -->
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="col form-group">
                         <label>Create a Password:</label>
                         {{ form.password }}
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="col form-group">
                         <label>Confirm the Password:</label>
                         {{ form.confirm_password }}
                     </div>
                 </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block"> Register </button>
+
+                <!-- Submit Button -->
+                <div class="register-btn-container">
+                    <button type="submit" class="btn"> Submit </button>
                 </div>
                 {{ form.email.errors }}
                 {{ form.non_field_errors }}
             </form>
         </article>
     </div>
-    <p class="text-center mt-4">Have an account? <a href="{% url 'signin' %}">Log In</a></p>
-    <br><br>
+    <p class="no_account">Have an account?</p>
+    <p class="signin">
+        <a href="{% url 'signin' %}">Sign in Here!</a>
+    </p>
 </section>
-
 {% endblock %}
