@@ -13,16 +13,21 @@
 html,body {
     height: 100%;
     margin: 0;
+}
+
+html {
     background-image: url("/static/images/misc/concrete.png");
     background-repeat: repeat;
 }
+
 
 body {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     font-family: "VarelaRound-Regular";
-    margin: 0 auto; /* Center the body content when the window is large */
+    margin: 0 auto;
+    background-color: transparent;
 }
 
 
@@ -85,7 +90,8 @@ body {
   list-style: none;
   text-align: right;
 }
-/*                            Item - LIST */
+
+/*                Item - Container - LIST */
 .filter-group a {
     text-decoration: none;
     color: #000;
@@ -95,6 +101,27 @@ body {
     color: #004078;
     border-bottom: 1px solid #004078;
 }
+
+
+/*                           Group - LIST */
+.list-group {
+}
+
+/*                    Item - Group - LIST */
+.list-group-item {
+    font-family: "junegull";
+    background-color: #db9cbb;
+}
+
+.list-group-item:hover {
+    color: #004078;
+}
+
+.list-group-item.active:active {
+    background-color: #db9cbb;
+
+}
+
 
 /*                            List - LIST */
 .icon-control {
@@ -304,6 +331,10 @@ body {
 
 /*                                  FOOTER.HTML */
 .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
     font-size: 12px;
     display: flex;
     flex-wrap: wrap;
@@ -313,9 +344,8 @@ body {
     padding: 5px 20px;
     color: #3d3c3c;
     background-color: #ffc3e0be;
-    position: relative;
     width: 100%;
-    max-width: 1300px;
+
     margin-top: auto;
 }
 
@@ -330,7 +360,6 @@ body {
 .footer-right i {
     font-size: 26px;
     margin-left: 10px; /
-    transition: color 0.3s ease;
 }
 
 .footer-right i:hover {
@@ -345,9 +374,6 @@ body {
         max-width: 100%;
     }
     /* Footer */
-    .footer {
-        flex-direction: column;
-    }
 
     .contact-info {
         text-align: center;
@@ -377,7 +403,7 @@ body {
     .footer-left,
     .footer-center,
     .footer-right {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
 }
 

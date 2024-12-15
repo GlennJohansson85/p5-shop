@@ -2,37 +2,37 @@
 {% load static %}
 
 {% block content %}
-<!-- Banner Section -->
-<section class="content-down ">
-    <div class="container">
-        <h1 class="intro-home">Latest trends are here!</h1>
-    </div>
-</section>
-
-<!-- Popular Products Section -->
-<section class="section-products">
-    <div class="container">
-
-        <!-- Popular Products Section - Heading -->
-        <header class="section-heading">
-            <div class="title-32">Popular products</div>
-            <a href="{% url 'products' %}" class="btn btn-outline-primary">See all</a>
-        </header>
-
-        <!-- Popular Products Section - Products  -->
-        <div class="product-row">
-            {% for product in products %}
-            <div class="col-md-3">
-                <div class="card card-product-grid">
-                    <a href="{{ product.get_url }}" class="img-wrap"><img src="{{ product.images.url }}"></a>
-                    <figcaption class="info-wrap">
-                        <a href="{{ product.get_url }}" class="product-title">{{ product.product_name }}</a>
-                        <div class="price mt-1">${{ product.price }}</div>
-                    </figcaption>
-                </div>
-            </div>
-            {% endfor %}
+    <!-- Banner Section -->
+    <section class="content-down ">
+        <div class="container">
+            <h1 class="intro-home">Latest trends are here!</h1>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Popular Products Section -->
+    <section class="section-products">
+        <div class="container">
+
+            <!-- Popular Products Section - Heading -->
+            <header class="section-heading">
+                <div class="title-32">Popular products</div>
+                <a href="{% url 'products' %}" class="btn btn-outline-primary">See all</a>
+            </header>
+
+            <!-- Popular Products Section - Products  -->
+            <div class="product-row">
+                {% for product in products %}
+                <div class="col-md-3">
+                    <div class="card card-product-grid">
+                        <a href="{{ product.get_url }}" class="img-wrap"><img src="{{ product.images.url }}"></a>
+                        <figcaption class="info-wrap">
+                            <a href="{{ product.get_url }}" class="product-title">{{ product.product_name }}</a>
+                            <div class="price mt-1">${{ product.price }}</div>
+                        </figcaption>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 {% endblock %}

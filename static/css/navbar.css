@@ -1,11 +1,11 @@
-/*                                          - NAVBAR */
+/*                                           NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0px;
@@ -16,14 +16,15 @@
     border-radius: 5px;
     background-color: #ffc3e0be;
 }
-/*                                  Navbar - Nav */
+
+/*                                           NAV */
 .navbar-nav {
     flex-direction: row;
     display: flex;
     align-items: center;
 }
 
-/*                                  Navbar - Dropdown */
+/*                                Dropdown - NAV */
 .navbar-nav .dropdown-menu {
     position: absolute;
     background-clip: padding-box;
@@ -35,8 +36,7 @@
     color: #000;
     background-color: #e7eff8;
 }
-
-/*                                  Navbar - Toggler */
+/*                                           TOGGLER */
 .navbar-toggler {
     border: none;
     outline: none;
@@ -45,6 +45,7 @@
     padding: 0;
 }
 
+/*                                   States - TOGGLER */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler:hover {
@@ -53,8 +54,7 @@
     box-shadow: none;
 
 }
-
-/*                                  Navbar - Toogler - Icon */
+/*                                     Icon - TOGGLER */
 .navbar-toggler-icon {
     display: block;
     margin-top:5px;
@@ -68,6 +68,8 @@
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+
+/*                            States - Icon - TOGGLER */
 .navbar-toggler-icon:hover {
     filter: invert(31%) sepia(88%) saturate(2997%) hue-rotate(200deg) brightness(50%) contrast(94%);
 }
@@ -76,8 +78,7 @@
     transform: rotate(45deg);
 }
 
-
-/*                                  Navbar - Brand */
+/*                                           BRAND */
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -91,7 +92,7 @@
     color: #004078;
 }
 
-/*                                  Navbar - Link */
+/*                                           LINK */
 .nav-link {
     position: relative;
     display: inline-flex;
@@ -112,12 +113,12 @@
     align-items: center;
 }
 
-/*                                  Navbar - Cart */
+/*                                           CART */
 .cart {
     border-radius: 5px;
 }
 
-/*                                  Navbar - Cart - Notify */
+/*                                  Notify - CART */
 .navbar-nav .nav-item .nav-link .notify {
     position: relative;
     top: 0;
@@ -128,7 +129,7 @@
     z-index: 1050;
 }
 
-/*                                  Navbar - Search */
+/*                                    Form - SEARCH */
 .search-form {
     display: flex;
     border-radius: 5px;
@@ -139,7 +140,7 @@
     color: #004078;
 }
 
-/*                                  Navbar - Search - Input */
+/*                                   Input - SEARCH */
 .search-input {
     font-family: "Typo Grotesk";
     padding-left: 5px;
@@ -157,7 +158,7 @@
     color: #c0adb6
 }
 
-/*                                  Navbar - Search - Button */
+/*                                  Button - SEARCH */
 .search-btn {
     border: none;
     background-color: #fff;
@@ -169,7 +170,7 @@
     color: #004078;
 }
 
-/* ================================> 1200PX */
+/* ========================================> 1200PX */
 @media (max-width: 1200px) {
     .navbar-collapse {
         display: flex;
