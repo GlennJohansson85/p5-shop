@@ -14,62 +14,79 @@
                         <strong class="d-inline-block mr-3">Edit Profile</strong>
                     </header>
                     <div class="card-body">
-                        <div class="text-left">
-
-                            {% if userprofile.profile_picture %}
-                                <!-- Render uploaded profile picture -->
-                                <img src="{{ userprofile.profile_picture.url }}" alt="Profile Picture" width="100">
-
-                            {% else %}
-                                <!-- Render default fallback profile picture -->
-                                <img src="{% static 'images/default_profile.png' %}" alt="Default Profile Picture" width="100" style="border-radius:50%;">
-                            {% endif %}
                         <div class="row">
                             <div class="col-md-12">
                                 <form action="{% url 'edit_profile' %}" method="POST" enctype="multipart/form-data">
                                     {% csrf_token %}
 
+                                    <!-- Profile Picture -->
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                        {% if userprofile.profile_picture %}
+                                            <img src="{{ userprofile.profile_picture.url }}" alt="Profile Picture" width="100">
+                                        {% else %}
+                                            <img src="{% static 'images/default_profile.png' %}" alt="Default Profile Picture" width="100" style="border-radius:50%;">
+                                        {% endif %}
+                                        </div>
+                                    </div>
+
+                                    <!-- Upload Profile Picture -->
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="id_profile_picture">Picture:</label>
+                                            {{ profile_form.profile_picture }}
+                                        </div>
+                                    </div>
+
                                     <!-- First & Last Name -->
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <label>First Name:</label>
+                                            <label for="id_first_name">First Name:</label>
                                             {{ user_form.first_name }}
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label>Last Name:</label>
+                                            <label for="id_last_name">Last Name:</label>
                                             {{ user_form.last_name }}
                                         </div>
                                     </div>
 
-                                    <!-- Phone  -->
+                                    <!-- Phone Number -->
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <label>Phone number:</label>
+                                            <label for="id_phone_number">Phone number:</label>
                                             {{ user_form.phone_number }}
                                         </div>
-                                        <div class="form-group col-md-6">
-                                            <label>Picture:</label>
-                                            {{ profile_form.profile_picture }}
-                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label>Address 1:</label>
-                                        {{ profile_form.address_line_1 }}
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Address 2:</label>
-                                        {{ profile_form.address_line_2 }}
-                                    </div>
+
+                                    <!-- Address 1 & 2 -->
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <label>City:</label>
+                                            <label for="id_address_line_1">Address 1:</label>
+                                            {{ profile_form.address_line_1 }}
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="id_address_line_2">Address 2:</label>
+                                            {{ profile_form.address_line_2 }}
+                                        </div>
+                                    </div>
+
+                                    <!-- City & Country -->
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="id_city">City:</label>
                                             {{ profile_form.city }}
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label>Country:</label>
+                                            <label for="id_country">Country:</label>
                                             {{ profile_form.country }}
                                         </div>
-                                        <input type="submit" value="save" class="btn btn-primary">
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <input type="submit" value="Save" class="btn">
+                                        </div>
                                     </div>
                                 </form>
                             </div>

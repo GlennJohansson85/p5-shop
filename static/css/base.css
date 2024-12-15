@@ -160,6 +160,12 @@ body {
     margin: 10px;
 }
 
+.form-control {
+    line-height: 1.6;
+}
+
+
+
 /*                                    BUTTON */
 .btn {
     font-family: "junegull";
@@ -178,7 +184,7 @@ body {
 
 /*                                  HOME.HTML Specific */
 .intro-home {
-    margin-bottom: 40px;
+    margin: 40px 0 60px 0;
     padding: 0px;
     font-family: "junegull";
     font-size: 76px;
@@ -333,6 +339,7 @@ body {
     border-bottom: 1px solid #004078;
 }
 
+/*                                  EDIT PROFILE TEMPLATE */
 
 /*                                  FOOTER.HTML */
 .footer {
