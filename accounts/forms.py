@@ -7,12 +7,12 @@ class RegistrationForm(forms.ModelForm):
     Form for user registration.
     '''
     password = forms.CharField(widget=forms.PasswordInput(attrs={
-        'placeholder': 'Choose a strong password',
+        'placeholder': 'Password here',
         'class': 'form-control',
     }))
-    
+
     confirm_password = forms.CharField(widget=forms.PasswordInput(attrs={
-        'placeholder': '<-- The one you created'
+        'placeholder': 'Enter the same password here'
     }))
 
     class Meta:
@@ -34,16 +34,16 @@ class RegistrationForm(forms.ModelForm):
             raise forms.ValidationError(
                 "Passwords do not match."
             )
-    
+
     def __init__(self, *args, **kwargs):
         """
         Initializes form with placeholders and CSS classes for styling.
         """
         super(RegistrationForm, self).__init__(*args, **kwargs)
-        self.fields['first_name'].widget.attrs['placeholder'] = 'David'
-        self.fields['last_name'].widget.attrs['placeholder'] = 'Hasselhoff'
-        self.fields['email'].widget.attrs['placeholder'] = 'David.Hasselhoff@hotmail.com'
-        self.fields['phone_number'].widget.attrs['placeholder'] = '+1 555-123-4567'
+        self.fields['first_name'].widget.attrs['placeholder'] = 'First name here'
+        self.fields['last_name'].widget.attrs['placeholder'] = 'Last name here'
+        self.fields['email'].widget.attrs['placeholder'] = 'Email address here'
+        self.fields['phone_number'].widget.attrs['placeholder'] = 'Phone number here'
         for field in self.fields:
             self.fields[field].widget.attrs['class'] = 'form-control'
 

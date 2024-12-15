@@ -1,18 +1,21 @@
-/*                                  Navbar */
+/*                                          - NAVBAR */
 .navbar {
-    box-sizing: border-box;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0px;
+    z-index: 1000;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0px;
-    z-index: 1000;
     border-radius: 5px;
     background-color: #ffc3e0be;
 }
-
 /*                                  Navbar - Nav */
 .navbar-nav {
     flex-direction: row;
@@ -54,8 +57,9 @@
 /*                                  Navbar - Toogler - Icon */
 .navbar-toggler-icon {
     display: block;
+    margin-top:5px;
     width: 30px;
-    height: 30px;
+    height: 35px;
     background-color: #000;
     mask: url("/static/images/misc/lines_15641347.png") no-repeat center;
     -webkit-mask: url("/static/images/misc/lines_15641347.png") no-repeat center;
@@ -72,9 +76,6 @@
     transform: rotate(45deg);
 }
 
-.navbar-collapse {
-    transition: ease-out;
-}
 
 /*                                  Navbar - Brand */
 .navbar-brand {

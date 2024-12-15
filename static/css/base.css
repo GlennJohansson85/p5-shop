@@ -10,21 +10,30 @@
 }
 
 /*                                  General */
-html {
+html,body {
+    height: 100%;
+    margin: 0;
     background-image: url("/static/images/misc/concrete.png");
     background-repeat: repeat;
 }
 
 body {
-    font-family: "VarelaRound-Regular";
     max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    font-family: "VarelaRound-Regular";
+    margin: 0 auto; /* Center the body content when the window is large */
 }
-/*                                  General - Push down Page Content */
+
+
+/* Push Body down from Navbar */
 .content-down {
-    padding-top: 120px;
+    margin-top: 80px;
+}
+
+/* Push Body in middle up from Footer*/
+.container {
+    margin: 0 auto 20px;
 }
 
 /*                                  Title - Page */
@@ -64,19 +73,19 @@ body {
     background-color: #004078;
 }
 
-/*                                  List - Title */
+/*                                - LIST */
+/*                          Title - LIST */
 .list-header {
+    font-size: 20px;
     margin-bottom: 0;
     line-height: 1.5;
 }
-
-/*                                  List - Container */
+/*                       Container - LIST */
 .list-menu {
   list-style: none;
   text-align: right;
 }
-
-/*                                  List - Item */
+/*                            Item - LIST */
 .filter-group a {
     text-decoration: none;
     color: #000;
@@ -87,34 +96,40 @@ body {
     border-bottom: 1px solid #004078;
 }
 
-/*                                  List - Icon */
+/*                            List - LIST */
 .icon-control {
   margin-top: 5px;
   float: right;
   font-size: 80%;
 }
 
-/*                                  Card - Container */
+/*                           Header - CARD */
+.card-header {
+    background-color: #d58db0dd;
+    border-color: #d0ac35;
+}
+
+/*                        Container - CARD */
 .card-width-400 {
     margin: 0 auto;
     width: 90%;
     max-width: 400px;
 }
-
-/*                                  Form */
-.form-group {
-    margin: 10px;
-}
-
-
-/*                                  Card - Body */
+/*                             Body - CARD */
 .card-body {
     background-color: #00000050;
     border-color: #d0ac35;
     border-style: inset;
     border-width: 5px;
 }
-/*                                  Button */
+
+/*                            Group - FORM */
+.form-group {
+    margin: 10px;
+}
+
+
+/*                                    BUTTON */
 .btn {
     font-family: "junegull";
     font-size: 18px;
@@ -289,16 +304,19 @@ body {
 
 /*                                  FOOTER.HTML */
 .footer {
-    margin-top: 30px;
-    padding: 10px;
-    color: #3d3c3c;
-    background-color: transparent;
-    z-index: 1000;
+    font-size: 12px;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #ccc;
+    padding: 5px 20px;
+    color: #3d3c3c;
+    background-color: #ffc3e0be;
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin-top: auto;
 }
 
 .contact-info {
@@ -318,7 +336,6 @@ body {
 .footer-right i:hover {
     color: #007bff;
 }
-
 
 /*                                  RESPONSIVE SETTINGS*/
 /* ==================================> 576 */
@@ -346,7 +363,6 @@ body {
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
-
 
     .card-width-400 {
         width: 80%;
