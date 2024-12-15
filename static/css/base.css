@@ -131,9 +131,13 @@ body {
 }
 
 /*                           Header - CARD */
+.card {
+    background-color: transparent;
+}
+
+/*                           Header - CARD */
 .card-header {
     background-color: #d58db0dd;
-    border-color: #d0ac35;
 }
 
 /*                        Container - CARD */
@@ -144,10 +148,8 @@ body {
 }
 /*                             Body - CARD */
 .card-body {
-    background-color: #00000050;
-    border-color: #d0ac35;
-    border-style: inset;
-    border-width: 5px;
+    background-color: #30303137;
+    border-color: transparent;
 }
 
 /*                            Group - FORM */
