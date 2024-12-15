@@ -16,23 +16,36 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12">
-                                <form action="{% url 'edit_profile' %}" method="POST" enctype="multipart/form-data">
+                                <form
+                                action="{% url 'edit_profile' %}"
+                                method="POST"
+                                enctype="multipart/form-data"
+                                >
                                     {% csrf_token %}
 
                                     <!-- Profile Picture -->
                                     <div class="form-row">
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-md-6 text-center">
                                         {% if userprofile.profile_picture %}
-                                            <img src="{{ userprofile.profile_picture.url }}" alt="Profile Picture" width="100">
+                                            <img
+                                            src="{{ userprofile.profile_picture.url }}"
+                                            alt="Profile Picture"
+                                            width="150"
+                                            >
                                         {% else %}
-                                            <img src="{% static 'images/default_profile.png' %}" alt="Default Profile Picture" width="100" style="border-radius:50%;">
+                                            <img
+                                            src="{% static 'images/default_profile.png' %}"
+                                            alt="Default Profile Picture"
+                                            width="100"
+                                            style="border-radius:50%;"
+                                            >
                                         {% endif %}
                                         </div>
                                     </div>
 
                                     <!-- Upload Profile Picture -->
                                     <div class="form-row">
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-md-6 text-center">
                                             <label for="id_profile_picture">Picture:</label>
                                             {{ profile_form.profile_picture }}
                                         </div>

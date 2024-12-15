@@ -160,9 +160,6 @@ body {
     margin: 10px;
 }
 
-.form-control {
-    line-height: 1.6;
-}
 
 
 
@@ -340,6 +337,57 @@ body {
 }
 
 /*                                  EDIT PROFILE TEMPLATE */
+
+
+/*                                  DASHBOARD_SIDEBAR TEMPLATE */
+.sidebar-btn-container {
+    margin: 20px 0;
+}
+
+/*                                  PRODUCT_DETAIL TEMPLATE */
+
+.item-option-select {
+
+}
+
+.review-header {
+    font-family: "junegull";
+    font-size: 22px;
+    margin: 20px 0;
+    border-bottom: 1px solid #2c2c2c;
+}
+
+.review-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #30303137;
+    border-radius: 5px;
+    border-style: transparent;
+}
+
+.review-img {
+    max-width: 150px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+    border-style: transparent;
+}
+
+.review-date, .review-name, .review-text {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+}
+
+.review-name {
+    font-size: 14px;
+
+
+}
+
+.review-text {
+
+}
 
 /*                                  FOOTER.HTML */
 .footer {
