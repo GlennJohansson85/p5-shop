@@ -105,23 +105,26 @@ body {
 
 /*                           Group - LIST */
 .list-group {
+    border: none;
 }
 
 /*                    Item - Group - LIST */
 .list-group-item {
     font-family: "junegull";
-    background-color: #db9cbb;
+    color: #000;
+    border: none;
+    background-color: #ffc3e0be;
 }
 
 .list-group-item:hover {
     color: #004078;
-}
-
-.list-group-item.active:active {
     background-color: #db9cbb;
-
 }
 
+.list-group-item.active {
+    color: #004078;
+    background-color: #db9cbb;
+}
 
 /*                            List - LIST */
 .icon-control {
@@ -157,7 +160,6 @@ body {
     margin: 10px;
 }
 
-
 /*                                    BUTTON */
 .btn {
     font-family: "junegull";
@@ -165,11 +167,12 @@ body {
     border: 2px outset #000;
     padding: 5px;
     color: #000;
+    background-color: transparent;
 }
 
 .btn:hover {
     color: #004078;
-    background-color: transparent;
+    background-color: #30303137;
     border: 2px outset #004078;
 }
 
