@@ -4,31 +4,34 @@
 {% block content %}
 <section class="content-down">
     <div class="container">
+
+        <!-- Cart Empty -->
         {% if not cart_items %}
             <h2 class="text-center">Your Cart is empty</h2>
             <br>
             <div class="text-center">
-                <a href="{% url 'products' %}" class="btn btn-primary">Continue Shopping</a>
+                <a href="{% url 'products' %}" class="btn">Continue Shopping</a>
             </div>
         {% else %}
+
         <div class="row">
             <aside class="col-lg-9">
-                <div class="card">
-                    <table class="table table-borderless table-shopping-cart">
-                        <thead class="text-muted">
-                            <tr class="small text-uppercase">
-                                <th scope="col">Product</th>
-                                <th scope="col" width="120">Quantity</th>
+                <div class="cart-card">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr class="cart-text">
+                                <th class="cart-product-header" scope="col">Product</th>
+                                <th class="cart-product-header" scope="col" width="120">Quantity</th>
                                 <th scope="col" width="120">Price</th>
                                 <th scope="col" class="text-right" width="200"></th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class= "cart-body">
                             {% for cart_item in cart_items %}
                             <tr>
                                 <td>
-                                    <figure class="itemside align-items-center">
-                                        <div class="aside"><img src="{{ cart_item.product.images.url }}" class="img-sm"></div>
+                                    <figure class="cart-items">
+                                        <div class="aside"><img src="{{ cart_item.product.images.url }}" class="cart-img"></div>
                                         <figcaption class="info">
                                             <a href="{{ cart_item.product.get_url }}" class="title text-dark">{{ cart_item.product.product_name }}</a>
                                             <p class="text-muted small">
@@ -43,10 +46,10 @@
                                 </td>
                                 <td>
                                     <div class="col">
-                                        <div class="input-group input-spinner">
+                                        <div class="input-group">
                                             <div class="input-group-append">
                                                 <a href="{% url 'remove_cart' cart_item.product.id cart_item.id %}"
-                                                class="btn btn-light" type="button" id="button-plus"><i class="fa fa-minus"></i>
+                                                class="btn-small" type="button" id="button-plus"><i class="fa fa-minus"></i>
                                                 </a>
                                             </div>
                                             <input type="text" class="form-control" value="{{ cart_item.quantity }}">
@@ -56,7 +59,7 @@
                                                     {% for item in cart_item.variations.all %}
                                                         <input type="hidden" name="{{ item.variation_category | lower }}" value="{{ item.variation_value | capfirst }}">
                                                     {% endfor %}
-                                                    <button class="btn btn-light" type="submit" id="button-minus"><i class="fa fa-plus"></i></button>
+                                                    <button class="btn-small" type="submit" id="button-minus"><i class="fa fa-plus"></i></button>
                                                 </form>
                                             </div>
                                         </div>
@@ -98,8 +101,8 @@
                         <p class="text-center mb-3">
                             <img src="{% static './images/misc/payments.png' %}" height="26">
                         </p>
-                        <a href="{% url 'checkout' %}" class="btn btn-primary btn-block">Checkout</a>
-                        <a href="{% url 'products' %}" class="btn btn-light btn-block">Continue Shopping</a>
+                        <a href="{% url 'checkout' %}" class="btn">Checkout</a>
+                        <a href="{% url 'products' %}" class="btn">Continue Shopping</a>
                     </div>
                 </div>
             </aside>
