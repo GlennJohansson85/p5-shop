@@ -47,11 +47,15 @@
                 </div>
 
                 <!-- Submit Button -->
-                <div class="register-btn-container">
-                    <button type="submit" class="btn"> Submit </button>
+                <div class="form-row">
+                    <div class="col form-group">
+                        <div class="btn-container">
+                            <button type="submit" class="btn"> Submit </button>
+                        </div>
+                        {{ form.email.errors }}
+                        {{ form.non_field_errors }}
+                    </div>
                 </div>
-                {{ form.email.errors }}
-                {{ form.non_field_errors }}
             </form>
         </article>
     </div>

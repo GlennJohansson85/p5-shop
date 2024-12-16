@@ -34,7 +34,7 @@
                                         <div class="aside"><img src="{{ cart_item.product.images.url }}" class="cart-img"></div>
                                         <figcaption class="info">
                                             <a href="{{ cart_item.product.get_url }}" class="title text-dark">{{ cart_item.product.product_name }}</a>
-                                            <p class="text-muted small">
+                                            <p class="text small">
                                                 {% if cart_item.variations.all %}
                                                     {% for item in cart_item.variations.all %}
                                                         {{ item.variation_category | capfirst }} : {{ item.variation_value | capfirst }} <br>
@@ -68,7 +68,7 @@
                                 <td>
                                     <div class="price-wrap">
                                         <var class="price">${{ cart_item.sub_total }}</var>
-                                        <small class="text-muted">${{ cart_item.product.prize }} each </small>
+                                        <small class="text small">${{ cart_item.product.prize }} each </small>
                                     </div>
                                 </td>
                                 <td class="text-right">
@@ -101,8 +101,10 @@
                         <p class="text-center mb-3">
                             <img src="{% static './images/misc/payments.png' %}" height="26">
                         </p>
-                        <a href="{% url 'checkout' %}" class="btn">Checkout</a>
-                        <a href="{% url 'products' %}" class="btn">Continue Shopping</a>
+                        <div class="btn-container">
+                            <a href="{% url 'checkout' %}" class="btn">Checkout</a>
+                            <a href="{% url 'products' %}" class="btn">Continue Shopping</a>
+                        </div>
                     </div>
                 </div>
             </aside>

@@ -9,6 +9,16 @@
     src: url('/static/fonts/VarelaRound-Regular.ttf') format('TrueType');
 }
 
+@font-face {
+    font-family: "Janyss";
+    src: url('/static/fonts/Janyss.otf') format('OpenType');
+}
+
+@font-face {
+    font-family: "crunch";
+    src: url('/static/fonts/crunch.otf') format('OpenType');
+}
+
 /*                                  General */
 html,body {
     height: 100%;
@@ -45,6 +55,11 @@ body {
 .title-32 {
     font-family: "junegull";
     font-size: 32px;
+}
+
+.title-26 {
+    font-family: "junegull";
+    font-size: 26px;
 }
 
 /*                                  Title - Item */
@@ -158,6 +173,7 @@ body {
 /*                            Group - FORM */
 .form-group {
     margin: 10px;
+    color: #000;
 }
 
 /*                                    CART.HTML */
@@ -183,10 +199,13 @@ body {
     height: auto;
 }
 
-
-
+/*                                    CHECKOUT.HTML */
 
 /*                                    BUTTON */
+.btn-container {
+    margin-top: 20px;
+}
+
 .btn {
     font-family: "junegull";
     font-size: 14px;
@@ -348,10 +367,6 @@ body {
     border-bottom: 1px solid #004078;
 }
 /*                                  REGISTER TEMPLATE */
-.register-btn-container {
-    margin: 20px 10px 0;
-}
-
 .signin {
     text-align: center;
 }
@@ -371,10 +386,7 @@ body {
 /*                                  EDIT PROFILE TEMPLATE */
 
 
-/*                                  DASHBOARD_SIDEBAR TEMPLATE */
-.sidebar-btn-container {
-    margin: 20px 0;
-}
+
 
 /*                                  PRODUCT_DETAIL TEMPLATE */
 
@@ -413,13 +425,26 @@ body {
 
 .review-name {
     font-size: 14px;
-
-
 }
 
-.review-text {
 
+/*                                  DASHBOARD.HTML */
+.view_orders {
+    font-family: "junegull";
+    font-size: 12px;
+    padding: 2px;
+    color: #000;
+    text-decoration: none;
+    border: 2px outset #000;
+    border-radius: 5px;
 }
+
+.view_orders:hover {
+    color: #004078;
+    text-decoration: none;
+    border: 2px outset #004078;
+}
+
 
 /*                                  FOOTER.HTML */
 .footer {
