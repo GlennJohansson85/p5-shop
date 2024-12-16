@@ -26,12 +26,14 @@
                                 <th scope="col" class="text-right" width="200"></th>
                             </tr>
                         </thead>
-                        <tbody class= "cart-body">
+                        <tbody class="cart-body">
                             {% for cart_item in cart_items %}
                             <tr>
                                 <td>
                                     <figure class="cart-items">
-                                        <div class="aside"><img src="{{ cart_item.product.images.url }}" class="cart-img"></div>
+                                        <div class="aside">
+                                            <img src="{{ cart_item.product.images.url }}" class="cart-img">
+                                        </div>
                                         <figcaption class="info">
                                             <a href="{{ cart_item.product.get_url }}" class="title text-dark">{{ cart_item.product.product_name }}</a>
                                             <p class="text small">

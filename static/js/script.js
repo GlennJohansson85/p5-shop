@@ -1,63 +1,41 @@
-// some scripts
-
-// jquery ready start
+// jQuery ready start
 $(document).ready(function() {
-	// jQuery code
-
-
-    /* ///////////////////////////////////////
-
-    THESE FOLLOWING SCRIPTS ONLY FOR BASIC USAGE, 
-    For sliders, interactions and other
-
-    */ ///////////////////////////////////////
-    
-
-	//////////////////////// Prevent closing from click inside dropdown
+    // Prevent closing dropdown on click inside
     $(document).on('click', '.dropdown-menu', function (e) {
-      e.stopPropagation();
+        e.stopPropagation(); // Stop the event from bubbling up
     });
 
-
+    // Handle radio button changes
     $('.js-check :radio').change(function () {
         var check_attr_name = $(this).attr('name');
         if ($(this).is(':checked')) {
-            $('input[name='+ check_attr_name +']').closest('.js-check').removeClass('active');
+            // Remove 'active' class from all other radio buttons in the same group
+            $('input[name=' + check_attr_name + ']').closest('.js-check').removeClass('active');
+            // Add 'active' class to the selected radio button
             $(this).closest('.js-check').addClass('active');
-           // item.find('.radio').find('span').text('Add');
-
-        } else {
-            item.removeClass('active');
-            // item.find('.radio').find('span').text('Unselect');
-        }
-    });
-
-
-    $('.js-check :checkbox').change(function () {
-        var check_attr_name = $(this).attr('name');
-        if ($(this).is(':checked')) {
-            $(this).closest('.js-check').addClass('active');
-           // item.find('.radio').find('span').text('Add');
         } else {
             $(this).closest('.js-check').removeClass('active');
-            // item.find('.radio').find('span').text('Unselect');
         }
     });
 
+    // Handle checkbox changes
+    $('.js-check :checkbox').change(function () {
+        if ($(this).is(':checked')) {
+            // Add 'active' class to the checked checkbox
+            $(this).closest('.js-check').addClass('active');
+        } else {
+            // Remove 'active' class from the unchecked checkbox
+            $(this).closest('.js-check').removeClass('active');
+        }
+    });
 
+    // Initialize Bootstrap tooltips if they exist
+    if ($('[data-toggle="tooltip"]').length > 0) {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+});
 
-	//////////////////////// Bootstrap tooltip
-	if($('[data-toggle="tooltip"]').length>0) {  // check if element exists
-		$('[data-toggle="tooltip"]').tooltip()
-	} // end if
-
-
-
-
-    
-}); 
-
-//________________________________________________________  Registration Successfull message
+// Registration success message fade-out
 setTimeout(function(){
-    $('#message').fadeOut('slow')
-}, 3000) 
+    $('#message').fadeOut('slow'); // Fade out the message after 3 seconds
+}, 3000);
