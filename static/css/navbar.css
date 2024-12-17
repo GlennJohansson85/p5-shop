@@ -1,7 +1,6 @@
 /*                                           NAVBAR */
 .navbar {
     font-family: "junegull";
-    font-size: 16px;
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +27,6 @@
 
 /*                                Dropdown - NAV */
 .navbar-nav .dropdown-menu {
-    font-size: 14px;
     position: absolute;
     background-clip: padding-box;
     border: transparent;
@@ -39,11 +37,14 @@
 }
 
 .dropdown-item {
+    font-family: "VarelaRound-Regular";
+    font-size: 14px;
     color: #000;
 }
 
 .dropdown-item:hover {
     color: #004078;
+    background-color: #d9ffc3e9;
 }
 /*                                           TOGGLER */
 .navbar-toggler {
@@ -127,7 +128,6 @@
     top: 0;
     right: -5px;
     color: #1c7e48;
-    font-size: 14px;
     padding: 0;
     z-index: 1050;
 }
@@ -157,7 +157,7 @@
 }
 
 .search-input::placeholder {
-    font-family: "junegull";
+
     color: #c0adb6
 }
 

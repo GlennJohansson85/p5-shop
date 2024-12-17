@@ -426,7 +426,7 @@ body {
 
 
 /*                                  DASHBOARD.HTML */
-.view_orders {
+.dash-orders {
     font-family: "junegull";
     color: #000;
     padding: 2px;
@@ -436,7 +436,7 @@ body {
     border-radius: 5px;
 }
 
-.view_orders:hover {
+.dash-orders:hover {
     color: #004078;
     text-decoration: none;
     border: 2px outset #004078;
@@ -454,9 +454,22 @@ body {
     color:#000;
 }
 
+/*                                  MY_ORDERS.HTML */
+.my-header {
+    color: #000;
+    font-weight: 500;
+}
+
 /*                                  EDIT_PROFILE.HTML */
 .edit-form {
     padding: 0 40px;
+    color: #000;
+}
+
+/*                                  CHANGE_PASSWORD.HTML */
+.change-form {
+    padding: 0 40px;
+    color: #000;
 }
 
 /*                                  FOOTER.HTML */
