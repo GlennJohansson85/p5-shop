@@ -32,11 +32,11 @@ html {
 
 
 body {
+    font-family: "VarelaRound-Regular";
+    font-size: 14px;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    font-family: "VarelaRound-Regular";
-    font-size: 14px;
     margin: 0 auto;
     background-color: transparent;
 }
@@ -73,9 +73,8 @@ body {
 }
 
 .product-title:hover {
-    font-weight: bold;
     text-decoration: none;
-    color: #004078;
+    color: #1c7e48;
 }
 
 /*                                  Pagination - Container */
@@ -97,12 +96,13 @@ body {
 /*                                - LIST */
 /*                          Title - LIST */
 .list-header {
-    font-size: 20px;
+    font-family: "junegull";
     margin-bottom: 0;
     line-height: 1.5;
 }
 /*                       Container - LIST */
 .list-menu {
+  font-family: "junegull";
   list-style: none;
   text-align: right;
 }
@@ -115,9 +115,7 @@ body {
 
 .list-menu a:hover {
     color: #004078;
-    border-bottom: 1px solid #004078;
 }
-
 
 /*                           Group - LIST */
 .list-group {
@@ -156,7 +154,9 @@ body {
 
 /*                           Header - CARD */
 .card-header {
+    font-family: "junegull";
     background-color: #d58db0dd;
+
 }
 
 /*                        Container - CARD */
@@ -176,6 +176,13 @@ body {
     margin: 10px;
     color: #000;
 }
+
+/*                          Control - FORM */
+.form-control {
+    color: #000;
+    font-size: 14px;
+}
+
 
 /*                                    CART.HTML */
 
@@ -233,20 +240,22 @@ body {
 
 .btn-small {
     font-family: "junegull";
-    border:none;
+    font-size: 12px;
+    border: none;
     padding: 5px;
     color: #000;
     background-color: transparent;
 
 }
 
-/*                                  HOME.HTML Specific */
+/*                                  HOME.HTML */
+/* Banner */
 .intro-home {
-    margin: 40px 0 60px 0;
-    padding: 0px;
     font-family: "junegull";
     font-size: 76px;
     text-align: center;
+    margin: 40px 0 60px 0;
+    padding: 0px;
     animation: text-shadow-animation 4s infinite alternate;
 }
 
@@ -288,11 +297,11 @@ body {
 
 .card-product-grid {
     padding: 2px;
-    border: 1px solid #ddd;
+    border: transparent;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.229);
     overflow: hidden;
-    background: linear-gradient(135deg, #f0efef, #ffffff);
+    background: linear-gradient(135deg, #f1f0f0b4, #ffc3e0ac);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -308,9 +317,7 @@ body {
     overflow: hidden;
     width: 100%;
     aspect-ratio: 1/1;
-    padding: 5px;
     border-radius: 5px;
-    background-color:#f9f9f9;
 }
 
 /* Product image */
@@ -324,6 +331,7 @@ body {
 
 /* Product info  */
 .info-wrap {
+    font-family: "junegull";
     text-align: center;
 }
 
@@ -331,14 +339,9 @@ body {
 
 /* Product Price style */
 .price {
-    color:#2f910e;
+    color:#1c7e48;
 }
 
-/* Button Styles */
-.btn-outline-primary:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
 
 /*                                  SIGNIN TEMPLATE */
 /*                         Forgot - SIGNIN */
@@ -423,7 +426,6 @@ body {
     max-width: 150px;
     margin-bottom: 5px;
     border-radius: 5px;
-
     border-style: transparent;
 }
 
@@ -458,21 +460,23 @@ body {
 
 /*                                  FOOTER.HTML */
 .footer {
+    font-family: "Jost*";
+    font-size: 12px;
     position: relative;
+    width: 100%;
     bottom: 0;
     left: 0;
     right: 0;
-    font-size: 12px;
     display: flex;
+    z-index: 1000;
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
     color: #3d3c3c;
-    background-color: #ffc3e0be;
-    width: 100%;
-
+    background-color: #ffc3e0e9;
+    border: transparent;
     margin-top: auto;
 }
 

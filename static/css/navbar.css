@@ -1,5 +1,7 @@
 /*                                           NAVBAR */
 .navbar {
+    font-family: "junegull";
+    font-size: 16px;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,8 +15,8 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    border-radius: 5px;
-    background-color: #ffc3e0be;
+    border: transparent;
+    background-color: #ffc3e0e9;
 }
 
 /*                                           NAV */
@@ -26,15 +28,22 @@
 
 /*                                Dropdown - NAV */
 .navbar-nav .dropdown-menu {
+    font-size: 14px;
     position: absolute;
     background-clip: padding-box;
-    border-radius: 5px;
-    background-color: #FFF;
+    border: transparent;
+    border-radius: 2px;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.229);
 }
 
-.navbar-nav .dropdown-menu:hover  {
+.dropdown-item {
     color: #000;
+}
 
+.dropdown-item:hover {
+    color: #004078;
 }
 /*                                           TOGGLER */
 .navbar-toggler {
@@ -80,11 +89,11 @@
 
 /*                                           BRAND */
 .navbar-brand {
+    font-family: "junegull";
+    font-size: 24px;
     display: flex;
     align-items: center;
     position: relative;
-    font-family: "junegull";
-    font-size: 32px;
     color: #000;
 }
 
@@ -97,7 +106,6 @@
     position: relative;
     display: inline-flex;
     align-items: center;
-    font-family: "junegull";
     color: #000;
 }
 
@@ -113,17 +121,12 @@
     align-items: center;
 }
 
-/*                                           CART */
-.cart {
-    border-radius: 5px;
-}
-
 /*                                  Notify - CART */
 .navbar-nav .nav-item .nav-link .notify {
     position: relative;
     top: 0;
     right: -5px;
-    color: #fff;
+    color: #1c7e48;
     font-size: 14px;
     padding: 0;
     z-index: 1050;
@@ -142,7 +145,7 @@
 
 /*                                   Input - SEARCH */
 .search-input {
-    font-family: "Typo Grotesk";
+    font-family: "VarelaRound-Regular";
     padding-left: 5px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
