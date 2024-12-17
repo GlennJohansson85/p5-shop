@@ -13,13 +13,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY','')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'p5-ishop-9dcecd21e916.herokuapp.com',
+    'p5-shop-8a4cf1a2ceb9.herokuapp.com',
     'localhost',
     '127.0.0.1',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://p5-ishop-9dcecd21e916.herokuapp.com'
+    'https://p5-shop-8a4cf1a2ceb9.herokuapp.com/'
 ]
 
 INSTALLED_APPS = [
@@ -29,13 +29,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gunicorn',
-    'storages',
     'category',
     'accounts',
     'products',
     'cart',
     'orders',
+    'gunicorn',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -108,7 +108,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
@@ -133,9 +132,9 @@ if 'USE_AWS' in os.environ:
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.eu-north-1.amazonaws.com'
-    # Static and media files
 
-       # Static and media files
+
+    # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
@@ -158,11 +157,5 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD','')
 # PayPal
 PAYPAL_CLIENT_ID = os.getenv('PAYPAL_CLIENT_ID', '')
 PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
-
-# ElephantSQL
-DATABASE_USER = 'sfyolaqg'
-DATABASE_NAME = 'p5-ishop'
-DATABASE_PASSWORD = os.environ.get('DATABASE_PASSWORD','')
-DATABASE_URL = os.environ.get('DATABASE_URL','')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

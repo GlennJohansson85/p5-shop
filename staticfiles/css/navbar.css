@@ -1,0 +1,186 @@
+/*                                           NAVBAR */
+.navbar {
+    font-family: "junegull";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0px;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border: transparent;
+    background-color: #ffc3e0e9;
+}
+
+/*                                           NAV */
+.navbar-nav {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+/*                                Dropdown - NAV */
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    background-clip: padding-box;
+    border: transparent;
+    border-radius: 2px;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.229);
+}
+
+.dropdown-item {
+    font-family: "VarelaRound-Regular";
+    font-size: 14px;
+    color: #000;
+}
+
+.dropdown-item:hover {
+    color: #004078;
+    background-color: #d9ffc3e9;
+}
+/*                                           TOGGLER */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+/*                                   States - TOGGLER */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+    border: none;
+    outline: none;
+    box-shadow: none;
+
+}
+/*                                     Icon - TOGGLER */
+.navbar-toggler-icon {
+    display: block;
+    margin-top:5px;
+    width: 30px;
+    height: 35px;
+    background-color: #000;
+    mask: url("/static/images/misc/toggler.png") no-repeat center;
+    -webkit-mask: url("/static/images/misc/toggler.png") no-repeat center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+/*                            States - Icon - TOGGLER */
+.navbar-toggler-icon:hover {
+    filter: invert(31%) sepia(88%) saturate(2997%) hue-rotate(200deg) brightness(50%) contrast(94%);
+}
+
+.navbar-toggler.open .navbar-toggler-icon {
+    transform: rotate(45deg);
+}
+
+/*                                           BRAND */
+.navbar-brand {
+    font-family: "junegull";
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #000;
+}
+
+.navbar-brand:hover {
+    color: #004078;
+}
+
+/*                                           LINK */
+.nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #004078;
+}
+
+.right-items {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*                                  Notify - CART */
+.navbar-nav .nav-item .nav-link .notify {
+    position: relative;
+    top: 0;
+    right: -5px;
+    color: #1c7e48;
+    padding: 0;
+    z-index: 1050;
+}
+
+/*                                    Form - SEARCH */
+.search-form {
+    display: flex;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.search-form:hover {
+    color: #004078;
+}
+
+/*                                   Input - SEARCH */
+.search-input {
+    font-family: "VarelaRound-Regular";
+    padding-left: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input::placeholder {
+
+    color: #c0adb6
+}
+
+/*                                  Button - SEARCH */
+.search-btn {
+    border: none;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-btn:hover {
+    color: #004078;
+}
+
+/* ========================================> 1200PX */
+@media (max-width: 1200px) {
+    .navbar-collapse {
+        display: flex;
+
+    }
+    .nav-link {
+        margin: 0 10px;
+    }
+
+}
