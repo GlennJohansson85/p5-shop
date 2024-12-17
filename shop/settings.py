@@ -1,6 +1,6 @@
 import os
-from pathlib import Path
 import dj_database_url
+from pathlib import Path
 
 if os.path.isfile('env.py'):
     import env
@@ -70,16 +70,14 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'shop.wsgi.application'
+
 AUTH_USER_MODEL = 'accounts.Account'
 
-# Alert Messages
-from django.contrib.messages import constants as messages
-MESSAGE_TAGS = {
-    messages.ERROR: 'danger',
-}
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
-# Database configuration with ElephantSQL (PostgreSQL)
+WSGI_APPLICATION = 'shop.wsgi.application'
+
+# Database
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
@@ -92,7 +90,7 @@ else:
         }
     }
 
-
+# Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -100,7 +98,8 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-# Init.
+
+# Internationalization
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
@@ -122,7 +121,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    AWS_STORAGE_BUCKET_NAME = 'p5-ishop-aws'
+    AWS_STORAGE_BUCKET_NAME = 'p5-shop-bucket'
     AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
