@@ -70,8 +70,8 @@
     width: 30px;
     height: 35px;
     background-color: #000;
-    mask: url("/static/images/misc/lines_15641347.png") no-repeat center;
-    -webkit-mask: url("/static/images/misc/lines_15641347.png") no-repeat center;
+    mask: url("/static/images/misc/toggler.png") no-repeat center;
+    -webkit-mask: url("/static/images/misc/toggler.png") no-repeat center;
     mask-size: contain;
     -webkit-mask-size: contain;
     transition: background-color 0.2s ease, transform 0.2s ease;

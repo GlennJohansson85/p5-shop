@@ -9,16 +9,6 @@
     src: url('/static/fonts/VarelaRound-Regular.ttf') format('TrueType');
 }
 
-@font-face {
-    font-family: "Janyss";
-    src: url('/static/fonts/Janyss.otf') format('OpenType');
-}
-
-@font-face {
-    font-family: "crunch";
-    src: url('/static/fonts/crunch.otf') format('OpenType');
-}
-
 /*                                  General */
 html,body {
     height: 100%;
@@ -396,16 +386,11 @@ body {
     border-bottom: 1px solid #004078;
 }
 
-/*                                  EDIT PROFILE TEMPLATE */
-
 
 
 
 /*                                  PRODUCT_DETAIL TEMPLATE */
 
-.item-option-select {
-
-}
 
 .review-header {
     font-family: "junegull";
@@ -443,7 +428,7 @@ body {
 /*                                  DASHBOARD.HTML */
 .view_orders {
     font-family: "junegull";
-    font-size: 12px;
+    color: #000;
     padding: 2px;
     color: #000;
     text-decoration: none;
@@ -457,6 +442,22 @@ body {
     border: 2px outset #004078;
 }
 
+.dash-img {
+    width: 150px;
+    height: auto;
+    border-radius: 2px;
+    border: transparent;
+}
+
+.dash-text {
+    margin:5px;
+    color:#000;
+}
+
+/*                                  EDIT_PROFILE.HTML */
+.edit-form {
+    padding: 0 40px;
+}
 
 /*                                  FOOTER.HTML */
 .footer {
