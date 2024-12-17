@@ -79,7 +79,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-
+# Database configuration with ElephantSQL (PostgreSQL)
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
@@ -94,25 +94,20 @@ else:
 
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
+# Init.
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
+
+
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
@@ -147,15 +142,19 @@ if 'USE_AWS' in os.environ:
 
 
 # Email Verification
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'glenncoding@gmail.com'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD','')
+EMAIL_BACKEND= 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS= True
+EMAIL_PORT= 587
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_HOST_USER= 'glenncoding@gmail.com'
+EMAIL_HOST_PASSWORD= os.environ.get('EMAIL_HOST_PASSWORD','')
 
 # PayPal
 PAYPAL_CLIENT_ID = os.getenv('PAYPAL_CLIENT_ID', '')
 PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
+
+# ElephantSql
+DATABASE_URL= os.environ.get('DATABASE_URL')
+DATABASE_API_KEY= os.environ.get('DATABASE_API_KEY')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
