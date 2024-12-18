@@ -2,17 +2,17 @@
 
 [See Live Project Here!](https://dashboard.heroku.com/apps/p5-shop/)
 
-# **About:**
+#### **About:**
 iShop is a dynamic e-commerce platform offering a wide range of clothing in various sizes. Customers can explore the entire collection, browse by clothing categories, or use the convenient search function in the navbar to find specific items. With secure transaction processing, customers can shop with confidence and enjoy a seamless shopping experience. By registering, users gain access to personalized accounts where all transaction and account details are securely stored for future convenience.
 
 Registered members can also access a personalized dashboard showcasing their complete order history. Orders are displayed as clickable links, organized in descending order by date, with each link providing detailed information about the corresponding purchase. This feature allows members to easily review and manage their past orders at any time.
 
 Additionally, iShop empowers users with options to update their profiles and conveniently reset their passwords in case the current one is forgotten, ensuring a user-friendly and secure experience.
 
-**Project Goals:**
+#### **Project Goals:**
 Create a Ecommerce website using the tools and knowledge gained from Code Institute.
 
-**User Goals:**
+#### **User Goals:**
 Create a user friendly website where customers can browse for clothes and make secure purchases.
 
 # User Experience
