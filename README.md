@@ -1,4 +1,4 @@
-<h1>Ishop</h1>
+# Ishop
 
 [See Live Project Here!](https://dashboard.heroku.com/apps/p5-shop/)
 
