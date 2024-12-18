@@ -1,18 +1,18 @@
-<h1>Ishop</h1>
+# Ishop
 
 [See Live Project Here!](https://dashboard.heroku.com/apps/p5-shop/)
 
-**About:**
+#### **About:**
 iShop is a dynamic e-commerce platform offering a wide range of clothing in various sizes. Customers can explore the entire collection, browse by clothing categories, or use the convenient search function in the navbar to find specific items. With secure transaction processing, customers can shop with confidence and enjoy a seamless shopping experience. By registering, users gain access to personalized accounts where all transaction and account details are securely stored for future convenience.
 
 Registered members can also access a personalized dashboard showcasing their complete order history. Orders are displayed as clickable links, organized in descending order by date, with each link providing detailed information about the corresponding purchase. This feature allows members to easily review and manage their past orders at any time.
 
 Additionally, iShop empowers users with options to update their profiles and conveniently reset their passwords in case the current one is forgotten, ensuring a user-friendly and secure experience.
 
-**Project Goals:**
+#### **Project Goals:**
 Create a Ecommerce website using the tools and knowledge gained from Code Institute.
 
-**User Goals:**
+#### **User Goals:**
 Create a user friendly website where customers can browse for clothes and make secure purchases.
 
 # User Experience
@@ -23,17 +23,33 @@ Create a user friendly website where customers can browse for clothes and make s
 
 &nbsp;&nbsp;&nbsp;&nbsp;**b)** As a **First Time User**, I want to browse clothes.
 
-&nbsp;&nbsp;&nbsp;&nbsp;**a)** As a **First Time User**, I want to search for a specifc clothing wear.
+&nbsp;&nbsp;&nbsp;&nbsp;**c)** As a **First Time User**, I want to search for a specific clothing wear.
 
 ### 1.1.2 Returning User Goals:
 
-&nbsp;&nbsp;&nbsp;&nbsp;**c)** As a **Returning User**, I want to make a purchase.
+&nbsp;&nbsp;&nbsp;&nbsp;**a)** As a **Returning User**, I want to make a purchase.
 
 &nbsp;&nbsp;&nbsp;&nbsp;**b)** As a **Returning User**, I want to register to the site.
 
-&nbsp;&nbsp;&nbsp;&nbsp;**b)** As a **Returning User**, I want to contact customer support.
+&nbsp;&nbsp;&nbsp;&nbsp;**c)** As a **Returning User**, I want to contact customer support.
 
 ### 1.1.3 Frequent User Goals:
+
+&nbsp;&nbsp;&nbsp;&nbsp;**a)** As a **Frequent User**, I want my purchases to go faster.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**b)** As a **Frequent User**, I want to see all my orders.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**b)** As a **Frequent User**, I want change my account details.
+
+# 2. Wireframes
+## 2.1 Desktop Wireframes:
+<details>
+    <summary><strong>2.1.1 - home</strong></summary>
+      <![image](https://github.com/user-attachments/assets/b4153c68-43a9-4319-bbfe-5488861d29a2) alt="Main page - home">
+</details>![image](https://github.com/user-attachments/assets/074b1b43-48b2-4195-a90a-683a3e1f38e0)
+![image](https://github.com/user-attachments/assets/b4153c68-43a9-4319-bbfe-5488861d29a2)
+
+
 
 ## 1. Features
 ### 1.1 Main Page
