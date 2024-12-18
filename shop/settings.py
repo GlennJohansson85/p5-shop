@@ -153,7 +153,7 @@ PAYPAL_CLIENT_ID = os.getenv('PAYPAL_CLIENT_ID', '')
 PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
 
 # ElephantSql
-DATABASE_URL= os.environ.get('DATABASE_URL')
-DATABASE_API_KEY= os.environ.get('DATABASE_API_KEY')
+DATABASE_URL= os.environ.get('DATABASE_URL','')
+DATABASE_API_KEY= os.environ.get('DATABASE_API_KEY','')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
