@@ -71,7 +71,7 @@
     width: 30px;
     height: 35px;
     background-color: #000;
-    mask: url("/static/images/misc/toggler.png") no-repeat center;
+    mask: url("/static/images//toggler.png") no-repeat center;
     -webkit-mask: url("/static/images/misc/toggler.png") no-repeat center;
     mask-size: contain;
     -webkit-mask-size: contain;
