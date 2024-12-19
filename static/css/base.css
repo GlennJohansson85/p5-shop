@@ -23,7 +23,6 @@ html {
 
 body {
     font-family: "VarelaRound-Regular";
-    font-size: 14px;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -52,7 +51,7 @@ body {
 }
 
 /*                                  Title - Item */
-.product-title {
+.home-product-title {
     display: block;
     color: #333;
     text-decoration: none;
@@ -60,9 +59,9 @@ body {
     transition: color 0.3s ease;
 }
 
-.product-title:hover {
+.home-product-title:hover {
     text-decoration: none;
-    color: #1c7e48;
+    color: #004078;
 }
 
 /*                                  Pagination - Container */
@@ -139,8 +138,11 @@ body {
 }
 
 .dash-text {
-    margin:5px;
     color:#000;
+}
+
+.dash-email {
+    margin-top: 10px;
 }
 
 /*                                  MY_ORDERS.HTML */
@@ -197,6 +199,21 @@ body {
 }
 
 .cart-product-header {
+    font-family: "junegull";
+    font-weight: 400;
+    text-align: center;
+}
+
+.cart-product-quantity {
+    font-family: "junegull";
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.cart-product-price {
+    font-family: "junegull";
+    font-weight: 400;
     text-align: center;
 }
 
@@ -207,6 +224,16 @@ body {
 .cart-text {
     color: #000;
 }
+
+.cart-price {
+    color:#1c7e48;
+    text-align: center;
+}
+
+.cart-price-small {
+    color: #000;
+}
+
 
 .cart-img {
     width: 150px;
@@ -249,13 +276,35 @@ body {
 }
 
 .btn-small {
-    font-family: "junegull";
+    font-family: "junegull", "sans-serif";
     font-size: 12px;
-    border: none;
-    padding: 5px;
+    padding: 3px;
+    text-decoration: none;
+    border: 3px solid #000;
+    border-style: outset;
+    border-radius: 5px;
     color: #000;
     background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
 
+.btn-small:hover {
+    color: #004078;
+    background-color: #30303137;
+    border: 3px solid #004078;
+    border-style: outset;
+}
+
+/* + & - Buttons */
+.btn-no-border {
+    font-family: "junegull";
+    text-align: center;
+    padding: 5px;
+    border: none;
+    color: #000;
+    background-color: transparent;
 }
 
 /*                                  HOME.HTML */
@@ -321,7 +370,7 @@ body {
     text-align: center;
 }
 
-.price {
+.home-product-price {
     color:#1c7e48;
 }
 
@@ -518,6 +567,12 @@ body {
                      4px 0px 0 #00000040;
         }
     }
+
+    .home-product-title,
+    .home-product-price {
+        font-size: 14px;
+    }
+
 
     /*             Product_detail - SMALL */
     .product_detail-select {
@@ -756,6 +811,16 @@ body {
         font-size: 18px;
     }
 
+    /*                  Dashboard - LARGE */
+
+    /*                       Cart - LARGE */
+    .cart-product-header {
+        font-size: 16px;
+    }
+
+    .cart-product-price {
+        font-size: 16px;
+    }
 
     /*                    General - LARGE */
     .header-1 {
