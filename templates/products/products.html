@@ -5,9 +5,9 @@
 <section class="content-down">
     <div class="container">
         {% if 'search' in request.path %}
-            <div class="title-32">Search Results</div>
+            <div class="header-1">Search Results</div>
         {% else %}
-            <div class="title-32">Our Products:</div>
+            <div class="header-1">Our Products:</div>
         {% endif %}
     </div>
 </section>
@@ -17,12 +17,10 @@
             <aside class="col-md-3">
                 <div class="card">
                     <article class="filter-group">
-                        <header class="card-header">
-                            <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
-                                <i class="icon-control fa fa-chevron-down"></i>
-                                <h6 class="list-header">Categories</h6>
-                            </a>
-                        </header>
+                        <div class="card-header" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true">
+                            Categories:
+                            <img class="arrow-down" src="{% static 'images/icons/2arrow-blackoutline-down.png' %}">
+                        </div>
                         <div class="filter-content collapse show" id="collapse_1">
                             <div class="card-body">
                                 <ul class="list-menu">
@@ -37,11 +35,13 @@
                 </div>
             </aside>
             <main class="col-md-9">
+            <div class="border-header-container">
                 <header class="border-bottom mb-4 pb-3">
                     <div class="form-inline">
                         <span class="mr-md-auto"><strong>{{ product_count }}</strong> products</span>
                     </div>
                 </header>
+            </div>
                 <div class="row">
                     {% if products %}
                     {% for product in products %}

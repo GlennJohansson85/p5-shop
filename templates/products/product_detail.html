@@ -4,20 +4,24 @@
 {% block content %}
 <section class="content-down">
     <div class="container">
-        <div class="card-width">
-            <div class="row no-gutters">
-                <aside class="col-md-6">
-                    <img src="{{ single_product.images.url }}"></a>
+        <div class="card-body">
+            <div class="row">
+                <aside class="col-12 col-md-6">
+                    <img class="product_detail-img" src="{{ single_product.images.url }}"></a>
                 </aside>
-                <main class="col-md-4 border-left">
+                <main class="col-12 col-md-6 border-left">
                     <form action="{% url 'add_cart' single_product.id %}" method="POST">
                         {% csrf_token %}
-                        <article class="content-body">
-                            <div class="title-32">{{ single_product.product_name }}</div>
+
+                        <!-- Product Select -->
+                        <article class="product_detail-select">
+                            <div class="product_detail-header">{{ single_product.product_name }}</div>
                             <div class="mb-3">
-								<var class="price h5 bold">$ {{single_product.price}}</var>
+								<var class="product_detail-price">$ {{single_product.price}}</var>
 							</div>
 							<p>{{ single_product.description }}</p>
+
+                            <!-- Color Select -->
                             <div class="form-group">Choose Color:
                                 <select name="color" class="form-control" required>
                                     <option value="" disabled selected>Select</option>
@@ -28,6 +32,8 @@
                                     {% endfor %}
                                 </select>
                             </div>
+
+                            <!-- Size Select -->
                             <div class="form-group">Select Size:
                                 <select name="size" class="form-control">
                                     <option value="" disabled selected>Select</option>
@@ -53,13 +59,15 @@
                 </main>
             </div>
         </div>
+
+        <!-- Customer Review -->
         <div class="col-md-8">
             <header class="review-header">Customer Reviews:</header>
             <div class="review-container">
                 <img class="review-img" src="{% static 'images/avatars/avatar1.png' %}">
-                <p class="review-date">Date: 11.05.2020 </p>
-                <p class="review-name">Customer: Elton john</p>
-                <p class="review-text">Review: Great Service, Great Clothes and Great Prices! I´ll buy everything from I SHOP from now on!!!</p>
+                <p class="review-date">11.05.2020, </p>
+                <p class="review-name">Mark Johnson:</p>
+                <p class="review-text">Great Service, Great Clothes and Great Prices! I´ll buy everything from I SHOP from now on!!!</p>
             </div>
         </div>
     </div>
