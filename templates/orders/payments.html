@@ -6,21 +6,22 @@
 	<div class="container">
 
 		<!-- Review and Place order -->
-		<div class="title-26">Review and Place order</div>
+		<h4 class="header-1">Review and Place order</h4>
+
 		<div class="row">
 			<aside class="col-lg-8">
 
-				<!-- Billing -->
+				<!-- Billing Address -->
 				<div class="card">
-					<h6 class="card-header">Billing Address:</h6>
+					<header class="card-header">Billing Address:</header>
 					<div class="card-body">
-						<p class="card-text mb-0">{{order.full_name}}</p>
-						<p class="card-text mb-0">{{order.full_address}}</p>
-						<p class="card-text mb-0">{{order.city}}</p>
-						<p class="card-text mb-0">{{order.country}}</p>
-						<p class="card-text mb-0">{{order.email}}</p>
-						<p class="card-text mb-0">{{order.phone}}</p>
-						{% if order.order_note %} <!--optional-->
+						<div class="card-text">{{order.full_name}}</div>
+						<div class="card-text">{{order.full_address}}</div>
+						<div class="card-text">{{order.city}}</div>
+						<div class="card-text">{{order.country}}</div>
+						<div class="card-text">{{order.email}}</div>
+						<div class="card-text">{{order.phone}}</div>
+						{% if order.order_note %}
 							<b>Note:</b> {{order.order_note }}
 						{% endif %}
 					</div>
@@ -28,7 +29,7 @@
 
 				<!-- Payment Method -->
 				<div class="card">
-					<h6 class="card-header">Payment Method:</h6>
+					<div class="card-header">Payment Method:</div>
 					<div class="card-body">
 						<p class="card-text">PayPal</p>
 					</div>
@@ -42,22 +43,22 @@
 						<table class="table table-borderless">
 							<thead>
 								<!-- Cart Items - Items Header -->
-								<tr class="cart-text">
-									<th class="cart-product-header" scope="col">Product:</th>
-									 <th scope="col">Quantity:</th>
-									<th scope="col" width="120">Price:</th>
+								<tr>
+									<th class="cart-header" scope="col" width="200">Product:</th>
+                                	<th class="cart-header" scope="col"width="110">Quantity:</th>
+                                	<th class="cart-header" scope="col"width="110">Price
 								</tr>
 							</thead>
 							<tbody class="cart-body">
 								{% for cart_item in cart_items %}
 								<tr>
 									<td>
-										<figure class="cart-items">
+										<figure class="cart-item">
 											<div class="aside">
 												<img src="{{ cart_item.product.images.url }}" class="cart-img">
 											<figcaption class="info">
 												<a href="{{ cart_item.product.get_url }}" class="title text-dark">{{ cart_item.product.product_name }}</a>
-												<p class="text small">
+												<p>
 													{% if cart_item.variations.all %}
 														{% for item in cart_item.variations.all %}
 															{{ item.variation_category | capfirst }} : {{ item.variation_value | capfirst }} <br>
@@ -67,12 +68,12 @@
 											</figcaption>
 										</figure>
 									</td>
-									<td>
+									<td class="payments-quantity">
 										<label for="">{{cart_item.quantity}}</label>
 									</td>
 									<td>
-										<div class="price-wrap">
-											<var class="price">$ {{ cart_item.sub_total }}</var>
+										<div class="text-center">
+											<var class="cart-price">$ {{ cart_item.sub_total }}</var>
 											<small class="text small"> $ {{ cart_item.product.price }} each </small>
 										</div>
 									</td>
