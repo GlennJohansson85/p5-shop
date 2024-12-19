@@ -5,10 +5,10 @@
         <a class="list-group-item {% if '/edit_profile/' in request.path %}active{% endif %}" href="{% url 'edit_profile' %}">Edit Profile </a>
         <a class="list-group-item {% if '/change_password/' in request.path %}active{% endif %}" href="{% url 'change_password' %}">Change Password </a>
     </ul>
-    <div class ="btn-container">
+    <div class ="sidebar-btn-container">
         <a class="btn" href="{% url 'signout' %}">
             <i class="fa fa-power-off"></i>
-            <span class="text">Sign Out</span>
+            <span class="sign-out">Sign Out</span>
         </a>
     </div>
 </aside>
