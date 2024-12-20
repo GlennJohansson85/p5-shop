@@ -121,12 +121,13 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    AWS_STORAGE_BUCKET_NAME = 'p5-shop-bucket'
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'p5-bucket'
     AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.eu-north-1.amazonaws.com'
-
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
@@ -151,9 +152,5 @@ EMAIL_HOST_PASSWORD= os.environ.get('EMAIL_HOST_PASSWORD','')
 # PayPal
 PAYPAL_CLIENT_ID = os.getenv('PAYPAL_CLIENT_ID', '')
 PAYPAL_SECRET_KEY = os.getenv('PAYPAL_SECRET_KEY', '')
-
-# ElephantSql
-DATABASE_URL= os.environ.get('DATABASE_URL','')
-DATABASE_API_KEY= os.environ.get('DATABASE_API_KEY','')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
