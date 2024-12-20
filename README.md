@@ -4,7 +4,11 @@
 
 [See Live Project Here!](https://dashboard.heroku.com/apps/p5-shop/)
 
+<<<<<<< Updated upstream
 
+=======
+![welcome](https://github.com/user-attachments/assets/daa21a45-72d1-43e3-91d8-efdf90cc26b6)
+>>>>>>> Stashed changes
 
 #### **About:**
 iShop is a dynamic e-commerce platform offering a wide range of clothing in various sizes. Customers can explore the entire collection, browse by clothing categories, or use the convenient search function in the navbar to find specific items. With secure transaction processing, customers can shop with confidence and enjoy a seamless shopping experience. By registering, users gain access to personalized accounts where all transaction and account details are securely stored for future convenience.
@@ -64,6 +68,7 @@ Create a user friendly website where customers can browse for clothes and make s
   <img src="" alt="Post Detail wireframe - image">
 </details>![image](https://github.com/)
 
+<<<<<<< Updated upstream
 <details>
   <summary><strong>2.1.4 - Dashboard</strong></summary>
   <img src="" alt="Dashboard wireframe - image">
@@ -115,6 +120,12 @@ Create a user friendly website where customers can browse for clothes and make s
 </details>![image](https://github.com/)
 
 ________________________________________________________________________________
+=======
+
+
+
+
+>>>>>>> Stashed changes
 ## 1. Features
 ### 1.1 Main Page
 ![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/3a5d2e27-34a3-4a45-81fc-c0353b522645)
