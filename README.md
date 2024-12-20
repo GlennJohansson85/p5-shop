@@ -45,16 +45,76 @@ Create a user friendly website where customers can browse for clothes and make s
 
 &nbsp;&nbsp;&nbsp;&nbsp;**b)** As a **Frequent User**, I want change my account details.
 
+## 1.2 Design
 # 2. Wireframes
 ## 2.1 Desktop Wireframes:
+
 <details>
-    <summary><strong>2.1.1 - home</strong></summary>
-      <![image](https://github.com/user-attachments/assets/b4153c68-43a9-4319-bbfe-5488861d29a2) alt="Main page - home">
-</details>![image](https://github.com/user-attachments/assets/074b1b43-48b2-4195-a90a-683a3e1f38e0)
-![image](https://github.com/user-attachments/assets/b4153c68-43a9-4319-bbfe-5488861d29a2)
+    <summary><strong>2.1.1 - Home</strong></summary>
+      <img src="" alt="Home wireframe - image">
+</details>![image](https://github.com/)
 
+<details>
+  <summary><strong>2.1.2 - Products</strong></summary>
+  <img src="" alt="Products wireframe - image">
+</details>![image](https://github.com/)
 
+<details>
+  <summary><strong>2.1.3 - Post_detail</strong></summary>
+  <img src="" alt="Post Detail wireframe - image">
+</details>![image](https://github.com/)
 
+<details>
+  <summary><strong>2.1.4 - Dashboard</strong></summary>
+  <img src="" alt="Dashboard wireframe - image">
+</details>![image](https://github.com/)
+
+<details>
+  <summary><strong>2.1.5 - My orders</strong></summary>
+  <img src="" alt="My orderswireframe - image">
+</details>![image](https://github.com/)
+
+<details>
+  <summary><strong>2.1.6 - Register</strong></summary>
+  <img src="" alt="Register wireframe - image">
+</details>![image](https://github.com/)
+
+<details>
+  <summary><strong>2.1.7 - Login</strong></summary>
+  <img src="" alt="Login wireframe - image">
+</details>![image](https://github.com/)
+
+<details>
+  <summary><strong>2.1.8 - Cart</strong></summary>
+  <img src="" alt="Cart wireframe - image">
+</details>![image](https://github.com/)
+
+<details>
+  <summary><strong>2.1.9 - Checkout</strong></summary>
+  <img src="" alt="Checkout wireframe - image">
+</details>![image](https://github.com/)
+
+<details>
+  <summary><strong>2.1.10 - Payment</strong></summary>
+  <img src="" alt="Checkout wireframe - image">
+</details>![image](https://github.com/)
+
+<details>
+  <summary><strong>2.1.11 - Receipt</strong></summary>
+  <img src="" alt="Recepit wireframe - image">
+</details>![image](https://github.com/)
+
+<details>
+  <summary><strong>2.1.12 - Navbar</strong></summary>
+  <img src="" alt="Navbar wireframe - image">
+</details>![image](https://github.com/)
+
+<details>
+  <summary><strong>2.1.13 - Footer</strong></summary>
+  <img src="" alt="Navbar wireframe - image">
+</details>![image](https://github.com/)
+
+________________________________________________________________________________
 ## 1. Features
 ### 1.1 Main Page
 ![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/3a5d2e27-34a3-4a45-81fc-c0353b522645)
