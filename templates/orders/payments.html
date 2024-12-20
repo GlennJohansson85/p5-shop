@@ -7,7 +7,6 @@
 
 		<!-- Review and Place order -->
 		<h4 class="header-1">Review and Place order</h4>
-
 		<div class="row">
 			<aside class="col-lg-8">
 
@@ -41,23 +40,40 @@
 					<h6 class="card-header">Cart:</h6>
 					<div class="card-body">
 						<table class="table table-borderless">
+							<!-- Cart Items - Items Header -->
 							<thead>
-								<!-- Cart Items - Items Header -->
 								<tr>
-									<th class="cart-header" scope="col" width="200">Product:</th>
-                                	<th class="cart-header" scope="col"width="110">Quantity:</th>
-                                	<th class="cart-header" scope="col"width="110">Price
+									<th
+										class="cart-header"
+										scope="col" width="200">Product:
+									</th>
+                                	<th
+										class="cart-header"
+										scope="col"width="110">Quantity:
+									</th>
+                                	<th
+										class="cart-header"
+										scope="col"width="110">Price
+									</th>
 								</tr>
 							</thead>
+
 							<tbody class="cart-body">
 								{% for cart_item in cart_items %}
 								<tr>
 									<td>
 										<figure class="cart-item">
 											<div class="aside">
-												<img src="{{ cart_item.product.images.url }}" class="cart-img">
+												<img
+													src="{{ cart_item.product.images.url }}"
+													class="cart-img"
+												>
 											<figcaption class="info">
-												<a href="{{ cart_item.product.get_url }}" class="title text-dark">{{ cart_item.product.product_name }}</a>
+												<a
+													href="{{ cart_item.product.get_url }}"
+													class="cart-info-link">
+													{{ cart_item.product.product_name }}
+												</a>
 												<p>
 													{% if cart_item.variations.all %}
 														{% for item in cart_item.variations.all %}
@@ -73,8 +89,14 @@
 									</td>
 									<td>
 										<div class="text-center">
-											<var class="cart-price">$ {{ cart_item.sub_total }}</var>
-											<small class="text small"> $ {{ cart_item.product.price }} each </small>
+											<var
+												class="cart-price">
+												$ {{ cart_item.sub_total }}
+											</var>
+											<small
+												class="text small">
+												$ {{ cart_item.product.price }} each
+											</small>
 										</div>
 									</td>
 								</tr>
@@ -98,14 +120,18 @@
 						</dl>
 						<dl class="dlist-align">
 							<dt>Grand Total:</dt>
-							<dd class="text-right text-dark b"><strong> ${{grand_total}}</strong></dd>
+							<dd class="text-right text-dark b">
+								<strong> ${{grand_total}}</strong>
+							</dd>
 						</dl>
 						<hr>
 						<p class="text-center mb-3">
-							<img src="{% static './images/misc/payments.png' %}" height="26">
+							<img
+								src="{% static './images/misc/payments.png' %}"
+								height="26"
+							>
 						</p>
-						<div id="paypal-button-container">
-						</div>
+						<div id="paypal-button-container"></div>
 					</div>
 				</div>
 			</aside>

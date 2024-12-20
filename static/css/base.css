@@ -373,7 +373,7 @@ input.form-control {
 }
 
 .card-text {
-    font-size: 12px;
+
 }
 
 /*                                  CHECKOUT.HTML */
@@ -386,6 +386,9 @@ input.form-control {
     align-items: center;
     justify-content: center;
     background-color: #30303137;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.291);
 }
 
 /*                                  BUTTON */
@@ -888,6 +891,14 @@ input.form-control {
         font-size: 16px;
     }
 
+    /*                  Payments - MEDIUM */
+    .card-body {
+        font-size: 14px;
+    }
+
+    .card-item {
+        padding: 0;
+    }
 
     /*                    General - MEDIUM */
     .header-1 {
@@ -976,6 +987,14 @@ input.form-control {
     /*                       Cart - LARGE */
     .cart-header {
         font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .card-body {
+        font-size: 14px;
     }
 
     /*                    General - LARGE */
