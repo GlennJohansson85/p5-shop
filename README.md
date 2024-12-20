@@ -1,4 +1,4 @@
-# Ishop
+# I SHOP
 
 ![image](https://github.com/user-attachments/assets/5909e845-3818-4808-9e1c-a862db84cb9a)
 
