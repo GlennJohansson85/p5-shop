@@ -1,7 +1,9 @@
 # Ishop
 
-[See Live Project Here!](https://dashboard.heroku.com/apps/p5-shop/)
 ![image](https://github.com/user-attachments/assets/5909e845-3818-4808-9e1c-a862db84cb9a)
+
+[See Live Project Here!](https://dashboard.heroku.com/apps/p5-shop/)
+
 
 
 #### **About:**
