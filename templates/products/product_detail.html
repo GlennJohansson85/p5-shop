@@ -3,27 +3,31 @@
 
 {% block content %}
 <section class="content-down">
-    <div class="container">
-        <div class="card-body">
-            <div class="row">
-                <aside class="col-12 col-md-6">
-                    <img class="product_detail-img" src="{{ single_product.images.url }}"></a>
-                </aside>
-                <main class="col-12 col-md-6 border-left">
+    <div class="container my-5">
+        <div class="row">
+
+            <!-- Image Section -->
+            <div class="col-md-6 mb-5">
+                <div class="detail-img-container">
+                    <img src="{{ single_product.images.url }}" alt="Product Image" class="detail-img">
+                </div>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="col-md-6 mb-5">
+                <div class="detail-form-container">
                     <form action="{% url 'add_cart' single_product.id %}" method="POST">
                         {% csrf_token %}
-
-                        <!-- Product Select -->
-                        <article class="product_detail-select">
-                            <div class="product_detail-header">{{ single_product.product_name }}</div>
-                            <div class="mb-3">
-								<var class="product_detail-price">$ {{single_product.price}}</var>
-							</div>
-							<p>{{ single_product.description }}</p>
+                        <article>
+                            <div class="header-1">{{ single_product.product_name }}</div>
+                            <var class="detail-form-price">$ {{ single_product.price }}</var>
+                            <div class="detail-form-text-container">
+                                <div class="detail-form-text">{{ single_product.description }}</div>
+                            </div>
 
                             <!-- Color Select -->
-                            <div class="form-group">Choose Color:
-                                <select name="color" class="form-control" required>
+                            <div class="detail-form-group-container">Choose Color:
+                                <select name="color" class="detail-form-select form-control" required>
                                     <option value="" disabled selected>Select</option>
                                     {% for variation in single_product.variation_set.colors %}
                                         <option value="{{ variation.variation_value }}">
@@ -34,8 +38,8 @@
                             </div>
 
                             <!-- Size Select -->
-                            <div class="form-group">Select Size:
-                                <select name="size" class="form-control">
+                            <div class="detail-form-group-container">Select Size:
+                                <select name="size" class="detail-form-select form-control">
                                     <option value="" disabled selected>Select</option>
                                     {% for variation in single_product.variation_set.sizes %}
                                         <option value="{{ variation.variation_value }}">
@@ -44,6 +48,8 @@
                                     {% endfor %}
                                 </select>
                             </div>
+
+                            <!-- Stock and Add to Cart -->
                             {% if single_product.stock <= 0 %}
                                 <h5 class="text-danger">Out of Stock</h5>
                             {% else %}
@@ -56,24 +62,56 @@
                             {% endif %}
                         </article>
                     </form>
-                </main>
-            </div>
-        </div>
-
-        <!-- Customer Review -->
-        <div class="col-md-8">
-            <header class="review-header">Customer Reviews:</header>
-            <div class="review-container">
-                <img class="review-img" src="{% static 'images/avatars/avatar1.png' %}">
-                <p class="review-date">11.05.2020, </p>
-                <p class="review-name">Mark Johnson:</p>
-                <p class="review-text">
-                    <i>
-                        Great Service, Great Clothes and Great Prices! I´ll buy everything from I SHOP from now on!!!
-                    </i>
-                </p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Customer Reviews Section -->
+<section>
+   <div class="container my-5">
+        <div class="row">
+        <header class="header-center">Customer Reviews</header>
+
+            <!-- Mark Review -->
+            <div class="col-md-6 mb-5">
+                <div class="detail-review-container">
+                    <div class="detail-img-container">
+                        <img class="detail-review-img" src="{% static 'images/avatars/avatar1.png' %}" alt="Reviewer Avatar">
+                    </div>
+                    <div class="ms-3">
+                        <p class="detail-review-name fw-bold">Mark Johnson</p>
+                        <p class="detail-review-date text-muted">11.05.2020</p>
+                        <p class="detail-review-text">
+                            <i>
+                                Great Service, Great Clothes, and Great Prices! I´ll buy everything from I SHOP from now on!!!
+                            </i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jane Review -->
+            <div class="col-md-6 mb-5">
+                <div class="detail-review-container">
+                    <div class="detail-img-container">
+                        <img class="detail-review-img" src="{% static 'images/avatars/avatar2.png' %}" alt="Reviewer Avatar">
+                    </div>
+                    <div class="ms-3">
+                        <p class="detail-review-name fw-bold">Jane Doe</p>
+                        <p class="detail-review-date text-muted">15.07.2021</p>
+                        <p class="detail-review-text">
+                            <i>
+                                Absolutely love the product! Excellent quality and very fast shipping.
+                            </i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 {% endblock %}

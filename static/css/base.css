@@ -47,6 +47,13 @@ body {
     text-shadow: 2px 2px 1px #4445447f;
 }
 
+.header-center {
+    font-family: "junegull";
+    text-shadow: 2px 2px 1px #4445447f;
+    text-align: center;
+}
+
+
 /*                                  Title - Item */
 .home-product-title {
     display: block;
@@ -585,53 +592,73 @@ input.form-control {
 }
 
 /*                                  PRODUCT_DETAIL.HTML */
-.product_detail-select {
-    margin: 20px;
-    font-size: 16px;
+.col-md-6 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.product_detail-header,
-.product_detail-price {
+/* detail-img */
+.detail-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.detail-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* detail-form */
+.detail-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.detail-form-header {
     font-family: "junegull";
+    font-size: 32px;
 }
 
-.product_detail-price {
+.detail-form-price {
+    font-family: "junegull";
+    font-size: 26px;
     color:#1c7e48;
 }
 
-
-.review-header {
-    font-family: "junegull";
-    border-bottom: 1px solid #2c2c2c;
+.detail-form-text-container {
+    margin: 20px 0;
 }
 
-.review-container {
-    border: transparent;
-    background-color: #30303137;
+.detail-form-select {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+/* detail-review */
+.detail-review-container {
+    display: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+
+}
+
+.detail-review-img {
+    display: border-box;
+    width: 150px;
+    height: 100px;
     border-radius: 5px;
-    box-shadow: 2px 2px 1px #4445447f;
 }
-
-
-.review-img {
-    margin-bottom: 5px;
-    border-style: transparent;
-}
-
-.review-date,
-.review-name,
-.review-text {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-
-.review-date,
-.review-name {
-    font-weight: bold;
-}
-
-
 
 /*                                  FOOTER.HTML */
 .footer {
@@ -703,31 +730,17 @@ input.form-control {
 
 
     /*             Product_detail - SMALL */
-    .product_detail-select {
+    .detail-img-container {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .detail-form-container {
         font-size: 14px;
     }
 
-    .product_detail-header {
-        font-size: 18px;
-    }
-
-    .product_detail-price {
-        font-size: 16px;
-    }
-
-    .review-header {
-        font-size: 18px;
-        margin: 10px 0;
-    }
-
-    .review-container {
+    .detail-review-container {
         font-size: 12px;
-        margin-top: 5px;
-        padding: 5px;
-    }
-
-    .review-img {
-        max-width: 90px;
     }
 
     /*                   Products - SMALL */
@@ -773,7 +786,12 @@ input.form-control {
 
 
     /*                    General - SMALL */
-    .header-1 {
+    .header-1,
+    .header-center {
+        font-size: 20px;
+    }
+
+    .header-center {
         font-size: 20px;
     }
 
@@ -829,34 +847,7 @@ input.form-control {
     }
 
     /*             Product_detail - MEDIUM */
-    .product_detail-header {
-        font-size: 24px;
-    }
 
-    .product_detail-price {
-        font-size: 20px;
-    }
-
-    .product_detail-img {
-        width: 90%;
-        height: auto;
-    }
-
-    .review-header {
-        font-size: 20px;
-        margin: 10px 0;
-    }
-
-    .review-container {
-        font-size: 14px;
-        margin-top: 10px;
-        padding: 5px;
-
-    }
-
-    .review-img {
-        max-width: 100px;
-    }
 
     /*                   Products - MEDIUM */
     .card-header {
@@ -901,7 +892,8 @@ input.form-control {
     }
 
     /*                    General - MEDIUM */
-    .header-1 {
+    .header-1,
+    .header-center {
         font-size: 24px;
     }
 
@@ -935,28 +927,7 @@ input.form-control {
         }
     }
     /*             Product_detail - LARGE */
-    .product_detail-header {
-        font-size: 32px;
-    }
 
-    .product_detail-price {
-        font-size: 26px;
-    }
-
-    .review-header {
-        font-size: 22px;
-        margin: 20px 0;
-    }
-
-    .review-container {
-        font-size: 16px;
-        margin-top: 20px;
-        padding: 15px;
-    }
-
-    .review-img {
-        max-width: 150px;
-    }
 
     /*                   Products - LARGE */
     .card-header {
@@ -998,7 +969,8 @@ input.form-control {
     }
 
     /*                    General - LARGE */
-    .header-1 {
+    .header-1,
+    .header-center {
         font-size: 32px;
     }
 

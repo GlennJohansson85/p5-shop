@@ -119,13 +119,9 @@ Create a user friendly website where customers can browse for clothes and make s
   <img src="" alt="Navbar wireframe - image">
 </details>![image](https://github.com/)
 
-________________________________________________________________________________
-=======
 
 
 
-
->>>>>>> Stashed changes
 ## 1. Features
 ### 1.1 Main Page
 ![image](https://github.com/GlennJohansson85/p5-shop/assets/139962883/3a5d2e27-34a3-4a45-81fc-c0353b522645)
