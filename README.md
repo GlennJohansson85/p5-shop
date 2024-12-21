@@ -173,14 +173,20 @@ Create a user friendly website where customers can browse for clothes and make s
 
 ## 3.3 - Homepage
 <details>
-    <summary>The main page, homepage, contains a intro text "LATEST TRENDS ARE HERE!" that raises/lowers from the concrete wallpaper in a pulsating way. Below is a grid containing the most popular clothing items. When hovering over a card it raises leaving a shadow below. Clicking on the card redirects the user to the details of that clothing item. There is also a "see all" button which redirects to the product page where all products are located.</summary>
+    <summary>The main page, homepage, contains a intro text "LATEST TRENDS ARE HERE!" which dynamically rises and falls against a concrete-textured background, creating a subtle pulsating effect. Below the header, a grid showcases the most popular clothing items. Each card in the grid lifts slightly when hovered over, casting a shadow beneath it for added emphasis. Clicking on a card directs users to the detailed page of the selected clothing item. A prominent "See All" button is also available, guiding users to the product page where they can explore the full collection.
+    </summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/homepage.png" alt="View of the homepage - image">
 </details>
 
 ## 3.4 Products
 <details>
-    <summary>The main page, homepage, contains a intro text "LATEST TRENDS ARE HERE!" that raises/lowers from the concrete wallpaper in a pulsating way. Below is a grid containing the most popular clothing items. When hovering over a card it raises leaving a shadow below. Clicking on the card redirects the user to the details of that clothing item. There is also a "see all" button which redirects to the product page where all products are located.</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/homepage.png" alt="View of the product page - image">
+    <summary>On the <strong>products page</strong> , where all clothing items are located, users can see six clothing items at a time. By using the paginator at the bottom users can move back and forth based on the number of items. On the left side of the grid is a list of all the differenct clothing wears to choose from. Clicking on category will show only that category.</summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/products.png" alt="View of the product page - image">
+</details>
+
+<details>
+    <summary>Clicking on a item will redirect the user to the <strong>product detail page</strong> where she can choose color and size aswell as add the item to her cart. At the bottom of the page are customers reviews.</summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/" alt="View of the product page - image">
 </details>
 
 

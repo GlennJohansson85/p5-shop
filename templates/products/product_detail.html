@@ -3,7 +3,7 @@
 
 {% block content %}
 <section class="content-down">
-    <div class="container my-5">
+    <div class="detail-container">
         <div class="row">
 
             <!-- Image Section -->
@@ -53,12 +53,10 @@
                             {% if single_product.stock <= 0 %}
                                 <h5 class="text-danger">Out of Stock</h5>
                             {% else %}
-                                <div class="btn-container">
-                                    <button type="submit" class="btn">
-                                        <span class="text">Add to cart</span>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </div>
+                                <button type="submit" class="btn">
+                                    <span class="text">Add to cart</span>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
                             {% endif %}
                         </article>
                     </form>
@@ -70,9 +68,9 @@
 
 <!-- Customer Reviews Section -->
 <section>
-   <div class="container my-5">
+   <div class="detail-container">
         <div class="row">
-        <header class="header-center">Customer Reviews</header>
+        <header class="detail-review-header">Customer Reviews</header>
 
             <!-- Mark Review -->
             <div class="col-md-6 mb-5">
@@ -80,9 +78,9 @@
                     <div class="detail-img-container">
                         <img class="detail-review-img" src="{% static 'images/avatars/avatar1.png' %}" alt="Reviewer Avatar">
                     </div>
-                    <div class="ms-3">
-                        <p class="detail-review-name fw-bold">Mark Johnson</p>
-                        <p class="detail-review-date text-muted">11.05.2020</p>
+                    <div class="detail-review-content">
+                        <p class="detail-review-text">Mark Johnson</p>
+                        <p class="detail-review-text">11.05.2020</p>
                         <p class="detail-review-text">
                             <i>
                                 Great Service, Great Clothes, and Great Prices! I´ll buy everything from I SHOP from now on!!!
@@ -98,9 +96,9 @@
                     <div class="detail-img-container">
                         <img class="detail-review-img" src="{% static 'images/avatars/avatar2.png' %}" alt="Reviewer Avatar">
                     </div>
-                    <div class="ms-3">
-                        <p class="detail-review-name fw-bold">Jane Doe</p>
-                        <p class="detail-review-date text-muted">15.07.2021</p>
+                    <div class="detail-review-content">
+                        <p class="detail-review-text">Jane Doe</p>
+                        <p class="detail-review-text">15.07.2021</p>
                         <p class="detail-review-text">
                             <i>
                                 Absolutely love the product! Excellent quality and very fast shipping.

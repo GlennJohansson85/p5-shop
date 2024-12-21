@@ -47,11 +47,6 @@ body {
     text-shadow: 2px 2px 1px #4445447f;
 }
 
-.header-center {
-    font-family: "junegull";
-    text-shadow: 2px 2px 1px #4445447f;
-    text-align: center;
-}
 
 
 /*                                  Title - Item */
@@ -588,6 +583,8 @@ input.form-control {
 }
 
 /*                                  PRODUCT_DETAIL.HTML */
+
+
 .col-md-6 {
     margin: 0;
     padding: 0;
@@ -600,7 +597,7 @@ input.form-control {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    margin: 0px;
 }
 
 .detail-img {
@@ -616,7 +613,7 @@ input.form-control {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 .detail-form-header {
@@ -630,23 +627,35 @@ input.form-control {
     color:#1c7e48;
 }
 
+
 .detail-form-text-container {
     margin: 20px 0;
 }
 
 .detail-form-select {
     width: 200px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* detail-review */
+.detail-review-header {
+    font-family: "junegull";
+    text-shadow: 2px 2px 1px #4445447f;
+    text-align: center;
+    border-bottom:1px solid #4445447f;
+}
+
 .detail-review-container {
     display: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align:center;
+    text-align: center;
+}
 
+.detail-review-text {
+    margin: 0px;
+    padding: 2px; /* Reduce spacing between text blocks */
 }
 
 .detail-review-img {
@@ -735,8 +744,21 @@ input.form-control {
         font-size: 14px;
     }
 
+    .detail-review-header {
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+    }
+
     .detail-review-container {
         font-size: 12px;
+        margin-top: 10px;
+        padding: 0px 20px;
+    }
+
+    .detail-review-content {
+        margin:0;
+        padding:0;
     }
 
     /*                   Products - SMALL */
@@ -843,7 +865,14 @@ input.form-control {
     }
 
     /*             Product_detail - MEDIUM */
+    .detail-review-header {
+        margin-top: 110px;
+        font-size: 26px;
+    }
 
+    .detail-review-container {
+        padding: 20px;
+    }
 
     /*                   Products - MEDIUM */
     .card-header {
@@ -923,7 +952,14 @@ input.form-control {
         }
     }
     /*             Product_detail - LARGE */
+    .detail-review-header {
+        margin-top: 110px;
+        font-size: 26px;
+    }
 
+    .detail-review-container {
+        padding: 10px;
+    }
 
     /*                   Products - LARGE */
     .card-header {
