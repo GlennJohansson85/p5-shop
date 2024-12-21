@@ -66,33 +66,33 @@ Create a user friendly website where customers can browse for clothes and make s
 ## 2.2 products.html:
 <details>
     <summary><strong>Desktop</strong></summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-large.png" alt="desktop wireframe - image">
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-large.png" alt="products desktop wireframe - image">
 </details>
 
 <details>
   <summary><strong>Tablet</strong></summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-medium.png" alt="tablet wireframe - image">
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-medium.png" alt="products tablet wireframe - image">
 </details>
 
 <details>
   <summary><strong>Mobile</strong></summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-small.png" alt="mobile wireframe - image">
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-small.png" alt="products mobile wireframe - image">
 </details>
 
 ## 2.3 product_detail.html:
 <details>
     <summary><strong>Desktop</strong></summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/" alt="desktop wireframe - image">
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-large.png" alt="product_detail desktop wireframe - image">
 </details>
 
 <details>
   <summary><strong>Tablet</strong></summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/" alt="tablet wireframe - image">
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-medium.png" alt="product_detail tablet wireframe - image">
 </details>
 
 <details>
   <summary><strong>Mobile</strong></summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/" alt="mobile wireframe - image">
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-small.png" alt="product_detail mobile wireframe - image">
 </details>
 
 <details>
