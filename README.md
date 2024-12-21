@@ -53,20 +53,21 @@ Create a user friendly website where customers can browse for clothes and make s
 # 2. Wireframes
 ## 2.1 Desktop Wireframes:
 
+### 2.1.1 home page
 <details>
-    <summary><strong>2.1.1 - Home</strong></summary>
-      <img src="" alt="Home wireframe - image">
-</details>![image](https://github.com/)
+    <summary><strong>Desktop</strong></summary>
+      <img src="" alt="Home desktop wireframe - image">
+</details>![image](https://github.com/docs/images/2-wireframes/home-large.png)
 
 <details>
-  <summary><strong>2.1.2 - Products</strong></summary>
-  <img src="" alt="Products wireframe - image">
-</details>![image](https://github.com/)
+  <summary><strong>Tablet</strong></summary>
+    <img src="" alt="Home tablet wireframe - image">
+</details>![image](https://github.com/docs/images/2-wireframes/home-medium.png)
 
 <details>
-  <summary><strong>2.1.3 - Post_detail</strong></summary>
-  <img src="" alt="Post Detail wireframe - image">
-</details>![image](https://github.com/)
+  <summary><strong>Mobile</strong></summary>
+    <img src="" alt="Home mobile wireframe - image">
+</details>![image](https://github.com/docs/images/2-wireframes/home-small.png)
 
 <<<<<<< Updated upstream
 <details>
