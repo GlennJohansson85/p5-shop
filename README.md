@@ -48,7 +48,7 @@ Create a user friendly website where customers can browse for clothes and make s
 ![Color Schme - image](https://github.com/user-attachments/assets/592674b0-c9e6-4724-931b-73bba8272bb0)
 
 ### 1.2.2 - Used Fonts:
-![JuneGull, VarelaRound-Regular - fonts used in project- image](image-2.png)
+![JuneGull, VarelaRound-Regular - fonts used in project- image](image-3.png)
 
 # 2 - Wireframes
 ## 2.1 - Home:
