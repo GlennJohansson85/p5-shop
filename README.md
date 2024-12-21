@@ -154,17 +154,17 @@ Create a user friendly website where customers can browse for clothes and make s
 ## 3.1 - User Authentication
 ### 3.1.1
 <details>
-    <summary><strong>A user register to the website using this form. When the form has been successfully submitted the user recieves a message to activate her account through the activation email sent to her account. </strong></summary>
+    <summary>A user register to the website using this form. When the form has been successfully submitted the user recieves a message to activate her account through the activation email sent to her account.</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register.png" alt="Register Form - image">
 </details>
 
 <details>
-    <summary><strong>The activation email has the website name as the sender and 'Activation Email' as the subject, as a more user-friendly input. </strong></summary>
+    <summary>The activation email has the website name as the sender and 'Activation Email' as the subject, as a more user-friendly input.</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register-activation.png" alt="Account activation email - image">
 </details>
 
 <details>
-    <summary><strong>Clicking the link will redirect the user to the sign in page and will be notified that the account has been activated </strong></summary>
+    <summary>Clicking the link will redirect the user to the sign-in page, where they will be notified that their account has been successfully activated. </strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register-activated.png" alt="Account activated success - image">
 </details>
 
