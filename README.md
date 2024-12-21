@@ -23,9 +23,9 @@ Create a Ecommerce website using the tools and knowledge gained from Code Instit
 #### **User Goals:**
 Create a user friendly website where customers can browse for clothes and make secure purchases.
 
-# User Experience
-## 1.1 User Stories:
-### 1.1.1 First Time User Goals:
+# 1 - UX
+## 1.1 - User Stories:
+### 1.1.1 - First Time User Goals:
 
 &nbsp;&nbsp;&nbsp;&nbsp;**a)** As a **First Time User**, I want to quickly understand the purpose of the website.
 
@@ -33,7 +33,7 @@ Create a user friendly website where customers can browse for clothes and make s
 
 &nbsp;&nbsp;&nbsp;&nbsp;**c)** As a **First Time User**, I want to search for a specific clothing wear.
 
-### 1.1.2 Returning User Goals:
+### 1.1.2 - Returning User Goals:
 
 &nbsp;&nbsp;&nbsp;&nbsp;**a)** As a **Returning User**, I want to make a purchase.
 
@@ -41,7 +41,7 @@ Create a user friendly website where customers can browse for clothes and make s
 
 &nbsp;&nbsp;&nbsp;&nbsp;**c)** As a **Returning User**, I want to contact customer support.
 
-### 1.1.3 Frequent User Goals:
+### 1.1.3 - Frequent User Goals:
 
 &nbsp;&nbsp;&nbsp;&nbsp;**a)** As a **Frequent User**, I want my purchases to go faster.
 
@@ -49,11 +49,12 @@ Create a user friendly website where customers can browse for clothes and make s
 
 &nbsp;&nbsp;&nbsp;&nbsp;**b)** As a **Frequent User**, I want change my account details.
 
-## 1.2 Design
-# 2. Wireframes
-## 2.1 Desktop Wireframes:
+## 1.2 - Design
 
-### 2.1.1 home page
+
+# 2 - Wireframes
+## 2.1 home.html:
+
 <details>
     <summary><strong>Desktop</strong></summary>
       <img src="" alt="Home desktop wireframe - image">
@@ -161,7 +162,7 @@ Create a user friendly website where customers can browse for clothes and make s
 
 ## 3.3 Browse & Search for Clothes
 
-## 3.4 Purchase 
+## 3.4 Purchase
 
 Safe transactions
 
