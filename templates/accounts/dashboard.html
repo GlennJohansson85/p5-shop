@@ -39,7 +39,7 @@
                                             {% if userprofile.profile_picture %}
                                                 <img class="dash-img" src="{{ userprofile.profile_picture.url }}" alt="User Profile Picture">
                                             {% else %}
-                                                <img class="dash-img" src="{% static 'images/default_profile.png' %}" alt="Default Profile Picture">
+                                                <img class="dash-img" src="/media/userprofile/default-profile.png" alt="Default Profile Image">
                                             {% endif %}
                                             <h6 class=dash-email>{{ user.email }}</h6>
                                             <h6 class="dash-phone">{{ user.phone_number }}</h6>
