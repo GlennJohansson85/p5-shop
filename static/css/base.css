@@ -93,8 +93,7 @@ body {
 /* Inputfields */
 input.form-control {
     font-size: 14px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+
 }
 
 /*                                  DASHBOARD_SIDEBAR.HTML */
@@ -271,7 +270,7 @@ table {
 /* Inputfields */
 input.form-control {
     font-size: 14px;
-    padding: 2px;
+
 }
 
 .cart-item {
