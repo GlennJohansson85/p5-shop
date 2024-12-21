@@ -44,11 +44,17 @@ Create a user friendly website where customers can browse for clothes and make s
 &nbsp;&nbsp;&nbsp;&nbsp;**b)** As a **Frequent User**, I want change my account details.
 
 ## 1.2 - Design
+### 1.2.1 - Color Scheme:
 ![image](https://github.com/user-attachments/assets/592674b0-c9e6-4724-931b-73bba8272bb0)
+
+### 1.2.2 - Font Family: 
+
+* Junegull: ![image](https://github.com/user-attachments/assets/b1167701-0df1-4812-b4f3-6b64b2b71f22)
+* VarelaRound-Regular: ![image](https://github.com/user-attachments/assets/983cf9f5-b859-4754-81e3-6adef59d7ffa)
 
 
 # 2 - Wireframes
-## 2.1 Home:
+## 2.1 - Home:
 <details>
     <summary><strong>Desktop</strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-large.png" alt="Home desktop wireframe - image">
@@ -64,7 +70,7 @@ Create a user friendly website where customers can browse for clothes and make s
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-small.png" alt="Home mobile wireframe - image">
 </details>
 
-## 2.2 All Products:
+## 2.2 - All Products:
 <details>
     <summary><strong>Desktop</strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-large.png" alt="products desktop wireframe - image">
@@ -80,7 +86,7 @@ Create a user friendly website where customers can browse for clothes and make s
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-small.png" alt="products mobile wireframe - image">
 </details>
 
-## 2.3 Product Detail:
+## 2.3 - Product Detail:
 <details>
     <summary><strong>Desktop</strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-large.png" alt="product_detail desktop wireframe - image">
@@ -96,7 +102,7 @@ Create a user friendly website where customers can browse for clothes and make s
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-small.png" alt="product_detail mobile wireframe - image">
 </details>
 
-## 2.4 Cart:
+## 2.4 - Cart:
 <details>
     <summary><strong>Desktop</strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-large.png" alt="cart desktop wireframe - image">
@@ -107,13 +113,13 @@ Create a user friendly website where customers can browse for clothes and make s
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-medium-small.png" alt="cart tablet wireframe - image">
 </details>
 
-## 2.5 Checkout:
+## 2.5 - Checkout:
 <details>
     <summary><strong>Same form for all devices</strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/checkout.png" alt="checkout wireframe - image">
 </details>
 
-## 2.6 Placing Order:
+## 2.6 - Placing Order:
 <details>
     <summary><strong>Desktop</strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-l.png" alt="payments desktop wireframe - image">
@@ -124,8 +130,7 @@ Create a user friendly website where customers can browse for clothes and make s
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-m-s.png" alt="payments tablet & mobile wireframe - image">
 </details>
 
-## 2.7 Dashboard:
-
+## 2.7 - Dashboard:
 <details>
     <summary><strong>Desktop</strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/dashboard-l.png" alt="dashboard desktop wireframe - image">
