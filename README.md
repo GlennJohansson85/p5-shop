@@ -56,15 +56,15 @@ Create a user friendly website where customers can browse for clothes and make s
 
 <details>
   <summary><strong>Tablet</strong></summary>
-    <img src="" alt="Home tablet wireframe - image">
-</details>![image](https://github.com/docs/images/2-wireframes/home-medium.png)
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-medium.png" alt="Home tablet wireframe - image">
+</details>
 
 <details>
   <summary><strong>Mobile</strong></summary>
-    <img src="" alt="Home mobile wireframe - image">
-</details>![image](https://github.com/docs/images/2-wireframes/home-small.png)
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-small.png" alt="Home mobile wireframe - image">
+</details>
 
-<<<<<<< Updated upstream
+
 <details>
   <summary><strong>2.1.4 - Dashboard</strong></summary>
   <img src="" alt="Dashboard wireframe - image">
