@@ -163,12 +163,12 @@ Create a user friendly website where customers can browse for clothes and make s
 
 <details>
     <summary>The navbar in mobile view</strong></summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-desktop.png" alt="Navbar mobile/tablet view - image">
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-mobile.png" alt="Navbar mobile/tablet view - image">
 </details>
 
 <details>
     <summary>The navbar in mobile/tablet view with the toggler open.</strong></summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-desktop.png" alt="Navbar with toggler open in mobile/tablet view - image">
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-toggler-open.png" alt="Navbar with toggler open in mobile/tablet view - image">
 </details>
 
 ## 3.3 - Browse Clothing wear
