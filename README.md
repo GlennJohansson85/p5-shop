@@ -107,12 +107,21 @@ Create a user friendly website where customers can browse for clothes and make s
 </details>
 
 ## 2.4 checkout.html:
-
 <details>
     <summary><strong>Same form for all devices</strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/checkout.png" alt="checkout wireframe - image">
 </details>
 
+## 2.4 payments.html:
+<details>
+    <summary><strong>Desktop</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-l.png" alt="payments desktop wireframe - image">
+</details>
+
+<details>
+    <summary><strong>Desktop</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-m-s.png" alt="payments tablet & mobile wireframe - image">
+</details>
 
 <details>
   <summary><strong>2.1.8 - Cart</strong></summary>
