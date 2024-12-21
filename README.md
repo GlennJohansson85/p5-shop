@@ -53,7 +53,6 @@ Create a user friendly website where customers can browse for clothes and make s
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-large.png" alt="Home desktop wireframe - image">
 </details>
 
-
 <details>
   <summary><strong>Tablet</strong></summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-medium.png" alt="Home tablet wireframe - image">
@@ -64,21 +63,37 @@ Create a user friendly website where customers can browse for clothes and make s
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-small.png" alt="Home mobile wireframe - image">
 </details>
 
+## 2.2 products.html:
+<details>
+    <summary><strong>Desktop</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-small.png" alt="desktop wireframe - image">
+</details>
 
 <details>
-  <summary><strong>2.1.4 - Dashboard</strong></summary>
-  <img src="" alt="Dashboard wireframe - image">
-</details>![image](https://github.com/)
+  <summary><strong>Tablet</strong></summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-medium.png" alt="tablet wireframe - image">
+</details>
 
 <details>
-  <summary><strong>2.1.5 - My orders</strong></summary>
-  <img src="" alt="My orderswireframe - image">
-</details>![image](https://github.com/)
+  <summary><strong>Mobile</strong></summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-small.png" alt="mobile wireframe - image">
+</details>
+
+## 2.3 product_detail.html:
+<details>
+    <summary><strong>Desktop</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/" alt="desktop wireframe - image">
+</details>
 
 <details>
-  <summary><strong>2.1.6 - Register</strong></summary>
-  <img src="" alt="Register wireframe - image">
-</details>![image](https://github.com/)
+  <summary><strong>Tablet</strong></summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/" alt="tablet wireframe - image">
+</details>
+
+<details>
+  <summary><strong>Mobile</strong></summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/" alt="mobile wireframe - image">
+</details>
 
 <details>
   <summary><strong>2.1.7 - Login</strong></summary>
