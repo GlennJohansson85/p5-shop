@@ -50,8 +50,9 @@ Create a user friendly website where customers can browse for clothes and make s
 ## 2.1 home.html:
 <details>
     <summary><strong>Desktop</strong></summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/postwall/main/docs/images/2-wireframes/home-large.png" alt="Home desktop wireframe - image">
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-large.png" alt="Home desktop wireframe - image">
 </details>
+
 
 <details>
   <summary><strong>Tablet</strong></summary>
