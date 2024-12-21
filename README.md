@@ -49,9 +49,11 @@ Create a user friendly website where customers can browse for clothes and make s
 
 ### 1.2.2 - Used Fonts:
 * **Junegull**
+<br>
 ![image](https://github.com/user-attachments/assets/b1167701-0df1-4812-b4f3-6b64b2b71f22)
 
 * **VarelaRound-Regular**
+<br>
 ![image](https://github.com/user-attachments/assets/983cf9f5-b859-4754-81e3-6adef59d7ffa)
 
 
