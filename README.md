@@ -45,6 +45,11 @@ Create a user friendly website where customers can browse for clothes and make s
 
 ## 1.2 - Design
 
+<details>
+    <summary><strong>1.2.1 Color Scheme</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-large.png" alt="Home desktop wireframe - image">
+</details>
+
 
 # 2 - Wireframes
 ## 2.1 Home:
