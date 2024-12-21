@@ -151,8 +151,7 @@ Create a user friendly website where customers can browse for clothes and make s
 </details>
 
 # 3 - Features
-## 3.1 - User Authentication
-### 3.1.1
+## 3.1 - Registration
 <details>
     <summary>A user register to the website using this form. When the form has been successfully submitted the user recieves a message to activate her account through the activation email sent to her account.</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register.png" alt="Register Form - image">
@@ -168,7 +167,22 @@ Create a user friendly website where customers can browse for clothes and make s
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register-activated.png" alt="Account activated success - image">
 </details>
 
-## 3.2 - Email Verification
+## 3.2 - Navbar
+<details>
+    <summary>The navbar contain the brand (I SHOP) which redirects to the homepage when clicked. A searchbar which searches for words in product name and categories based on input from user. Categories as a dropdown showing all clothing categories as links. A link "All products" which redirects the user to the products page. Accounts, a dropdown, with a link to the users´personal dashboard and a sign out button. Lastly, a cart which redirects the user to her cart and a "notify" showing the number of items in the cart.</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-desktop.png" alt="Navbar with dropdowns in desktop view - image">
+</details>
+
+<details>
+    <summary>The navbar in mobile view</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-desktop.png" alt="Navbar mobile/tablet view - image">
+</details>
+
+<details>
+    <summary>The navbar in mobile/tablet view with the toggler open.</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-desktop.png" alt="Navbar with toggler open in mobile/tablet view - image">
+</details>
+
 ## 3.3 - Browse Clothing wear
 ## 3.4 - Transactions
 
