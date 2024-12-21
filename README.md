@@ -120,6 +120,57 @@ Create a user friendly website where customers can browse for clothes and make s
   <img src="" alt="Navbar wireframe - image">
 </details>![image](https://github.com/)
 
+<<<<<<< HEAD
+=======
+
+
+# 3. Features
+## 3.1 User Authentication:
+
+<details><summary><strong>3.1.1 - Register</strong></summary>
+  <img src="https://raw.githubusercontent.com/3.1.1-register.png" alt="Register Page - image">
+</details>
+<details><summary><strong>3.1.2 - Log in</strong></summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/postwall/main/docs/images/3-features/3.1.2-login.png" alt="Login Page- image">
+</details>
+<details><summary><strong>3.1.3 - Log out</strong></summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/postwall/main/docs/images/3-features/3.1.3-logout.png" alt="Logout Page - image">
+</details>
+<details><summary><strong>3.1.4 - Access the Dashboard</strong></summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/postwall/main/docs/images/3-features/3.1.4-dashboard.png" alt="Dashboard Page - image">
+</details>
+<details><summary><strong>3.1.5 - Edit Profile</strong></summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/postwall/main/docs/images/3-features/3.1.5-edit_profile.png" alt="Edit_Profile Page - image">
+</details>
+<details><summary><strong>3.1.6 - Change Password</summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/postwall/main/docs/images/3-features/3.1.6-change_password.png" alt="Change_Password Page - image">
+</details>
+
+## 3.2 Email Verification:
+***Email verification is performed:***
+
+<details>
+    <summary><strong>3.2.1 - When a new user register to the website. A email with a link, to verify their account, is sent to their inbox.</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/postwall/main/docs/images/3-features/3.2-email_verification/3.2.1-dekstop-register.png" alt="Welcome Message after registering, user email inbox - image ">
+</details>
+
+<details>
+    <summary><strong>3.2.2 - If the user forgets his/hers account password.</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/postwall/main/docs/images/3-features/3.2-email_verification/3.2.2-desktop-forget_password.png" alt="Reseting Password, user email inbox - image ">
+</details>
+
+## 3.3 Browse & Search for Clothes
+
+## 3.4 Purchase 
+
+Safe transactions
+
+Order History
+
+Stored billing information
+
+
+>>>>>>> feee0a3503336852f5ac0d0c244fa4adb8c80fc4
 
 
 
