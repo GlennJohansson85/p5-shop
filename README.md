@@ -44,6 +44,7 @@ Create a user friendly website where customers can browse for clothes and make s
 &nbsp;&nbsp;&nbsp;&nbsp;**b)** As a **Frequent User**, I want change my account details.
 
 ## 1.2 - Design
+![image](https://github.com/user-attachments/assets/592674b0-c9e6-4724-931b-73bba8272bb0)
 
 
 # 2 - Wireframes
