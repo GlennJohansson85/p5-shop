@@ -145,6 +145,32 @@ Create a user friendly website where customers can browse for clothes and make s
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/dashboard-m-s.png" alt="dashboard tablet & mobile wireframe - image">
 </details>
 
+# 3 - Features
+## 3.1 - User Authentication
+## 3.2 - Email Verification
+## 3.3 - Browse Clothing wear
+## 3.4 - Transactions
+
+# 4 - Reponsiveness
+
+# 5 Technologies Used:
+## 5.1 Languages Used:
+
+## 5.2 Frameworks, Libraries & Programs Used:
+### 5.2.1 Frameworks:
+### 5.2.2 Libraries:
+### 5.2.3 Development Tools:
+### 5.2.4 Other Libraries & Tools Used - Agile
+
+# 6 - Testing
+## 6.1 - W3C Validator Test
+## 6.2 - Testing of User Stories (From Chapter 1)
+## 6.3 - Further Testing
+## 6.4 - Known Bugs
+
+# 7 - Deployment
+
+
 
 
 
