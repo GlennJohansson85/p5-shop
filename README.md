@@ -171,6 +171,13 @@ Create a user friendly website where customers can browse for clothes and make s
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-toggler-open.png" alt="Navbar with toggler open in mobile/tablet view - image">
 </details>
 
+## 3.3 - Homepage
+
+<details>
+    <summary>The main page, homepage, contains a intro text "LATEST TRENDS ARE HERE!" that raises/lowers from the concrete wallpaper in a pulsating way. Below is a grid containing the most popular clothing items. When hovering over a card it raises leaving a shadow below. Clicking on the card redirects the user to the details of that clothing item. There is also a "see all" button which redirects to the product page where all products are located. </strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/homepage.png" alt="View of the homepage - image">
+</details>
+
 ## 3.3 - Browse Clothing wear
 ## 3.4 - Transactions
 
