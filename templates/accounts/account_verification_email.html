@@ -1,15 +1,10 @@
 {% autoescape off %}
-
-Dear {{user.first_name}}, 
-
-Welcome to iShop. 
-
-To activate your account, just click on the link below:
-
-http://{{domain}}{% url 'activate' uidb64=uid token=token %}
-
-Kind Regards
-
-iShop
-
+    <div style="text-align: center;">
+        Welcome <strong>{{ user.first_name }}</strong>!
+        <br><br>
+        To activate your account, click
+        <a href="http://{{ domain }}{% url 'activate' uidb64=uid token=token %}"
+            target="_blank" rel="noopener noreferrer">here
+        </a>
+    </div>
 {% endautoescape %}

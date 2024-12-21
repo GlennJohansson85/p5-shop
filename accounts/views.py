@@ -33,7 +33,12 @@ def register(request):
             email = form.cleaned_data['email']
             password = form.cleaned_data['password']
             username = email.split("@")[0]
-            user = Account.objects.create_user(first_name=first_name, last_name=last_name, email=email, username=username, password=password)
+            user = Account.objects.create_user(
+                first_name=first_name,
+                last_name=last_name,
+                email=email,
+                username=username,
+                password=password)
             user.phone_number = phone_number
             user.save()
 
@@ -45,23 +50,43 @@ def register(request):
 
             # Activation
             current_site = get_current_site(request)
-            mail_subject = 'Please activate your account'
+            mail_subject = 'iShop - Account Activation'
             message = render_to_string('accounts/account_verification_email.html', {
                 'user': user,
                 'domain': current_site,
                 'uid': urlsafe_base64_encode(force_bytes(user.pk)),
                 'token': default_token_generator.make_token(user),
             })
+
+            # Set the recipient email
             to_email = email
-            send_email = EmailMessage(mail_subject, message, to=[to_email])
+
+            # Create EmailMessage instance to send the activation email
+            send_email = EmailMessage(
+                mail_subject,
+                message,
+                # Sender's email
+                from_email='iShop <glenncoding@gmail.com>',
+                # Recipient's email
+                to=[to_email])
+
+            send_email.content_subtype = "html"
             send_email.send()
-            # messages.success(request, 'Thank you for registering with us. We have sent you a verification email to your email address [rathan.kumar@gmail.com]. Please verify it.')
-            return redirect('/accounts/signin/?command=verification&email='+email)
+
+            # Display a success message to the user
+            messages.success(request, 'Activation link sent to your email')
+
+            # Redirect the user to the login page after successful registration
+            return redirect('/accounts/signin/')
+
+    # if registstration is not successful
     else:
         form = RegistrationForm()
+
     context = {
         'form': form,
     }
+
     return render(request, 'accounts/register.html', context)
 
 

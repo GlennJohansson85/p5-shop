@@ -47,13 +47,13 @@ Create a user friendly website where customers can browse for clothes and make s
 ### 1.2.1 - Color Scheme:
 ![image](https://github.com/user-attachments/assets/592674b0-c9e6-4724-931b-73bba8272bb0)
 
-### 1.2.2 - Used Fonts: 
+### 1.2.2 - Used Fonts:
 **Junegull**
-<br> 
-![image](https://github.com/user-attachments/assets/b1167701-0df1-4812-b4f3-6b64b2b71f22) 
+<br>
+![image](https://github.com/user-attachments/assets/b1167701-0df1-4812-b4f3-6b64b2b71f22)
 <br>
 **VarelaRound-Regular**
-<br> 
+<br>
 ![image](https://github.com/user-attachments/assets/983cf9f5-b859-4754-81e3-6adef59d7ffa)
 
 <details>

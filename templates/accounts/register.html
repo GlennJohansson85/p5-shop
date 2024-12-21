@@ -6,7 +6,7 @@
     <div class="card-width-400">
         <article class="card-body">
             {% include 'includes/alerts.html' %}
-            <div class="title-32">Register Form!</div>
+            <div class="header-1">Register Form!</div>
             <form action="{% url 'register' %}" method="POST">
                 {% csrf_token %}
 
@@ -52,6 +52,7 @@
                         <div class="btn-container">
                             <button type="submit" class="btn"> Submit </button>
                         </div>
+                        <br>
                         {{ form.email.errors }}
                         {{ form.non_field_errors }}
                     </div>
@@ -61,7 +62,7 @@
     </div>
     <p class="no_account">Have an account?</p>
     <p class="signin">
-        <a href="{% url 'signin' %}">Sign in Here!</a>
+        <a class="btn" href="{% url 'signin' %}">Sign in Here!</a>
     </p>
 </section>
 {% endblock %}

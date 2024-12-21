@@ -535,7 +535,6 @@ input.form-control {
 
 
 /*                                  SIGNIN.HTML */
-/*                         Forgot - SIGNIN */
 .forgot_password {
     color: #000;
     text-decoration: none;
@@ -548,7 +547,6 @@ input.form-control {
     border-bottom: 1px solid #004078;
 }
 
-/*                     No Account - SIGNIN */
 .no_account {
     text-align: center;
     text-decoration: none;
@@ -556,7 +554,6 @@ input.form-control {
     color: #000;
 }
 
-/*                       Register - SIGNIN */
 .register {
     text-align: center;
 }
