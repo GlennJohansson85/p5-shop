@@ -53,88 +53,88 @@ Create a user friendly website where customers can browse for clothes and make s
 # 2 - Wireframes
 ## 2.1 - Home:
 <details>
-    <summary><strong>Desktop</strong></summary>
+    <summary>Desktop</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-large.png" alt="Home desktop wireframe - image">
 </details>
 
 <details>
-  <summary><strong>Tablet</strong></summary>
+  <summary>Tablet</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-medium.png" alt="Home tablet wireframe - image">
 </details>
 
 <details>
-  <summary><strong>Mobile</strong></summary>
+  <summary>Mobile</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-small.png" alt="Home mobile wireframe - image">
 </details>
 
 ## 2.2 - All Products:
 <details>
-    <summary><strong>Desktop</strong></summary>
+    <summary>Desktop</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-large.png" alt="products desktop wireframe - image">
 </details>
 
 <details>
-  <summary><strong>Tablet</strong></summary>
+  <summary>Tablet</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-medium.png" alt="products tablet wireframe - image">
 </details>
 
 <details>
-  <summary><strong>Mobile</strong></summary>
+  <summary>Mobile</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-small.png" alt="products mobile wireframe - image">
 </details>
 
 ## 2.3 - Product Detail:
 <details>
-    <summary><strong>Desktop</strong></summary>
+    <summary>Desktop</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-large.png" alt="product_detail desktop wireframe - image">
 </details>
 
 <details>
-  <summary><strong>Tablet</strong></summary>
+  <summary>Tablet</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-medium.png" alt="product_detail tablet wireframe - image">
 </details>
 
 <details>
-  <summary><strong>Mobile</strong></summary>
+  <summary>Mobile</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-small.png" alt="product_detail mobile wireframe - image">
 </details>
 
 ## 2.4 - Cart:
 <details>
-    <summary><strong>Desktop</strong></summary>
+    <summary>Desktop</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-large.png" alt="cart desktop wireframe - image">
 </details>
 
 <details>
-  <summary><strong>Tablet & Mobile</strong></summary>
+  <summary>Tablet & Mobile</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-medium-small.png" alt="cart tablet wireframe - image">
 </details>
 
 ## 2.5 - Checkout:
 <details>
-    <summary><strong>Same form for all devices</strong></summary>
+    <summary>All devices</strong></summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/checkout.png" alt="checkout wireframe - image">
 </details>
 
 ## 2.6 - Placing Order:
 <details>
-    <summary><strong>Desktop</strong></summary>
+    <summary>Desktop</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-l.png" alt="payments desktop wireframe - image">
 </details>
 
 <details>
-    <summary><strong>Tablet & Mobile</strong></summary>
+    <summary>Tablet & Mobile</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-m-s.png" alt="payments tablet & mobile wireframe - image">
 </details>
 
 ## 2.7 - Dashboard:
 <details>
-    <summary><strong>Desktop</strong></summary>
+    <summary>Desktop</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/dashboard-l.png" alt="dashboard desktop wireframe - image">
 </details>
 
 <details>
-    <summary><strong>Tablet & Mobile</strong></summary>
+    <summary>Tablet & Mobile</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/dashboard-m-s.png" alt="dashboard tablet & mobile wireframe - image">
 </details>
 
@@ -151,32 +151,39 @@ Create a user friendly website where customers can browse for clothes and make s
 </details>
 
 <details>
-    <summary>Clicking the link will redirect the user to the sign-in page, where they will be notified that their account has been successfully activated. </strong></summary>
+    <summary>Clicking the link will redirect the user to the sign-in page, where they will be notified that their account has been successfully activated.</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register-activated.png" alt="Account activated success - image">
 </details>
 
 ## 3.2 - Navbar
 <details>
-    <summary>The navbar contain the brand (I SHOP) which redirects to the homepage when clicked. A searchbar which searches for words in product name and categories based on input from user. Categories as a dropdown showing all clothing categories as links. A link "All products" which redirects the user to the products page. Accounts, a dropdown, with a link to the users´personal dashboard and a sign out button. Lastly, a cart which redirects the user to her cart and a "notify" showing the number of items in the cart.</strong></summary>
+    <summary>The navbar contain the brand (I SHOP) which redirects to the homepage when clicked. A searchbar which searches for words in product name and categories based on input from user. Categories as a dropdown showing all clothing categories as links. A link "All products" which redirects the user to the products page. Accounts, a dropdown, with a link to the users´personal dashboard and a sign out button. Lastly, a cart which redirects the user to her cart and a "notify" showing the number of items in the cart.</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-desktop.png" alt="Navbar with dropdowns in desktop view - image">
 </details>
 
 <details>
-    <summary>The navbar in mobile view</strong></summary>
+    <summary>The navbar in mobile view</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-mobile.png" alt="Navbar mobile/tablet view - image">
 </details>
 
 <details>
-    <summary>The navbar in mobile/tablet view with the toggler open.</strong></summary>
+    <summary>The navbar in mobile/tablet view with the toggler open.</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-toggler-open.png" alt="Navbar with toggler open in mobile/tablet view - image">
 </details>
 
 ## 3.3 - Homepage
-
 <details>
-    <summary>The main page, homepage, contains a intro text "LATEST TRENDS ARE HERE!" that raises/lowers from the concrete wallpaper in a pulsating way. Below is a grid containing the most popular clothing items. When hovering over a card it raises leaving a shadow below. Clicking on the card redirects the user to the details of that clothing item. There is also a "see all" button which redirects to the product page where all products are located. </strong></summary>
+    <summary>The main page, homepage, contains a intro text "LATEST TRENDS ARE HERE!" that raises/lowers from the concrete wallpaper in a pulsating way. Below is a grid containing the most popular clothing items. When hovering over a card it raises leaving a shadow below. Clicking on the card redirects the user to the details of that clothing item. There is also a "see all" button which redirects to the product page where all products are located.</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/homepage.png" alt="View of the homepage - image">
 </details>
+
+## 3.4 Products
+<details>
+    <summary>The main page, homepage, contains a intro text "LATEST TRENDS ARE HERE!" that raises/lowers from the concrete wallpaper in a pulsating way. Below is a grid containing the most popular clothing items. When hovering over a card it raises leaving a shadow below. Clicking on the card redirects the user to the details of that clothing item. There is also a "see all" button which redirects to the product page where all products are located.</summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/homepage.png" alt="View of the product page - image">
+</details>
+
+
 
 ## 3.3 - Browse Clothing wear
 ## 3.4 - Transactions
