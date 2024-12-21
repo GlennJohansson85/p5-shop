@@ -95,6 +95,19 @@ Create a user friendly website where customers can browse for clothes and make s
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-small.png" alt="product_detail mobile wireframe - image">
 </details>
 
+## 2.4 cart.html:
+<details>
+    <summary><strong>Desktop</strong></summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-large.png" alt="cart desktop wireframe - image">
+</details>
+
+<details>
+  <summary><strong>Tablet & Mobile</strong></summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-medium-small.png" alt="cart tablet wireframe - image">
+</details>
+
+
+
 <details>
   <summary><strong>2.1.7 - Login</strong></summary>
   <img src="" alt="Login wireframe - image">
