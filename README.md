@@ -53,6 +53,11 @@ Create a user friendly website where customers can browse for clothes and make s
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/1-ux/fonts.png" alt="JuneGull, VarelaRound-Regular, Sans-serif Font - image">
 </details>
 
+### 1.2.3 - Responsive Design
+<details>
+    <summary>Desktop, tablet and mobile view</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/1-ux/responsive.png" alt="Desktop, tablet and mobile view - image">
+</details>
 
 # 2 - Wireframes
 ## 2.1 - Home:
@@ -235,6 +240,9 @@ Create a user friendly website where customers can browse for clothes and make s
 
 
 # 4 - Reponsiveness
+
+
+
 
 # 5 Technologies Used:
 ## 5.1 Languages Used:
