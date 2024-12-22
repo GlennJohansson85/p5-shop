@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'p5-shop-8a4cf1a2ceb9.herokuapp.com',
@@ -69,7 +69,6 @@ TEMPLATES = [
         },
     },
 ]
-
 
 AUTH_USER_MODEL = 'accounts.Account'
 
@@ -138,7 +137,6 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
 
 
 # Email Verification

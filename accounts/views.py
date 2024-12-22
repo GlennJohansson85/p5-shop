@@ -164,7 +164,9 @@ def signout(request):
 
 
 def activate(request, uidb64, token):
-
+    """
+    Logs out the user and redirects them to the sign-in page.
+    """
     try:
         uid = urlsafe_base64_decode(uidb64).decode()
         user = Account._default_manager.get(pk=uid)

@@ -1,14 +1,8 @@
 from django.shortcuts import render, redirect
-
 from django.http import HttpResponse, JsonResponse
-
 from cart.models import CartItem
-
 from .forms import OrderForm
-
-
 from .models import Order, Payment, OrderProduct
-
 from products.models import Product
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string

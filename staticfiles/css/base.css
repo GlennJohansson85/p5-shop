@@ -388,7 +388,6 @@ table {
 }
 
 .detail-review-container {
-    display: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -397,11 +396,10 @@ table {
 
 .detail-review-text {
     margin: 0px;
-    padding: 2px; /* Reduce spacing between text blocks */
+    padding: 2px;
 }
 
 .detail-review-img {
-    display: border-box;
     width: 150px;
     height: 100px;
     border-radius: 5px;
@@ -689,7 +687,7 @@ table {
 
 .footer-right i {
     font-size: 26px;
-    margin-left: 10px; /
+    margin-left: 10px;
 }
 
 .footer-right i:hover {
