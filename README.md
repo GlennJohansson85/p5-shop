@@ -182,7 +182,7 @@ Create a user friendly website where customers can browse for clothes and make s
 <details>
     <summary>The <strong>cart page</strong> showcases all selected items, including individual item details/costs and the overall total. Users can easily adjust quantities by adding or removing items, with the total cost updating dynamically. They can revisit product details by clicking on the product name (link) or proceed with the purchase using the checkout button.
     </summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/product_detail.png" alt="View of the product_detail page - image">
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/product_detail.png" alt="View of the cart page - image">
 </details>
 
 
@@ -190,8 +190,9 @@ Create a user friendly website where customers can browse for clothes and make s
 ## 3.5 - Transaction
 
 <details>
-    <summary></summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/product_detail.png" alt="View of the product_detail page - image">
+    <summary>The <strong>checkout page</strong> features a form that users must complete to finalize their purchase. For returning customers, the form is pre-filled with their previous details, ensuring a seamless and user-friendly experience.
+    </summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/cart.png" alt="View of the checkout page - image">
 </details>
 
 
