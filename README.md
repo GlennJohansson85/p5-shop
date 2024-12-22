@@ -271,6 +271,7 @@ Create a user friendly website where customers can browse for clothes and make s
   <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-browse.png" alt="First Time User Story - Browse - image">
 </details>
 
+### 6.2.2 - Testing of Returning User Goals:
 <details>
   <summary>
     As a Returning User, I want check the items in my cart.
@@ -292,6 +293,7 @@ Create a user friendly website where customers can browse for clothes and make s
   <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-register.png" alt="Returning User Story - Register - image">
 </details>
 
+### 6.2.3 - Testing of Frequent User Goals:
 <details>
   <summary>
     As a Frequent User, I want to make my purchases faster.
