@@ -54,7 +54,6 @@ Create a user friendly website where customers can browse for clothes and make s
 </details>
 
 
-
 # 2 - Wireframes
 ## 2.1 - Home:
 <details>
