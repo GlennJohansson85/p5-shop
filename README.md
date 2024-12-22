@@ -248,6 +248,71 @@ Create a user friendly website where customers can browse for clothes and make s
 # 6 - Testing
 ## 6.1 - W3C Validator Test
 ## 6.2 - Testing of User Stories (From Chapter 1)
+
+### 6.2.1 - Testing of First Time User Goals:
+<details>
+  <summary>
+    As a First Time User, I want to quickly understand the purpose of the website.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-purpose.png" alt="First Time User Story - Purpose - image">
+</details>
+
+<details>
+  <summary>
+    As a First Time User, I want to easily navigate through the website.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-navigate.png" alt="First Time User Story - Navigate - image">
+</details>
+
+<details>
+  <summary>
+    As a First Time User, I want to browse clothes.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-browse.png" alt="First Time User Story - Browse - image">
+</details>
+
+<details>
+  <summary>
+    As a Returning User, I want check the items in my cart.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-cart.png" alt="Returning User Story - Cart - image">
+</details>
+
+<details>
+  <summary>
+    As a Returning User, I want to make a purchase.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-purchase.png" alt="Returning User Story - Purchase - image">
+</details>
+
+<details>
+  <summary>
+    As a Returning User, I want to register to the site.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-register.png" alt="Returning User Story - Register - image">
+</details>
+
+<details>
+  <summary>
+    As a Frequent User, I want to make my purchases faster.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-faster-purchase.png" alt="Returning User Story - Faster Purchase - image">
+</details>
+
+<details>
+  <summary>
+    As a Frequent User, I want to see all my orders.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-order-history.png" alt="Returning User Story - Order History - image">
+</details>
+
+<details>
+  <summary>
+    As a Frequent User, I want to change my account details.
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-update.png" alt="Returning User Story - Change Accounts details - image">
+  </summary>
+</details>
+
 ## 6.3 - Further Testing
 ## 6.4 - Known Bugs
 
