@@ -280,6 +280,20 @@ Create a user friendly website where customers can browse for clothes and make s
 
 # 6 - Testing
 ## 6.1 - W3C Validator Test
+<details>
+  <summary>
+    Base.css - Result
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/base.css-w3c.png" alt="W3C Validater result of base.css - image">
+</details>
+
+<details>
+  <summary>
+    Navbar.CSS - Result
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/navbar.css-w3c.png" alt="W3C Validater result of navbar.css - image">
+</details>
+
 ## 6.2 - Testing of User Stories (From Chapter 1)
 ### 6.2.1 - Testing of First Time User Goals:
 <details>
