@@ -311,8 +311,8 @@ Create a user friendly website where customers can browse for clothes and make s
 <details>
   <summary>
     As a Frequent User, I want to change my account details.
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-update.png" alt="Returning User Story - Change Accounts details - image">
   </summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-update.png" alt="Returning User Story - Change Accounts details - image">
 </details>
 
 ## 6.3 - Further Testing
