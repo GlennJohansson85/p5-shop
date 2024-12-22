@@ -22,7 +22,7 @@ html {
 
 
 body {
-    font-family: "VarelaRound-Regular";
+    font-family: "VarelaRound-Regular", Arial, sans-serif;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@ body {
 
 /*                                  Title - Page */
 .header-1 {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     text-shadow: 2px 2px 1px #4445447f;
 }
 
@@ -105,7 +105,7 @@ input.form-control {
 
 /* Sidebar Items */
 .list-group-item {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     color: #000;
     border: none;
     background-color: #ffc3e0be;
@@ -188,7 +188,7 @@ input.form-control {
 }
 /*                         Header - CARD */
 .card-header {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     background-color: #d58db0dd;
     display: flex;
     justify-content: space-between;
@@ -200,7 +200,7 @@ input.form-control {
 }
 
 .card-header-2 {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     background-color: #d58db0dd;
     display: flex;
     justify-content: space-between;
@@ -257,7 +257,7 @@ table {
 }
 
 .cart-header {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     font-weight: 400;
     text-align: center;
 }
@@ -333,7 +333,7 @@ input.form-control {
 }
 
 .cart-link-container {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     font-size: 14px;
     margin-top: 5px;
 }
@@ -364,7 +364,7 @@ input.form-control {
 }
 
 .payments-header {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     font-weight: 400;
     text-align: center;
 }
@@ -398,7 +398,7 @@ input.form-control {
 }
 
 .btn {
-    font-family: "junegull", "sans-serif";
+    font-family: "junegull", sans-serif;
     border: 2px solid #000;
     border-radius: 5px;
     color: #000;
@@ -417,7 +417,7 @@ input.form-control {
 }
 
 .btn-small {
-    font-family: "junegull", "sans-serif";
+    font-family: "junegull", sans-serif;
     font-size: 12px;
     padding: 3px;
     text-decoration: none;
@@ -442,7 +442,7 @@ input.form-control {
 
 /*                                  HOME.HTML */
 .home-intro {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     text-align: center;
     padding: 0px;
 }
@@ -497,7 +497,7 @@ input.form-control {
 }
 
 .info-wrap {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     text-align: center;
 }
 
@@ -617,12 +617,12 @@ input.form-control {
 }
 
 .detail-form-header {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     font-size: 32px;
 }
 
 .detail-form-price {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     font-size: 26px;
     color:#1c7e48;
 }
@@ -639,7 +639,7 @@ input.form-control {
 
 /* detail-review */
 .detail-review-header {
-    font-family: "junegull";
+    font-family: "junegull", sans-serif;
     text-shadow: 2px 2px 1px #4445447f;
     text-align: center;
     border-bottom:1px solid #4445447f;
@@ -667,7 +667,8 @@ input.form-control {
 
 /*                                  FOOTER.HTML */
 .footer {
-    font-family: "Jost*";
+    font-family: sans-serif;
+    font-weight: 300;
     font-size: 12px;
     position: relative;
     width: 100%;
