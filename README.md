@@ -48,7 +48,11 @@ Create a user friendly website where customers can browse for clothes and make s
 ![Color Scheme - image](https://github.com/user-attachments/assets/592674b0-c9e6-4724-931b-73bba8272bb0)
 
 ### 1.2.2 - Fonts:
-![JuneGull, VarelaRound-Regular, Sans-serif](image-5.png)
+<details>
+    <summary>JuneGull, VarelaRound-Regular, Sans-serif</summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/image-5.png" alt="JuneGull, VarelaRound-Regular, Sans-serif Font - image">
+</details>
+
 
 
 # 2 - Wireframes
