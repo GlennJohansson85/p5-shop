@@ -50,7 +50,7 @@ Create a user friendly website where customers can browse for clothes and make s
 ### 1.2.2 - Fonts:
 <details>
     <summary>JuneGull, VarelaRound-Regular, Sans-serif</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/1-ux/image-5.png" alt="JuneGull, VarelaRound-Regular, Sans-serif Font - image">
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/1-ux/fonts.png" alt="JuneGull, VarelaRound-Regular, Sans-serif Font - image">
 </details>
 
 
@@ -58,7 +58,7 @@ Create a user friendly website where customers can browse for clothes and make s
 ## 2.1 - Home:
 <details>
     <summary>Desktop</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-large.png" alt="Home desktop wireframe - image">
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-large.png" alt="Home desktop wireframe - image">
 </details>
 
 <details>
