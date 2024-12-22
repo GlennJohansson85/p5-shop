@@ -185,8 +185,8 @@ Create a user friendly website where customers can browse for clothes and make s
 </details>
 
 <details>
-    <summary>Clicking on a item will redirect the user to the <strong>product detail page</strong> where she can choose color and size aswell as add the item to her cart. At the bottom of the page are customers reviews.</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/" alt="View of the product page - image">
+    <summary> Clicking on an item redirects the user to the <strong>product detail page</strong>, where they can view the item in a larger size. After selecting a color and size, the user can add the item to their cart. From there, they can either proceed to checkout or continue browsing using the buttons below the "Add to Cart" button. At the bottom of the page, users can also read reviews from other customers. </summary>
+      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/product_detail.png" alt="View of the product_detail page - image">
 </details>
 
 
