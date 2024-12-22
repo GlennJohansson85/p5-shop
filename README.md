@@ -226,7 +226,7 @@ Create a user friendly website where customers can browse for clothes and make s
   <summary>
     The <strong>payments/"Place order" page</strong> is where the user review their order making sure all the details are correct before going through with the purchase.
   </summary>
-  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/checkout.png" alt="View of the checkout page - image">
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/checkout.png" alt="View of the payments page - image">
 </details>
 
 
