@@ -131,12 +131,12 @@ if 'USE_AWS' in os.environ:
     # Static files configuration
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     STATICFILES_LOCATION = 'static'
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    STATIC_URL = 'https://p5-bucket.s3.eu-north-1.amazonaws.com/static/'
 
     # Media files configuration
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     MEDIAFILES_LOCATION = 'media'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    MEDIA_URL = 'https://p5-bucket.s3.eu-north-1.amazonaws.com/media/'
 
 
 # Email Verification
