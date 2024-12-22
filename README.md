@@ -238,17 +238,49 @@ Create a user friendly website where customers can browse for clothes and make s
 
 # 5 Technologies Used:
 ## 5.1 Languages Used:
+* **[HTML5](https://en.wikipedia.org/wiki/HTML5)** - Markup language used for structuring web pages.
+* **[CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)** - Styling language used for the presentation of the HTML elements.
+* **[Python](https://www.python.org/)** - Programming language used for the backend of the application.
+* **[SQL](https://en.wikipedia.org/wiki/SQL)** - Used for database queries (e.g., in SQLite or PostgreSQL databases).
 
 ## 5.2 Frameworks, Libraries & Programs Used:
 ### 5.2.1 Frameworks:
+* **[Django](https://www.djangoproject.com/)** - High-level Python web framework for rapid development.
+* **[Django Cloudinary Storage](https://django-cloudinary-storage.readthedocs.io/en/latest/)** - Integration with Cloudinary for media file management.
+* **[Django Storages](https://django-storages.readthedocs.io/)** - Integration with different cloud storage solutions like AWS S3.
+
 ### 5.2.2 Libraries:
+* **[requests](https://requests.readthedocs.io/)** - Library for making HTTP requests.
+* **[django-environ](https://django-environ.readthedocs.io/)** - Configuration management library for reading environment variables.
+* **[dj-database-url](https://pypi.org/project/dj-database-url/)** - Simplifies database configuration using URL format.
+* **[boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)** - AWS SDK for Python to interact with AWS services.
+* **[Pillow](https://python-pillow.org/)** - Python Imaging Library for image processing.
+* **[pyyaml](https://pyyaml.org/)** - YAML parser and emitter for Python.
+
 ### 5.2.3 Development Tools:
-### 5.2.4 Other Libraries & Tools Used - Agile
+* **[Visual Studio Code](https://code.visualstudio.com/)** - Code editor used for development.
+* **[GitHub Desktop](https://desktop.github.com/)** - GitHub client for managing repository and version control.
+* **[GitHub](https://github.com/)** - Platform for version control and collaboration.
+* **[Heroku](https://www.heroku.com/)** - Platform for deploying and running the app.
+* **[ElephantSQL](https://www.heroku.com/)** - Database - Save user actions.
+* **[Amazon AWS](https://aws.amazon.com/)** - Cloud services used for storage (static and media).
+* **[PayPal](https://paypal.com/)** - Transaction Service.
+* **[Postman](https://www.postman.com/)** - API testing tool.
+* **[Agile Development](https://www.opentext.com/what-is/agile-development#:~:text=Agile%20development%20is%20a%20project,twelve%20principles%20of%20Agile%20development.)** - Aimed to work in accordance to Agile Development.
+
+### 5.2.4 Other Libraries & Tools Used:
+* **[Google Gmail](https://mail.google.com/)** - Used for email services (account and password verification).
+* **[Temp Mail](https://temp-mail.org/)** - For creating temporary email accounts used for testing purposes.
+* **[Bootstrap 5.0.2](https://getbootstrap.com/docs/5.0/getting-started/introduction/)** - Framework for responsive web design and styling.
+* **[jQuery 3.7.1](https://jquery.com/)** - Library for manipulating the HTML DOM.
+* **[Font Awesome](https://fontawesome.com/)** - Icons used throughout the application.
+* **[Fontspace](https://www.fontspace.com/)** & **[1001Fonts](https://www.1001fonts.com/)** - Sources for fonts used in the design.
+* **[Freepik](https://www.freepik.com/)** - Used for sourcing background images and other assets.
+* **[Balsamiq Wireframes](https://balsamiq.com/wireframes/)** - Wireframing tool used in the design phase of the project.
 
 # 6 - Testing
 ## 6.1 - W3C Validator Test
 ## 6.2 - Testing of User Stories (From Chapter 1)
-
 ### 6.2.1 - Testing of First Time User Goals:
 <details>
   <summary>
@@ -315,10 +347,56 @@ Create a user friendly website where customers can browse for clothes and make s
     <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/6-testing/us-update.png" alt="Returning User Story - Change Accounts details - image">
 </details>
 
-## 6.3 - Further Testing
-## 6.4 - Known Bugs
 
-# 7 - Deployment
+# 7. Deployment
+
+## 7.1 GitHub Pages
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [p5-shop](https://github.com/GlennJohansson85/p5-shop)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Main Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [p5-shop](https://github.com/GlennJohansson85/p5-shop) in the "GitHub Pages" section.
+
+### 7.2 Forking the GitHub Repository
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [p5-shop](https://github.com/GlennJohansson85/p5-shop)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### 7.3 Making a Local Clone
+1. Log in to GitHub and locate the [p5-shop](https://github.com/GlennJohansson85/p5-shop)[p5-shop](https://github.com/GlennJohansson85/p5-shop)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/GlennJohansson85/p5-shop
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone  https://github.com/GlennJohansson85/p5-shop
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+## 8.Credits
+- All technologies beeing used mentioned in chapter 4.
+- The people whom created the media and font files.
+- Code Insitute
+
 
 
 
