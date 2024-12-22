@@ -1,4 +1,4 @@
-/*                                           NAVBAR */
+/* Navbar */
 .navbar {
     font-family: "junegull";
     position: fixed;
@@ -18,14 +18,14 @@
     background-color: #ffc3e0e9;
 }
 
-/*                                           NAV */
+/* Navbar Nav */
 .navbar-nav {
     flex-direction: row;
     display: flex;
     align-items: center;
 }
 
-/*                                Dropdown - NAV */
+/* Navbar Dropdown */
 .navbar-nav .dropdown-menu {
     position: absolute;
     background-clip: padding-box;
@@ -36,17 +36,20 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.229);
 }
 
+/* Navbar Dropdown - Item */
 .dropdown-item {
     font-family: "VarelaRound-Regular";
     font-size: 14px;
     color: #000;
 }
 
+/* Navbar Dropdown - Item - Effect */
 .dropdown-item:hover {
     color: #004078;
     background-color: #d9ffc3e9;
 }
-/*                                           TOGGLER */
+
+/* Navbar Toggler */
 .navbar-toggler {
     border: none;
     outline: none;
@@ -55,7 +58,7 @@
     padding: 0;
 }
 
-/*                                   States - TOGGLER */
+/* Navbar Toggler - States */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler:hover {
@@ -64,31 +67,32 @@
     box-shadow: none;
 
 }
-/*                                     Icon - TOGGLER */
+
+/* Navbar Toggler - Icon */
 .navbar-toggler-icon {
     display: block;
     margin-top:5px;
     width: 30px;
     height: 35px;
     background-color: #000;
-    mask: url("/static/images//toggler.png") no-repeat center;
+    mask: url("/static/images/misc/toggler.png") no-repeat center;
     -webkit-mask: url("/static/images/misc/toggler.png") no-repeat center;
     mask-size: contain;
     -webkit-mask-size: contain;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-
-/*                            States - Icon - TOGGLER */
+/* Navbar Toggler - Icon - Effect */
 .navbar-toggler-icon:hover {
     filter: invert(31%) sepia(88%) saturate(2997%) hue-rotate(200deg) brightness(50%) contrast(94%);
 }
 
+/* Navbar Toggler - Icon - Active State */
 .navbar-toggler.open .navbar-toggler-icon {
     transform: rotate(45deg);
 }
 
-/*                                           BRAND */
+/* Navbar Brand */
 .navbar-brand {
     font-family: "junegull";
     font-size: 24px;
@@ -98,11 +102,12 @@
     color: #000;
 }
 
+/* Navbar Brand - Effect */
 .navbar-brand:hover {
     color: #004078;
 }
 
-/*                                           LINK */
+/* Navbar Links */
 .nav-link {
     position: relative;
     display: inline-flex;
@@ -110,19 +115,21 @@
     color: #000;
 }
 
+/* Navbar Links - Effect */
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
     color: #004078;
 }
 
+/* Navbar Links - Right Side of Search Function */
 .right-items {
     margin-left: auto;
     display: flex;
     align-items: center;
 }
 
-/*                                  Notify - CART */
+/* Navbar Cart - Notification */
 .navbar-nav .nav-item .nav-link .notify {
     position: relative;
     top: 0;
@@ -132,18 +139,19 @@
     z-index: 1050;
 }
 
-/*                                    Form - SEARCH */
+/* Navbar Search */
 .search-form {
     display: flex;
     border-radius: 5px;
     margin-right: 5px;
 }
 
+/* Navbar Search - Effect */
 .search-form:hover {
     color: #004078;
 }
 
-/*                                   Input - SEARCH */
+/* Navbar Search - Inputfield */
 .search-input {
     font-family: "VarelaRound-Regular";
     padding-left: 5px;
@@ -152,16 +160,17 @@
     border: none;
 }
 
+/* Navbar Search - Effect */
 .search-input:focus {
   outline: none;
 }
 
+/* Navbar Search - Placeholder */
 .search-input::placeholder {
-
     color: #c0adb6
 }
 
-/*                                  Button - SEARCH */
+/* Navbar Search - Button */
 .search-btn {
     border: none;
     background-color: #fff;
@@ -169,18 +178,19 @@
     border-bottom-right-radius: 5px;
 }
 
+/* Navbar Search - Button - Effect */
 .search-btn:hover {
     color: #004078;
 }
 
-/* ========================================> 1200PX */
+/* Smaller than Desktop - Max Width 1200px */
 @media (max-width: 1200px) {
     .navbar-collapse {
         display: flex;
 
     }
+
     .nav-link {
         margin: 0 10px;
     }
-
 }
