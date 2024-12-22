@@ -54,7 +54,7 @@ ROOT_URLCONF = 'shop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -62,7 +62,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.media',
                 'category.context_processors.menu_links',
                 'cart.context_processors.counter',
             ],
@@ -70,10 +69,13 @@ TEMPLATES = [
     },
 ]
 
+# Custom User Model
 AUTH_USER_MODEL = 'accounts.Account'
 
+# Messages
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
+# WSGI Application
 WSGI_APPLICATION = 'shop.wsgi.application'
 
 # Database
@@ -124,18 +126,14 @@ if 'USE_AWS' in os.environ:
     # AWS S3 Configuration
     AWS_STORAGE_BUCKET_NAME = 'p5-bucket'
     AWS_S3_REGION_NAME = 'eu-north-1'
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
 
-    # Static files configuration
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-    STATICFILES_LOCATION = 'static'
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
 
-    # Media files configuration
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-    MEDIAFILES_LOCATION = 'media'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 
 
