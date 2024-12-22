@@ -56,13 +56,15 @@ Create a user friendly website where customers can browse for clothes and make s
     <summary>Desktop</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-large.png" alt="Home desktop wireframe - image">
 </details>
+
 <details>
   <summary>Tablet</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-medium.png" alt="Home tablet wireframe - image">
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-medium.png" alt="Home tablet wireframe - image">
 </details>
+
 <details>
   <summary>Mobile</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-small.png" alt="Home mobile wireframe - image">
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/home-small.png" alt="Home mobile wireframe - image">
 </details>
 
 ## 2.2 - All Products:
@@ -70,13 +72,15 @@ Create a user friendly website where customers can browse for clothes and make s
     <summary>Desktop</summary>
       <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-large.png" alt="products desktop wireframe - image">
 </details>
+
 <details>
   <summary>Tablet</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-medium.png" alt="products tablet wireframe - image">
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-medium.png" alt="products tablet wireframe - image">
 </details>
+
 <details>
   <summary>Mobile</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-small.png" alt="products mobile wireframe - image">
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/products-small.png" alt="products mobile wireframe - image">
 </details>
 
 ## 2.3 - Product Detail:
@@ -87,110 +91,142 @@ Create a user friendly website where customers can browse for clothes and make s
 
 <details>
   <summary>Tablet</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-medium.png" alt="product_detail tablet wireframe - image">
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-medium.png" alt="product_detail tablet wireframe - image">
 </details>
+
 <details>
   <summary>Mobile</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-small.png" alt="product_detail mobile wireframe - image">
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/product_detail-small.png" alt="product_detail mobile wireframe - image">
 </details>
 
 ## 2.4 - Cart:
 <details>
-    <summary>Desktop</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-large.png" alt="cart desktop wireframe - image">
+  <summary>Desktop</summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-large.png" alt="cart desktop wireframe - image">
 </details>
+
 <details>
   <summary>Tablet & Mobile</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-medium-small.png" alt="cart tablet wireframe - image">
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/cart-medium-small.png" alt="cart tablet wireframe - image">
 </details>
 
 ## 2.5 - Checkout:
 <details>
-    <summary>All devices</strong></summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/checkout.png" alt="checkout wireframe - image">
+  <summary>All devices</summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/checkout.png" alt="checkout wireframe - image">
 </details>
 
 ## 2.6 - Placing Order:
 <details>
-    <summary>Desktop</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-l.png" alt="payments desktop wireframe - image">
+  <summary>Desktop</summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-l.png" alt="payments desktop wireframe - image">
 </details>
+
 <details>
-    <summary>Tablet & Mobile</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-m-s.png" alt="payments tablet & mobile wireframe - image">
+  <summary>Tablet & Mobile</summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/payments-m-s.png" alt="payments tablet & mobile wireframe - image">
 </details>
 
 ## 2.7 - Dashboard:
 <details>
-    <summary>Desktop</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/dashboard-l.png" alt="dashboard desktop wireframe - image">
+  <summary>Desktop</summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/dashboard-l.png" alt="dashboard desktop wireframe - image">
 </details>
+
 <details>
-    <summary>Tablet & Mobile</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/dashboard-m-s.png" alt="dashboard tablet & mobile wireframe - image">
+  <summary>Tablet & Mobile</summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/2-wireframes/dashboard-m-s.png" alt="dashboard tablet & mobile wireframe - image">
 </details>
 
 # 3 - Features
 ## 3.1 - Registration
 <details>
-    <summary>A user register to the website using this form. When the form has been successfully submitted the user recieves a message to activate her account through the activation email sent to her account.
-    </summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register.png" alt="Register Form - image">
+  <summary>
+    A user register to the website using this form. When the form has been successfully submitted the user recieves a message to activate her account through the activation email sent to her account.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register.png" alt="Register Form - image">
 </details>
+
 <details>
-    <summary>The activation email has the website name as the sender and 'Activation Email' as the subject, as a more user-friendly input.</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register-activation.png" alt="Account activation email - image">
+  <summary>
+    The activation email has the website name as the sender and 'Activation Email' as the subject, as a more user-friendly input.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register-activation.png" alt="Account activation email - image">
 </details>
+
 <details>
-    <summary>Clicking the link will redirect the user to the sign-in page, where they will be notified that their account has been successfully activated.</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register-activated.png" alt="Account activated success - image">
+  <summary>
+    Clicking the link will redirect the user to the sign-in page, where they will be notified that their account has been successfully activated.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/register-activated.png" alt="Account activated success - image">
 </details>
 
 ## 3.2 - Navbar
 <details>
-    <summary>The navbar contain the brand (I SHOP) which redirects to the homepage when clicked. A searchbar which searches for words in product name and categories based on input from user. Categories as a dropdown showing all clothing categories as links. A link "All products" which redirects the user to the products page. Accounts, a dropdown, with a link to the users´personal dashboard and a sign out button. Lastly, a cart which redirects the user to her cart and a "notify" showing the number of items in the cart.</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-desktop.png" alt="Navbar with dropdowns in desktop view - image">
+  <summary>
+    The navbar contain the brand (I SHOP) which redirects to the homepage when clicked. A searchbar which searches for words in product name and categories based on input from user. Categories as a dropdown showing all clothing categories as links. A link "All products" which redirects the user to the products page. Accounts, a dropdown, with a link to the users´personal dashboard and a sign out button. Lastly, a cart which redirects the user to her cart and a "notify" showing the number of items in the cart.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-desktop.png" alt="Navbar with dropdowns in desktop view - image">
 </details>
 
 <details>
-    <summary>The navbar in mobile view</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-mobile.png" alt="Navbar mobile/tablet view - image">
+  <summary>
+    The navbar in mobile view
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-mobile.png" alt="Navbar mobile/tablet view - image">
 </details>
+
 <details>
-    <summary>The navbar in mobile/tablet view with the toggler open.</summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-toggler-open.png" alt="Navbar with toggler open in mobile/tablet view - image">
+  <summary>
+    The navbar in mobile/tablet view with the toggler open.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/navbar-toggler-open.png" alt="Navbar with toggler open in mobile/tablet view - image">
 </details>
 
 ## 3.3 - Homepage
 <details>
-    <summary>The main page, <strong>homepage</strong>, contains a intro text "LATEST TRENDS ARE HERE!" which dynamically rises and falls against a concrete-textured background, creating a subtle pulsating effect. Below the header, a grid showcases the most popular clothing items. Each card in the grid lifts slightly when hovered over, casting a shadow beneath it for added emphasis. Clicking on a card directs users to the detailed page of the selected clothing item. A prominent "See All" button is also available, guiding users to the product page where they can explore the full collection.
-    </summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/homepage.png" alt="View of the homepage - image">
+  <summary>
+    The main page, <strong>homepage</strong>, contains a intro text "LATEST TRENDS ARE HERE!" which dynamically rises and falls against a concrete-textured background, creating a subtle pulsating effect. Below the header, a grid showcases the most popular clothing items. Each card in the grid lifts slightly when hovered over, casting a shadow beneath it for added emphasis. Clicking on a card directs users to the detailed page of the selected clothing item. A prominent "See All" button is also available, guiding users to the product page where they can explore the full collection.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/homepage.png" alt="View of the homepage - image">
 </details>
 
 ## 3.4 Products
 <details>
-    <summary>On the <strong>products page</strong>, where all clothing items are located, users can see six clothing items at a time. By using the paginator at the bottom users can move back and forth based on the number of items. On the left side of the grid is a list of all the differenct clothing wears to choose from. Clicking on category will show only that category.
-    </summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/products.png" alt="View of the product page - image">
+  <summary>
+    On the <strong>products page</strong>, where all clothing items are located, users can see six clothing items at a time. By using the paginator at the bottom users can move back and forth based on the number of items. On the left side of the grid is a list of all the differenct clothing wears to choose from. Clicking on category will show only that category.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/products.png" alt="View of the product page - image">
 </details>
+
 <details>
-    <summary> Clicking on an item redirects the user to the <strong>product detail page</strong>, where they can view the item in a larger size. After selecting a color and size, the user can add the item to their cart. At the bottom of the page, users can also read reviews from other customers.
-    </summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/product_detail.png" alt="View of the product_detail page - image">
+  <summary>
+    Clicking on an item redirects the user to the <strong>product detail page</strong>, where they can view the item in a larger size. After selecting a color and size, the user can add the item to their cart. At the bottom of the page, users can also read reviews from other customers.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/product_detail.png" alt="View of the product_detail page - image">
 </details>
+
 <details>
-    <summary>The <strong>cart page</strong> showcases all selected items, including individual item details/costs and the overall total. Users can easily adjust quantities by adding or removing items, with the total cost updating dynamically. They can revisit product details by clicking on the product name (link) or proceed with the purchase using the checkout button.
-    </summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/cart.png" alt="View of the cart page - image">
+  <summary>
+    The <strong>cart page</strong> showcases all selected items, including individual item details/costs and the overall total. Users can easily adjust quantities by adding or removing items, with the total cost updating dynamically. They can revisit product details by clicking on the product name (link) or proceed with the purchase using the checkout button.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/cart.png" alt="View of the cart page - image">
 </details>
 
 
 ## 3.5 - Transaction
 <details>
-    <summary>The <strong>checkout page</strong> features a form that users must complete to finalize their purchase. For returning customers, the form is pre-filled with their previous details, ensuring a seamless and user-friendly experience.
-    </summary>
-      <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/checkout.png" alt="View of the checkout page - image">
+  <summary>
+    The <strong>checkout page</strong> features a form that users must complete to finalize their purchase. For returning customers, the form is pre-filled with their previous details, ensuring a seamless and user-friendly experience.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/checkout.png" alt="View of the checkout form - image">
+</details>
+
+<details>
+  <summary>
+    The <strong>payments/"Place order" page</strong> is where the user review their order making sure all the details are correct before going through with the purchase.
+  </summary>
+  <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/3-features/checkout.png" alt="View of the checkout page - image">
 </details>
 
 
