@@ -60,4 +60,4 @@ paypal.Buttons({
             });
         }
     }
-}).render('#paypal-container');
+}).render('#paypal-button-container');
