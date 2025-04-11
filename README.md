@@ -1,8 +1,5 @@
 # I SHOP
 
-![image](https://github.com/user-attachments/assets/5909e845-3818-4808-9e1c-a862db84cb9a)
-
-Updated:
 ![image](https://github.com/user-attachments/assets/ad738601-fc95-4dc1-8651-5b8eb480e270)
 
 
